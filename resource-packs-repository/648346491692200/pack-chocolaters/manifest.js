@@ -1,1 +1,0 @@
-{"internalName":"pack-chocolaters","commit":"1371a3d44210dfd8fe8f5abc8e71a946743f4d67","displayName":"ChocolateRS","compatibleVersion":"1.4.3","author":"HotJuicyMess","tags":["chocolate","osrs","brown"],"repo":"https://github.com/melkypie/resource-packs/tree/pack-chocolaters","hasIcon":true}

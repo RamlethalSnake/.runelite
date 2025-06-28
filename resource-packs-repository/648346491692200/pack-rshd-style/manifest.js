@@ -1,1 +1,0 @@
-{"internalName":"pack-rshd-style","commit":"dcb18702b72b5857ebc8fbb19d651fb40f973582","displayName":"RSHD Style","compatibleVersion":"1.0.0","author":"Surprise Pie","tags":["2008","2009","RSHD"],"repo":"https://github.com/melkypie/resource-packs/tree/pack-rshd-style","hasIcon":true}

@@ -1,1 +1,0 @@
-{"internalName":"pack-07-Zuvelox","commit":"976c13062835ed9cbcaf29ec8decea1f2f5dd674","displayName":"07 Zuveløx","compatibleVersion":"1.4.5","author":"Poo","tags":["zuv","zuvelox","zx","clan","poo","dark","vanilla","black","blue","cyan"],"repo":"https://github.com/melkypie/resource-packs/tree/pack-07-Zuvelox","hasIcon":true}

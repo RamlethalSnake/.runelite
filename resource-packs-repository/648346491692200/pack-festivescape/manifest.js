@@ -1,1 +1,0 @@
-{"internalName":"pack-festivescape","commit":"109be89e66607657b5c021675c96e5f841f7f364","displayName":"FestiveScape","compatibleVersion":"1.4.8","author":"Ninjapig","tags":["christmas","festive","holiday","snow","winter"],"repo":"https://github.com/melkypie/resource-packs/tree/pack-festivescape","hasIcon":true}

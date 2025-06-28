@@ -1,1 +1,0 @@
-{"internalName":"pack-redblackvanilla","commit":"8df06f8f558aa39c998b51cb8c7961bfb7671ec2","displayName":"RedBlack\u0026Vanilla","compatibleVersion":"1.1.4","author":"j8","tags":["red","black","vanilla"],"repo":"https://github.com/melkypie/resource-packs/tree/pack-redblackvanilla","hasIcon":true}

@@ -1,1 +1,0 @@
-{"internalName":"pack-dank-mode-teal","commit":"24c9b5e95941636599c7a5f997007b01b6cd07c2","displayName":"Dank Mode Teal","compatibleVersion":"1.6.0","author":"Vera","tags":["dark","dank","modern","clean","dark mode","teal","dmt","vera","dark"],"repo":"https://github.com/melkypie/resource-packs/tree/pack-dank-mode-teal","hasIcon":true}

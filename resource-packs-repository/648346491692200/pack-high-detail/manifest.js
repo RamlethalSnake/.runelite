@@ -1,1 +1,0 @@
-{"internalName":"pack-high-detail","commit":"e0a654b633c5b2814214c1ef8bd2d8bfef22e847","displayName":"Brown Theme","compatibleVersion":"1.3.1","author":"6cythe","tags":["simple","modern","smooth","dark","brown"],"repo":"https://github.com/melkypie/resource-packs/tree/pack-high-detail","hasIcon":true}

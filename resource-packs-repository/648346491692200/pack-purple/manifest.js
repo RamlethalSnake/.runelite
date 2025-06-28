@@ -1,1 +1,0 @@
-{"internalName":"pack-purple","commit":"d043d41ed7c23ab8c779a037b3b88a514e1da65a","displayName":"Purple Pack 1.4.3","compatibleVersion":"1.4.3","author":"BasVonSpace","tags":["Purple"," Pixel"," Amazing"," Ms Paint FTW"],"repo":"https://github.com/melkypie/resource-packs/tree/pack-purple","hasIcon":true}

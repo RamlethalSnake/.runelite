@@ -1,1 +1,0 @@
-{"internalName":"pack-lite-ui","commit":"f3c1178d30650ad9c1b68b6fd7d82f14c1b8b2c9","displayName":"lite:ui","compatibleVersion":"1.6.1","author":"cue","tags":["Dark"," Clean"," Runelite"],"repo":"https://github.com/melkypie/resource-packs/tree/pack-lite-ui","hasIcon":true}

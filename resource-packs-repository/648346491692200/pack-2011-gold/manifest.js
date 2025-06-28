@@ -1,1 +1,0 @@
-{"internalName":"pack-2011-gold","commit":"460d63e6fcdb7fb6bc4b70b552fc01db194cae64","displayName":"2011 gold","compatibleVersion":"1.3.2","author":"Manpaint","tags":["2011","hd","RSHD"," Pre-Eoc"," pre-RS3"],"repo":"https://github.com/melkypie/resource-packs/tree/pack-2011-gold","hasIcon":true}

@@ -1,1 +1,0 @@
-{"internalName":"pack-0-dark","commit":"2526b9577737cbcc911ce56dfbb2f23457afd7d7","displayName":"0 Dark","compatibleVersion":"1.7.0","author":"EXpoZuR","tags":["dark","colorful","modern"],"repo":"https://github.com/melkypie/resource-packs/tree/pack-0-dark","hasIcon":true}

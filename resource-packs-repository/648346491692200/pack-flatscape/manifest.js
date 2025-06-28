@@ -1,1 +1,0 @@
-{"internalName":"pack-flatscape","commit":"ac7c99960580a6144096faa83d1c24daaf3cb057","displayName":"Flatscape","compatibleVersion":"1.1.2","author":"melky","tags":["simple","modern","smooth"],"repo":"https://github.com/melkypie/resource-packs/tree/pack-flatscape","hasIcon":true}

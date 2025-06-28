@@ -1,1 +1,0 @@
-{"internalName":"pack-sand-casino","commit":"d16026bed6055db7c0767a17fcfc0d6d6f30054b","displayName":"Sand Casino","compatibleVersion":"1.0.5","author":"psyda","tags":["gold","bright","meme","funny","money","rich","coins","gaudy","gawdy","duel","arena"],"repo":"https://github.com/melkypie/resource-packs/tree/pack-sand-casino","hasIcon":true}

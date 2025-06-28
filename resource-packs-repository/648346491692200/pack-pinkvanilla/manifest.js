@@ -1,1 +1,0 @@
-{"internalName":"pack-pinkvanilla","commit":"65915ab537e87f4a25423a2e07577810ff0d1233","displayName":"Pink Vanilla","compatibleVersion":"1.3.3","author":"SnowMonarch","tags":["Pink","Magenta","Purple","Vanilla","Reskin","Recolor","Recolour","Color","Colour"],"repo":"https://github.com/melkypie/resource-packs/tree/pack-pinkvanilla","hasIcon":true}

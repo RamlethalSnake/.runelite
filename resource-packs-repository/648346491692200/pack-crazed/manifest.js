@@ -1,1 +1,0 @@
-{"internalName":"pack-crazed","commit":"e04290a9563718378bd20c825bbbb64a47d6e88c","displayName":"CRAZED","compatibleVersion":"1.2.1","author":"SPCCKZ","tags":["dark","sleek","spooky","modern","smooth","shiny","HD"],"repo":"https://github.com/melkypie/resource-packs/tree/pack-crazed","hasIcon":true}

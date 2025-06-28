@@ -1,1 +1,0 @@
-{"internalName":"pack-dragonframe","commit":"3ff3bc7c2d950682b8a99d99f3e2c7e30b9e37a9","displayName":"Dragonframe","compatibleVersion":"1.1.4","author":"Ripvayne","tags":["red","dragon","edgy","cool"],"repo":"https://github.com/melkypie/resource-packs/tree/pack-dragonframe","hasIcon":true}

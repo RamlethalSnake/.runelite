@@ -1,1 +1,0 @@
-{"internalName":"pack-pixelscape-regular","commit":"340810fc686d0e17cf80744a4d250546adf08627","displayName":"Pixelscape","compatibleVersion":"1.3.4","author":"f2p Ello","tags":["high detail"," pixelart"],"repo":"https://github.com/melkypie/resource-packs/tree/pack-pixelscape-regular","hasIcon":true}

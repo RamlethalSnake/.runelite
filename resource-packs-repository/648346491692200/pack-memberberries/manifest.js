@@ -1,1 +1,0 @@
-{"internalName":"pack-memberberries","commit":"dabdccd7d9d7e6624a92ba80a6297126f6667702","displayName":"Memberberries","compatibleVersion":"1.3.0","author":"Kalapeno","tags":["nord","Purple","dark","vanilla","recolor"],"repo":"https://github.com/melkypie/resource-packs/tree/pack-memberberries","hasIcon":true}

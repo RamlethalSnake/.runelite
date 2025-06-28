@@ -1,1 +1,0 @@
-{"internalName":"pack-kitty","commit":"a22e075af6fcd525445b658b908d099d9e52c9f8","displayName":"Kitty","compatibleVersion":"1.4.8","author":"Haffy","tags":["dark mode"," kitty"," catppuccin"," night"," beautiful"," fulfilling"],"repo":"https://github.com/melkypie/resource-packs/tree/pack-kitty","hasIcon":true}
