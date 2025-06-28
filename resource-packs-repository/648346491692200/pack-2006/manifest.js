@@ -1,0 +1,1 @@
+{"internalName":"pack-2006","commit":"8446c39e0c0ef9554f963201dcccf1c52fbe26c9","displayName":"2006","compatibleVersion":"1.6.1","author":"Glocc","tags":["resizeable","classic","retro","2006"],"repo":"https://github.com/melkypie/resource-packs/tree/pack-2006","hasIcon":true}

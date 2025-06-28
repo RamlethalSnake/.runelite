@@ -1,0 +1,1 @@
+{"internalName":"pack-sakurascape","commit":"9cc985e37c204fc19a5f5f8a1cf3ebf72a4cdb7a","displayName":"SakuraScape","compatibleVersion":"1.4.9","author":"degradee","tags":["reskin","pink","sakura","cherry","brown","kirby","soft"],"repo":"https://github.com/melkypie/resource-packs/tree/pack-sakurascape","hasIcon":true}

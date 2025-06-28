@@ -1,0 +1,1 @@
+{"internalName":"pack-retro-hybrid","commit":"8fa3ee694a4dee1fd70b64225ab336cddafa9a21","displayName":"Retro Hybrid","compatibleVersion":"1.4.5","author":"Septem151","tags":["retro","classic","2005"],"repo":"https://github.com/melkypie/resource-packs/tree/pack-retro-hybrid","hasIcon":true}

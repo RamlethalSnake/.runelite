@@ -1,0 +1,1 @@
+{"internalName":"pack-DeadScape","commit":"0230bc45313b169fb4e00db48ce622bcdd513977","displayName":"DeadScape","compatibleVersion":"1.7.0","author":"LootLunatic","tags":["dead","deadspace","deadscape","dead space","dead scape","space","horror",""],"repo":"https://github.com/melkypie/resource-packs/tree/pack-DeadScape","hasIcon":true}

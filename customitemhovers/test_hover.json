@@ -1,0 +1,11 @@
+{
+  "name": "Test Hover",
+  "enabled": true,
+  "conditions": [
+    {
+      "name": "Coins",
+      "hoverText": "Hello, Daniel!",
+      "itemNames": ["Coins"]
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+{"internalName":"pack-kanata","commit":"79dab5b5d6a3b30d0e4103e78f2585f1218a0d15","displayName":"Kanata","compatibleVersion":"1.4.4","author":"vmp","tags":["anime","kyoukai","weeb","red","dark","dark chatbox","click"],"repo":"https://github.com/melkypie/resource-packs/tree/pack-kanata","hasIcon":true}

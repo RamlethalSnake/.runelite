@@ -1,0 +1,1 @@
+{"internalName":"pack-rs3","commit":"1725b20ecfe0629ebed00f5dd98adb3fb86b1f7a","displayName":"RS3","compatibleVersion":"1.4.4","author":"Frankz","tags":["rs3","modern","hd"],"repo":"https://github.com/melkypie/resource-packs/tree/pack-rs3","hasIcon":true}

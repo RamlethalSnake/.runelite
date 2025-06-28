@@ -1,0 +1,1 @@
+{"internalName":"pack-jins-minimap","commit":"8ee40feca1e882dfccf6374974fd14699270bdb8","displayName":"Fixed style minimap for resizable","compatibleVersion":"1.4.8","author":"Jin","tags":["minimap"],"repo":"https://github.com/melkypie/resource-packs/tree/pack-jins-minimap","hasIcon":true}

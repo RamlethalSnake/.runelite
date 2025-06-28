@@ -1,0 +1,1 @@
+{"internalName":"pack-hcim-theme","commit":"48b06cfbb28b4545d33502285bab89033ceceb8e","displayName":"HCIM Theme","compatibleVersion":"1.3.3","author":"Red Vitreous","tags":["simple","themed","vitreous","coating","modern","fixed","legacy"],"repo":"https://github.com/melkypie/resource-packs/tree/pack-hcim-theme","hasIcon":true}

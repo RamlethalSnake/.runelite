@@ -1,0 +1,1 @@
+{"internalName":"pack-dark","commit":"44de1672e70e3346e614fd1d80d80b86648b36b1","displayName":"Dark (resizable)","compatibleVersion":"1.0.4","author":"Nan0bit","repo":"https://github.com/melkypie/resource-packs/tree/pack-dark","hasIcon":true}

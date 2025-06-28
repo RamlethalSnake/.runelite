@@ -1,0 +1,1 @@
+{"internalName":"pack-celtic-cuspair","commit":"d7780541cc19596743ebcbc976a1d3a7bd450027","displayName":"Celtic Cuspair","compatibleVersion":"1.7.0","author":"Biadh (bee-ikh)","tags":["celtic","green","rpg"],"repo":"https://github.com/melkypie/resource-packs/tree/pack-celtic-cuspair","hasIcon":true}

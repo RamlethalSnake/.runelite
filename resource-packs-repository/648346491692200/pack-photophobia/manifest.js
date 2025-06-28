@@ -1,0 +1,1 @@
+{"internalName":"pack-photophobia","commit":"0828fd905ee0b2fc211abb95e1ddb75a33eedf03","displayName":"Photophobia","compatibleVersion":"1.3.0","author":"Esta","tags":["simple","clean","dark"],"repo":"https://github.com/melkypie/resource-packs/tree/pack-photophobia","hasIcon":true}

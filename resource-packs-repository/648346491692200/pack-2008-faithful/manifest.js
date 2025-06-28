@@ -1,0 +1,1 @@
+{"internalName":"pack-2008-faithful","commit":"24c3893029b2214d8d9093d32954c872edd08de5","displayName":"2008 Faithful","compatibleVersion":"1.4.4","author":"BongoBooty","tags":["2008","remake","simple"],"repo":"https://github.com/melkypie/resource-packs/tree/pack-2008-faithful","hasIcon":true}

@@ -1,0 +1,1 @@
+{"internalName":"pack-browntown","commit":"4ee250c70c104662cf6ac81e03e5a5e2dafcc489","displayName":"Browntown","compatibleVersion":"1.7.0","author":"Nichy (nickyGyul)","tags":["dark","wiki","browntown","chocolate","brown","mocha","vanilla","recolor"],"repo":"https://github.com/melkypie/resource-packs/tree/pack-browntown","hasIcon":true}

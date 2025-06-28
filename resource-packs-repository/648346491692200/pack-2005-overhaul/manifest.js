@@ -1,0 +1,1 @@
+{"internalName":"pack-2005-overhaul","commit":"3cc1f06b5e1c33b71308138b3a7fe5dedbe1ca1f","displayName":"2005 Overhaul","compatibleVersion":"1.4.7","author":"debuffed","tags":["2005"],"repo":"https://github.com/melkypie/resource-packs/tree/pack-2005-overhaul","hasIcon":true}

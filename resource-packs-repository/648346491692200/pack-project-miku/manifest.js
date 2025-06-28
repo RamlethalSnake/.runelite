@@ -1,0 +1,1 @@
+{"internalName":"pack-project-miku","commit":"f772451b81e37c6b5146b0f4f1df766aa872dfce","displayName":"Project Miku","compatibleVersion":"1.4.4","author":"Haffy","tags":["Hatsune"," Miku"," Vocaloid"," Blue"," Teal"],"repo":"https://github.com/melkypie/resource-packs/tree/pack-project-miku","hasIcon":true}

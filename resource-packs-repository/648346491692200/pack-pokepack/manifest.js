@@ -1,0 +1,1 @@
+{"internalName":"pack-pokepack","commit":"7252d5ef649cf44ee545865b8f5f6554c19a33fc","displayName":"PokéPack","compatibleVersion":"1.4.8","author":"Jiro","tags":["pokemon"," pixel"," fixed"," resizeable"," firered"," leafgreen"],"repo":"https://github.com/melkypie/resource-packs/tree/pack-pokepack","hasIcon":true}

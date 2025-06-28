@@ -1,0 +1,1 @@
+{"internalName":"pack-2012-interface","commit":"e8b122a9b6063650190c688978d2ca6b600a1cad","displayName":"2012","compatibleVersion":"1.4.4","author":"Shredit, Leyline","tags":["2011","2012","modern","hd","rs3","dark"],"repo":"https://github.com/melkypie/resource-packs/tree/pack-2012-interface","hasIcon":true}

@@ -1,0 +1,1 @@
+{"internalName":"pack-reaper","commit":"6eb35ebc9559755e84aa12974f2b8461deefb18c","displayName":"Reaper","compatibleVersion":"1.4.4","author":"EXpoZuR","tags":["dark","modern","minimalist"],"repo":"https://github.com/melkypie/resource-packs/tree/pack-reaper","hasIcon":true}

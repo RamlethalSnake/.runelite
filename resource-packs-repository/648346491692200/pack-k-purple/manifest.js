@@ -1,0 +1,1 @@
+{"internalName":"pack-k-purple","commit":"d8bba28819444b45d1e821bd638fdbd96151ea94","displayName":"Kalapeno\u0027s Purple","compatibleVersion":"1.4.0","author":"Kalapeno","tags":["Purple","Teal","Recolor"],"repo":"https://github.com/melkypie/resource-packs/tree/pack-k-purple","hasIcon":true}

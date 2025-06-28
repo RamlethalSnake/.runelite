@@ -1,0 +1,1 @@
+{"internalName":"pack-dark-cherry","commit":"64701f06f9a955c300920b2642de31a361528e3a","displayName":"Dark Cherry","compatibleVersion":"1.6.1","author":"Boataku","tags":["dark","cherry","red","recolor","fixed","resizeable","gim"],"repo":"https://github.com/melkypie/resource-packs/tree/pack-dark-cherry","hasIcon":true}

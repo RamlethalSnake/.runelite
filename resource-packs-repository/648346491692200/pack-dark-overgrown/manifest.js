@@ -1,0 +1,1 @@
+{"internalName":"pack-dark-overgrown","commit":"0d3de02cacca05843f3a685f5806f81a6650dd74","displayName":"dark overgrown","compatibleVersion":"1.4.5","author":"0xO","tags":["dark mode","dark","black","night","vanilla","recolor","plants","overgrown","green"],"repo":"https://github.com/melkypie/resource-packs/tree/pack-dark-overgrown","hasIcon":true}

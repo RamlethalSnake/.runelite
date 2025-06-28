@@ -1,0 +1,21 @@
+{
+  "name": "rune_prices",
+  "is_table_file": "absolutely",
+  "items": {
+    "Air rune": { "gp": 5 },
+    "Water rune": { "gp": 5 },
+    "Earth rune": { "gp": 5 },
+    "Fire rune": { "gp": 5 },
+    "Mind rune": { "gp": 3 },
+    "Chaos rune": { "gp": 80 },
+    "Death rune": { "gp": 250 },
+    "Blood rune": { "gp": 400 },
+    "Soul rune": { "gp": 400 },
+    "Wrath rune": { "gp": 500 },
+    "Astral rune": { "gp": 80 },
+    "Nature rune": { "gp": 100 },
+    "Law rune": { "gp": 120 },
+    "Body rune": { "gp": 5 },
+    "Cosmic rune": { "gp": 90 }
+  }
+}

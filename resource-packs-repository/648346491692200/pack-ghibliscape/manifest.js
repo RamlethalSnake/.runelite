@@ -1,0 +1,1 @@
+{"internalName":"pack-ghibliscape","commit":"9e2012caa1253352a4fa351b83591f6667254621","displayName":"GhibliScape","compatibleVersion":"1.4.8","author":"nwn7","tags":["cute","pixel","bright","light","pretty","fixed","resizeable"],"repo":"https://github.com/melkypie/resource-packs/tree/pack-ghibliscape","hasIcon":true}

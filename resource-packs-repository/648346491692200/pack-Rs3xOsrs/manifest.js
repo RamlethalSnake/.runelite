@@ -1,0 +1,1 @@
+{"internalName":"pack-Rs3xOsrs","commit":"0f445c83aa4d2fbbabaf6885fd0706b2ce0b9f3a","displayName":"RS3xOSRS","compatibleVersion":"1.4.8","author":"Pyry","tags":["rs3"," modern"," hd"," oldschool"," legacy"," osrs"," frankz"," pyry"],"repo":"https://github.com/melkypie/resource-packs/tree/pack-Rs3xOsrs","hasIcon":true}

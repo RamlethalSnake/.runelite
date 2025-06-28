@@ -1,0 +1,1 @@
+{"internalName":"pack-dark-vanilla-nichy","commit":"486b2c755ee3d1489afc75eb7e7994c5458a9583","displayName":"Dark Vanilla","compatibleVersion":"1.7.6","author":"Nichy (nickyGyul)","tags":["dark mode","dark","black","night","vanilla","recolor","updated","gim","no bugs"],"repo":"https://github.com/melkypie/resource-packs/tree/pack-dark-vanilla-nichy","hasIcon":true}

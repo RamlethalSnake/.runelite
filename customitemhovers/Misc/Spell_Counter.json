@@ -1,0 +1,353 @@
+{
+  "is_hover_map": "absolutely",
+  "hovers": [
+{
+  "items": ["Mind rune"],
+  "condition": "inv_qty('Mind rune') >= 1 && inv_qty('Air rune') >= 1",
+  "hovers": [
+    [
+      "${'<col=66B2FF>Wind Strike: <col=C266FF>Casts: ' + floor(min(inv_qty('Mind rune'), inv_qty('Air rune'))) + '  <col=FFFF88>Price: 10g  > ' + (10 * floor(min(inv_qty('Mind rune'), inv_qty('Air rune'))) < 1000 ? 10 * floor(min(inv_qty('Mind rune'), inv_qty('Air rune'))) + 'g' : floor((10 * floor(min(inv_qty('Mind rune'), inv_qty('Air rune'))) / 100) / 10) + 'k') + '  <col=FF4D4D>Power: 2 '}"
+    ]
+  ]
+},
+{
+  "items": ["Mind rune"],
+  "condition": "inv_qty('Mind rune') >= 1 && inv_qty('Water rune') >= 1 && inv_qty('Air rune') >= 1",
+  "hovers": [
+    [
+      "${'<col=66B2FF>Water Strike: <col=C266FF>Casts: ' + floor(min(inv_qty('Mind rune'), inv_qty('Water rune'), inv_qty('Air rune'))) + '  <col=FFFF88>Price: 15g  > ' + (15 * floor(min(inv_qty('Mind rune'), inv_qty('Water rune'), inv_qty('Air rune'))) < 1000 ? 15 * floor(min(inv_qty('Mind rune'), inv_qty('Water rune'), inv_qty('Air rune'))) + 'g' : floor((15 * floor(min(inv_qty('Mind rune'), inv_qty('Water rune'), inv_qty('Air rune'))) / 100) / 10) + 'k') + '  <col=FF4D4D>Power: 4 '}"
+    ]
+  ]
+},
+{
+  "items": ["Mind rune"],
+  "condition": "inv_qty('Mind rune') >= 1 && inv_qty('Earth rune') >= 2 && inv_qty('Air rune') >= 1",
+  "hovers": [
+    [
+      "${'<col=66B2FF>Earth Strike: <col=C266FF>Casts: ' + floor(min(inv_qty('Mind rune'), floor(inv_qty('Earth rune') / 2), inv_qty('Air rune'))) + '  <col=FFFF88>Price: 18g  > ' + (18 * floor(min(inv_qty('Mind rune'), floor(inv_qty('Earth rune') / 2), inv_qty('Air rune'))) < 1000 ? 18 * floor(min(inv_qty('Mind rune'), floor(inv_qty('Earth rune') / 2), inv_qty('Air rune'))) + 'g' : floor((18 * floor(min(inv_qty('Mind rune'), floor(inv_qty('Earth rune') / 2), inv_qty('Air rune'))) / 100) / 10) + 'k') + '  <col=FF4D4D>Power: 6'}"
+    ]
+  ]
+},
+{
+  "items": ["Mind rune"],
+  "condition": "inv_qty('Mind rune') >= 1 && inv_qty('Fire rune') >= 3 && inv_qty('Air rune') >= 1",
+  "hovers": [
+    [
+      "${'<col=66B2FF>Fire Strike: <col=C266FF>Casts: ' + floor(min(inv_qty('Mind rune'), floor(inv_qty('Fire rune') / 3), inv_qty('Air rune'))) + '  <col=FFFF88>Price: 20g  > ' + (20 * floor(min(inv_qty('Mind rune'), floor(inv_qty('Fire rune') / 3), inv_qty('Air rune'))) < 1000 ? 20 * floor(min(inv_qty('Mind rune'), floor(inv_qty('Fire rune') / 3), inv_qty('Air rune'))) + 'g' : floor((20 * floor(min(inv_qty('Mind rune'), floor(inv_qty('Fire rune') / 3), inv_qty('Air rune'))) / 100) / 10) + 'k') + '  <col=FF4D4D>Power: 8 '}"
+    ]
+  ]
+},
+
+{
+  "items": ["Chaos rune"],
+  "condition": "inv_qty('Chaos rune') >= 1 && inv_qty('Air rune') >= 2",
+  "hovers": [
+    [
+      "${'<col=66B2FF>Wind Bolt: <col=C266FF>Casts: ' + floor(min(inv_qty('Air rune') / 2, inv_qty('Chaos rune'))) + '  <col=FFFF88>Price: 60g  > ' + (60 * floor(min(inv_qty('Air rune') / 2, inv_qty('Chaos rune'))) < 1000 ? 60 * floor(min(inv_qty('Air rune') / 2, inv_qty('Chaos rune'))) + 'g' : floor((60 * floor(min(inv_qty('Air rune') / 2, inv_qty('Chaos rune'))) / 100) / 10) + 'k') + '  <col=FF4D4D>Power: 9  '}"
+    ]
+  ]
+},
+{
+  "items": ["Chaos rune"],
+  "condition": "inv_qty('Chaos rune') >= 1 && inv_qty('Water rune') >= 3",
+  "hovers": [
+    [
+      "${'<col=66B2FF>Water Bolt: <col=C266FF>Casts: ' + floor(min(inv_qty('Water rune') / 3, inv_qty('Chaos rune'))) + '  <col=FFFF88>Price: 80g  > ' + (80 * floor(min(inv_qty('Water rune') / 3, inv_qty('Chaos rune'))) < 1000 ? 80 * floor(min(inv_qty('Water rune') / 3, inv_qty('Chaos rune'))) + 'g' : floor((80 * floor(min(inv_qty('Water rune') / 3, inv_qty('Chaos rune'))) / 100) / 10) + 'k') + '  <col=FF4D4D>Power: 10  '}"
+    ]
+  ]
+},
+
+{
+  "items": ["Chaos rune"],
+  "condition": "inv_qty('Chaos rune') >= 1 && inv_qty('Earth rune') >= 2",
+  "hovers": [
+    [
+      "${'<col=66B2FF>Earth Bolt: <col=C266FF>Casts: ' + floor(min(inv_qty('Earth rune') / 2, inv_qty('Chaos rune'))) + '  <col=FFFF88>Price: 90g  > ' + (90 * floor(min(inv_qty('Earth rune') / 2, inv_qty('Chaos rune'))) < 1000 ? 90 * floor(min(inv_qty('Earth rune') / 2, inv_qty('Chaos rune'))) + 'g' : floor((90 * floor(min(inv_qty('Earth rune') / 2, inv_qty('Chaos rune'))) / 100) / 10) + 'k') + '  <col=FF4D4D>Power: 10  '}"
+    ]
+  ]
+},
+{
+  "items": ["Chaos rune"],
+  "condition": "inv_qty('Chaos rune') >= 1 && inv_qty('Fire rune') >= 3",
+  "hovers": [
+    [
+      "${'<col=66B2FF>Fire Bolt: <col=C266FF>Casts: ' + floor(min(inv_qty('Fire rune') / 3, inv_qty('Chaos rune'))) + '  <col=FFFF88>Price: 110g  > ' + (110 * floor(min(inv_qty('Fire rune') / 3, inv_qty('Chaos rune'))) < 1000 ? 110 * floor(min(inv_qty('Fire rune') / 3, inv_qty('Chaos rune'))) + 'g' : floor((110 * floor(min(inv_qty('Fire rune') / 3, inv_qty('Chaos rune'))) / 100) / 10) + 'k') + '  <col=FF4D4D>Power: 12  '}"
+    ]
+  ]
+},
+{
+  "items": ["Blood rune"],
+  "condition": "inv_qty('Blood rune') >= 1 && inv_qty('Air rune') >= 5",
+  "hovers": [
+    [
+      "${'<col=66B2FF>Wind Wave: <col=C266FF>Casts: ' + floor(min(inv_qty('Air rune') / 5, inv_qty('Blood rune'))) + '  <col=FFFF88>Price: 500g  > ' + (500 * floor(min(inv_qty('Air rune') / 5, inv_qty('Blood rune'))) < 1000 ? 500 * floor(min(inv_qty('Air rune') / 5, inv_qty('Blood rune'))) + 'g' : floor((500 * floor(min(inv_qty('Air rune') / 5, inv_qty('Blood rune'))) / 100) / 10) + 'k') + '  <col=FF4D4D>Power: 21  '}"
+    ]
+  ]
+},
+{
+  "items": ["Blood rune"],
+  "condition": "inv_qty('Blood rune') >= 1 && inv_qty('Water rune') >= 7",
+  "hovers": [
+    [
+      "${'<col=66B2FF>Water Wave: <col=C266FF>Casts: ' + floor(min(inv_qty('Water rune') / 7, inv_qty('Blood rune'))) + '  <col=FFFF88>Price: 520g  > ' + (520 * floor(min(inv_qty('Water rune') / 7, inv_qty('Blood rune'))) < 1000 ? 520 * floor(min(inv_qty('Water rune') / 7, inv_qty('Blood rune'))) + 'g' : floor((520 * floor(min(inv_qty('Water rune') / 7, inv_qty('Blood rune'))) / 100) / 10) + 'k') + '  <col=FF4D4D>Power: 22  '}"
+    ]
+  ]
+},
+{
+  "items": ["Blood rune"],
+  "condition": "inv_qty('Blood rune') >= 1 && inv_qty('Earth rune') >= 7",
+  "hovers": [
+    [
+      "${'<col=66B2FF>Earth Wave: <col=C266FF>Casts: ' + floor(min(inv_qty('Earth rune') / 7, inv_qty('Blood rune'))) + '  <col=FFFF88>Price: 540g  > ' + (540 * floor(min(inv_qty('Earth rune') / 7, inv_qty('Blood rune'))) < 1000 ? 540 * floor(min(inv_qty('Earth rune') / 7, inv_qty('Blood rune'))) + 'g' : floor((540 * floor(min(inv_qty('Earth rune') / 7, inv_qty('Blood rune'))) / 100) / 10) + 'k') + '  <col=FF4D4D>Power: 23  '}"
+    ]
+  ]
+},
+{
+  "items": ["Blood rune"],
+  "condition": "inv_qty('Blood rune') >= 1 && inv_qty('Fire rune') >= 7",
+  "hovers": [
+    [
+      "${'<col=66B2FF>Fire Wave: <col=C266FF>Casts: ' + floor(min(inv_qty('Fire rune') / 7, inv_qty('Blood rune'))) + '  <col=FFFF88>Price: 560g  > ' + (560 * floor(min(inv_qty('Fire rune') / 7, inv_qty('Blood rune'))) < 1000 ? 560 * floor(min(inv_qty('Fire rune') / 7, inv_qty('Blood rune'))) + 'g' : floor((560 * floor(min(inv_qty('Fire rune') / 7, inv_qty('Blood rune'))) / 100) / 10) + 'k') + '  <col=FF4D4D>Power: 24  '}"
+    ]
+  ]
+},
+{
+  "items": ["Wrath rune"],
+  "condition": "inv_qty('Wrath rune') >= 1 && inv_qty('Air rune') >= 7",
+  "hovers": [
+    [
+      "${'<col=66B2FF>Wind Surge: <col=C266FF>Casts: ' + floor(min(inv_qty('Air rune') / 7, inv_qty('Wrath rune'))) + '  <col=FFFF88>Price: 470g  > ' + (470 * floor(min(inv_qty('Air rune') / 7, inv_qty('Wrath rune'))) < 1000 ? 470 * floor(min(inv_qty('Air rune') / 7, inv_qty('Wrath rune'))) + 'g' : floor((470 * floor(min(inv_qty('Air rune') / 7, inv_qty('Wrath rune'))) / 100) / 10) + 'k') + '  <col=FF4D4D>Power: 22  '}"
+    ]
+  ]
+},
+{
+  "items": ["Wrath rune"],
+  "condition": "inv_qty('Wrath rune') >= 1 && inv_qty('Water rune') >= 10",
+  "hovers": [
+    [
+      "${'<col=66B2FF>Water Surge: <col=C266FF>Casts: ' + floor(min(inv_qty('Water rune') / 10, inv_qty('Wrath rune'))) + '  <col=FFFF88>Price: 490g  > ' + (490 * floor(min(inv_qty('Water rune') / 10, inv_qty('Wrath rune'))) < 1000 ? 490 * floor(min(inv_qty('Water rune') / 10, inv_qty('Wrath rune'))) + 'g' : floor((490 * floor(min(inv_qty('Water rune') / 10, inv_qty('Wrath rune'))) / 100) / 10) + 'k') + '  <col=FF4D4D>Power: 23  '}"
+    ]
+  ]
+},
+{
+  "items": ["Wrath rune", "Earth rune"],
+  "condition": "inv_qty('Wrath rune') >= 1 && inv_qty('Earth rune') >= 10",
+  "hovers": [
+    [
+      "${'<col=66B2FF>Earth Surge: <col=C266FF>Casts: ' + floor(min(inv_qty('Earth rune') / 10, inv_qty('Wrath rune'))) + '  <col=FFFF88>Price: 510g  > ' + (510 * floor(min(inv_qty('Earth rune') / 10, inv_qty('Wrath rune'))) < 1000 ? 510 * floor(min(inv_qty('Earth rune') / 10, inv_qty('Wrath rune'))) + 'g' : floor((510 * floor(min(inv_qty('Earth rune') / 10, inv_qty('Wrath rune'))) / 100) / 10) + 'k') + '  <col=FF4D4D>Power: 24  '}"
+    ]
+  ]
+},
+{
+  "items": ["Wrath rune"],
+  "condition": "inv_qty('Wrath rune') >= 1 && inv_qty('Fire rune') >= 10",
+  "hovers": [
+    [
+      "${'<col=66B2FF>Fire Surge: <col=C266FF>Casts: ' + floor(min(inv_qty('Fire rune') / 10, inv_qty('Wrath rune'))) + '  <col=FFFF88>Price: 530g  > ' + (530 * floor(min(inv_qty('Fire rune') / 10, inv_qty('Wrath rune'))) < 1000 ? 530 * floor(min(inv_qty('Fire rune') / 10, inv_qty('Wrath rune'))) + 'g' : floor((530 * floor(min(inv_qty('Fire rune') / 10, inv_qty('Wrath rune'))) / 100) / 10) + 'k') + '  <col=FF4D4D>Power: 25  '}"
+    ]
+  ]
+},
+{
+  "items": ["Slayer's staff"],
+  "condition": "inv_qty('Slayer's staff') >= 1",
+  "hovers": [
+    [
+      "${(inv_qty('Death rune') >= 1 && inv_qty('Mind rune') >= 4) ? '<col=66B2FF>Magic Dart: <col=C266FF>Casts: ' + floor(min(inv_qty('Death rune'), floor(inv_qty('Mind rune') / 4))) + '  <col=FFFF88>Price: 220g  > ' + (220 * floor(min(inv_qty('Death rune'), floor(inv_qty('Mind rune') / 4))) < 1000 ? 220 * floor(min(inv_qty('Death rune'), floor(inv_qty('Mind rune') / 4))) + 'g' : floor((220 * floor(min(inv_qty('Death rune'), floor(inv_qty('Mind rune') / 4))) / 100) / 10) + 'k') + '  <col=FF4D4D>Power: ' + (floor(magic_level / 10) + 10 + (equipment_contains('Slayer helmet') || equipment_contains('Slayer helmet (i)') || equipment_contains('Slayer helmet (e)') || equipment_contains('Black mask') || equipment_contains('Slayer ring(8)') ? 2 : 0)) + (equipment_contains('Slayer helmet') || equipment_contains('Slayer helmet (i)') || equipment_contains('Slayer helmet (e)') || equipment_contains('Black mask') || equipment_contains('Slayer ring(8)') ? '!' : '') : ''}"
+    ]
+  ]
+},
+{
+  "items": ["Iban's staff", "Iban's staff (u)"],
+  "condition": "inv_qty('Iban's staff') >= 1 || inv_qty('Iban's staff (u)') >= 1",
+  "hovers": [
+    [
+      "${(inv_qty('Fire rune') >= 5 && inv_qty('Death rune') >= 1) ? '<col=66B2FF>Iban Blast: <col=C266FF>Casts: ' + floor(min(inv_qty('Fire rune') / 5, inv_qty('Death rune'))) + '  <col=FFFF88>Price: 250g  > ' + (250 * floor(min(inv_qty('Fire rune') / 5, inv_qty('Death rune'))) < 1000 ? 250 * floor(min(inv_qty('Fire rune') / 5, inv_qty('Death rune'))) + 'g' : floor((250 * floor(min(inv_qty('Fire rune') / 5, inv_qty('Death rune'))) / 100) / 10) + 'k') + '  <col=A52A2A><col=FF4D4D>Power: 25' : ''}"
+    ]
+  ]
+},
+//Smoke
+{
+  "items": ["Fire rune"],
+  "condition": "inv_qty('Fire rune') >= 1 && inv_qty('Air rune') >= 1 && inv_qty('Chaos rune') >= 1",
+  "hovers": [
+    [
+      "${'<col=66B2FF>Smoke Rush: <col=C266FF>Casts: ' + floor(min(inv_qty('Chaos rune'), inv_qty('Air rune'), inv_qty('Fire rune'))) + '  <col=FFFF88>Price: 220g  > ' + (220 * floor(min(inv_qty('Chaos rune'), inv_qty('Air rune'), inv_qty('Fire rune'))) < 1000 ? 220 * floor(min(inv_qty('Chaos rune'), inv_qty('Air rune'), inv_qty('Fire rune'))) + 'g' : floor((220 * floor(min(inv_qty('Chaos rune'), inv_qty('Air rune'), inv_qty('Fire rune'))) / 100) / 10) + 'k') + '  <col=FF4D4D>Power: 13  '}"
+    ]
+  ]
+},
+{
+  "items": ["Fire rune"],
+  "condition": "inv_qty('Fire rune') >= 2 && inv_qty('Air rune') >= 2 && inv_qty('Death rune') >= 2",
+  "hovers": [
+    [
+      "${'<col=66B2FF>Smoke Burst: <col=C266FF>Casts: ' + floor(min(inv_qty('Death rune') / 2, inv_qty('Air rune') / 2, inv_qty('Fire rune') / 2)) + '  <col=FFFF88>Price: 430g  > ' + (430 * floor(min(inv_qty('Death rune') / 2, inv_qty('Air rune') / 2, inv_qty('Fire rune') / 2)) < 1000 ? 430 * floor(min(inv_qty('Death rune') / 2, inv_qty('Air rune') / 2, inv_qty('Fire rune') / 2)) + 'g' : floor((430 * floor(min(inv_qty('Death rune') / 2, inv_qty('Air rune') / 2, inv_qty('Fire rune') / 2)) / 100) / 10) + 'k') + '  <col=FF4D4D>Power: 17  '}"
+    ]
+  ]
+},
+{
+  "items": ["Fire rune"],
+  "condition": "inv_qty('Fire rune') >= 2 && inv_qty('Air rune') >= 2 && inv_qty('Blood rune') >= 2",
+  "hovers": [
+    [
+      "${'<col=66B2FF>Smoke Blitz: <col=C266FF>Casts: ' + floor(min(inv_qty('Blood rune') / 2, inv_qty('Air rune') / 2, inv_qty('Fire rune') / 2)) + '  <col=FFFF88>Price: 650g  > ' + (650 * floor(min(inv_qty('Blood rune') / 2, inv_qty('Air rune') / 2, inv_qty('Fire rune') / 2)) < 1000 ? 650 * floor(min(inv_qty('Blood rune') / 2, inv_qty('Air rune') / 2, inv_qty('Fire rune') / 2)) + 'g' : floor((650 * floor(min(inv_qty('Blood rune') / 2, inv_qty('Air rune') / 2, inv_qty('Fire rune') / 2)) / 100) / 10) + 'k') + '  <col=FF4D4D>Power: 21  '}"
+    ]
+  ]
+},
+{
+  "items": ["Fire rune"],
+  "condition": "inv_qty('Fire rune') >= 4 && inv_qty('Air rune') >= 4 && inv_qty('Blood rune') >= 4",
+  "hovers": [
+    [
+      "${'<col=66B2FF>Smoke Barrage: <col=C266FF>Casts: ' + floor(min(inv_qty('Blood rune') / 4, inv_qty('Air rune') / 4, inv_qty('Fire rune') / 4)) + '  <col=FFFF88>Price: 870g  > ' + (870 * floor(min(inv_qty('Blood rune') / 4, inv_qty('Air rune') / 4, inv_qty('Fire rune') / 4)) < 1000 ? 870 * floor(min(inv_qty('Blood rune') / 4, inv_qty('Air rune') / 4, inv_qty('Fire rune') / 4)) + 'g' : floor((870 * floor(min(inv_qty('Blood rune') / 4, inv_qty('Air rune') / 4, inv_qty('Fire rune') / 4)) / 100) / 10) + 'k') + '  <col=FF4D4D>Power: 27  '}"
+    ]
+  ]
+},
+//Shadow
+{
+  "items": ["Soul rune"],
+  "condition": "inv_qty('Soul rune') >= 1 && inv_qty('Chaos rune') >= 1",
+  "hovers": [
+    [
+      "${'<col=66B2FF>Shadow Rush: <col=C266FF>Casts: ' + floor(min(inv_qty('Chaos rune'), inv_qty('Soul rune'))) + '  <col=FFFF88>Price: 260g  > ' + (260 * floor(min(inv_qty('Chaos rune'), inv_qty('Soul rune'))) < 1000 ? 260 * floor(min(inv_qty('Chaos rune'), inv_qty('Soul rune'))) + 'g' : floor((260 * floor(min(inv_qty('Chaos rune'), inv_qty('Soul rune'))) / 100) / 10) + 'k') + '  <col=FF4D4D>Power: 14'}"
+    ]
+  ]
+},
+{
+  "items": ["Soul rune"],
+  "condition": "inv_qty('Soul rune') >= 2 && inv_qty('Death rune') >= 2",
+  "hovers": [
+    [
+      "${'<col=66B2FF>Shadow Burst: <col=C266FF>Casts: ' + floor(min(inv_qty('Death rune') / 2, inv_qty('Soul rune') / 2)) + '  <col=FFFF88>Price: 470g  > ' + (470 * floor(min(inv_qty('Death rune') / 2, inv_qty('Soul rune') / 2)) < 1000 ? 470 * floor(min(inv_qty('Death rune') / 2, inv_qty('Soul rune') / 2)) + 'g' : floor((470 * floor(min(inv_qty('Death rune') / 2, inv_qty('Soul rune') / 2)) / 100) / 10) + 'k') + '  <col=FF4D4D>Power: 18'}"
+    ]
+  ]
+},
+{
+  "items": ["Soul rune"],
+  "condition": "inv_qty('Soul rune') >= 2 && inv_qty('Blood rune') >= 2",
+  "hovers": [
+    [
+      "${'<col=66B2FF>Shadow Blitz: <col=C266FF>Casts: ' + floor(min(inv_qty('Blood rune') / 2, inv_qty('Soul rune') / 2)) + '  <col=FFFF88>Price: 680g  > ' + (680 * floor(min(inv_qty('Blood rune') / 2, inv_qty('Soul rune') / 2)) < 1000 ? 680 * floor(min(inv_qty('Blood rune') / 2, inv_qty('Soul rune') / 2)) + 'g' : floor((680 * floor(min(inv_qty('Blood rune') / 2, inv_qty('Soul rune') / 2)) / 100) / 10) + 'k') + '  <col=FF4D4D>Power: 22'}"
+    ]
+  ]
+},
+{
+  "items": ["Soul rune"],
+  "condition": "inv_qty('Soul rune') >= 4 && inv_qty('Blood rune') >= 4",
+  "hovers": [
+    [
+      "${'<col=66B2FF>Shadow Barrage: <col=C266FF>Casts: ' + floor(min(inv_qty('Water rune') / 4, inv_qty('Soul rune') / 4)) + '  <col=FFFF88>Price: 900g  > ' + (900 * floor(min(inv_qty('Water rune') / 4, inv_qty('Soul rune') / 4)) < 1000 ? 900 * floor(min(inv_qty('Water rune') / 4, inv_qty('Soul rune') / 4)) + 'g' : floor((900 * floor(min(inv_qty('W rune') / 4, inv_qty('Soul rune') / 4)) / 100) / 10) + 'k') + '  <col=FF4D4D>Power: 28'}"
+    ]
+  ]
+},
+//Blood
+{
+  "items": ["Blood rune"],
+  "condition": "inv_qty('Blood rune') >= 1 && inv_qty('Death rune') >= 2",
+  "hovers": [
+    [
+      "${'<col=66B2FF>Blood Rush: <col=C266FF>Casts: ' + floor(min(inv_qty('Blood rune'), floor(inv_qty('Death rune') / 2))) + '  <col=FFFF88>Price: 300g  > ' + (300 * floor(min(inv_qty('Blood rune'), floor(inv_qty('Death rune') / 2))) < 1000 ? 300 * floor(min(inv_qty('Blood rune'), floor(inv_qty('Death rune') / 2))) + 'g' : floor((300 * floor(min(inv_qty('Blood rune'), floor(inv_qty('Death rune') / 2))) / 100) / 10) + 'k') + '  <col=FF4D4D>Power: 15'}"
+    ]
+  ]
+},
+{
+  "items": ["Blood rune"],
+  "condition": "inv_qty('Blood rune') >= 2 && inv_qty('Death rune') >= 2",
+  "hovers": [
+    [
+      "${'<col=66B2FF>Blood Burst: <col=C266FF>Casts: ' + floor(min(inv_qty('Blood rune') / 2, inv_qty('Death rune') / 2)) + '  <col=FFFF88>Price: 520g  > ' + (520 * floor(min(inv_qty('Blood rune') / 2, inv_qty('Death rune') / 2)) < 1000 ? 520 * floor(min(inv_qty('Blood rune') / 2, inv_qty('Death rune') / 2)) + 'g' : floor((520 * floor(min(inv_qty('Blood rune') / 2, inv_qty('Death rune') / 2)) / 100) / 10) + 'k') + '  <col=FF4D4D>Power: 21'}"
+    ]
+  ]
+},
+{
+  "items": ["Blood rune"],
+  "condition": "inv_qty('Blood rune') >= 2 && inv_qty('Death rune') >= 2",
+  "hovers": [
+    [
+      "${'<col=66B2FF>Blood Blitz: <col=C266FF>Casts: ' + floor(min(inv_qty('Blood rune') / 2, inv_qty('Death rune') / 2)) + '  <col=FFFF88>Price: 740g  > ' + (740 * floor(min(inv_qty('Blood rune') / 2, inv_qty('Death rune') / 2)) < 1000 ? 740 * floor(min(inv_qty('Blood rune') / 2, inv_qty('Death rune') / 2)) + 'g' : floor((740 * floor(min(inv_qty('Blood rune') / 2, inv_qty('Death rune') / 2)) / 100) / 10) + 'k') + '  <col=FF4D4D>Power: 25'}"
+    ]
+  ]
+},
+{
+  "items": ["Blood rune"],
+  "condition": "inv_qty('Blood rune') >= 4 && inv_qty('Death rune') >= 4",
+  "hovers": [
+    [
+      "${'<col=66B2FF>Blood Barrage: <col=C266FF>Casts: ' + floor(min(inv_qty('Blood rune') / 4, inv_qty('Death rune') / 4)) + '  <col=FFFF88>Price: 960g  > ' + (960 * floor(min(inv_qty('Blood rune') / 4, inv_qty('Death rune') / 4)) < 1000 ? 960 * floor(min(inv_qty('Blood rune') / 4, inv_qty('Death rune') / 4)) + 'g' : floor((960 * floor(min(inv_qty('Blood rune') / 4, inv_qty('Death rune') / 4)) / 100) / 10) + 'k') + '  <col=FF4D4D>Power: 29'}"
+    ]
+  ]
+},
+//Ice
+{
+  "items": ["Water rune", "Chaos rune"],
+  "condition": "inv_qty('Chaos rune') >= 2 && inv_qty('Water rune') >= 2",
+  "hovers": [
+    [
+      "${'<col=66B2FF>Ice Rush: <col=C266FF>Casts: ' + floor(min(inv_qty('Chaos rune') / 2, inv_qty('Water rune') / 2)) + '  <col=FFFF88>Price: 280g  > ' + (280 * floor(min(inv_qty('Chaos rune') / 2, inv_qty('Water rune') / 2)) < 1000 ? 280 * floor(min(inv_qty('Chaos rune') / 2, inv_qty('Water rune') / 2)) + 'g' : floor((280 * floor(min(inv_qty('Chaos rune') / 2, inv_qty('Water rune') / 2)) / 100) / 10) + 'k') + '  <col=FF4D4D>Power: 16  '}"
+    ]
+  ]
+},
+{
+  "items": ["Water rune", "Death rune"],
+  "condition": "inv_qty('Death rune') >= 2 && inv_qty('Water rune') >= 4",
+  "hovers": [
+    [
+      "${'<col=66B2FF>Ice Burst: <col=C266FF>Casts: ' + floor(min(inv_qty('Death rune') / 2, inv_qty('Water rune') / 4)) + '  <col=FFFF88>Price: 500g  > ' + (500 * floor(min(inv_qty('Death rune') / 2, inv_qty('Water rune') / 4)) < 1000 ? 500 * floor(min(inv_qty('Death rune') / 2, inv_qty('Water rune') / 4)) + 'g' : floor((500 * floor(min(inv_qty('Death rune') / 2, inv_qty('Water rune') / 4)) / 100) / 10) + 'k') + '  <col=FF4D4D>Power: 22  '}"
+    ]
+  ]
+},
+{
+  "items": ["Water rune", "Blood rune"],
+  "condition": "inv_qty('Blood rune') >= 2 && inv_qty('Water rune') >= 4",
+  "hovers": [
+    [
+      "${'<col=66B2FF>Ice Blitz: <col=C266FF>Casts: ' + floor(min(inv_qty('Blood rune') / 2, inv_qty('Water rune') / 4)) + '  <col=FFFF88>Price: 720g  > ' + (720 * floor(min(inv_qty('Blood rune') / 2, inv_qty('Water rune') / 4)) < 1000 ? 720 * floor(min(inv_qty('Blood rune') / 2, inv_qty('Water rune') / 4)) + 'g' : floor((720 * floor(min(inv_qty('Blood rune') / 2, inv_qty('Water rune') / 4)) / 100) / 10) + 'k') + '  <col=FF4D4D>Power: 26  '}"
+    ]
+  ]
+},
+{
+  "items": ["Water rune", "Blood rune"],
+  "condition": "inv_qty('Blood rune') >= 4 && inv_qty('Water rune') >= 6",
+  "hovers": [
+    [
+      "${'<col=66B2FF>Ice Barrage: <col=C266FF>Casts: ' + floor(min(inv_qty('Blood rune') / 4, inv_qty('Water rune') / 6)) + '  <col=FFFF88>Price: 940g  > ' + (940 * floor(min(inv_qty('Blood rune') / 4, inv_qty('Water rune') / 6)) < 1000 ? 940 * floor(min(inv_qty('Blood rune') / 4, inv_qty('Water rune') / 6)) + 'g' : floor((940 * floor(min(inv_qty('Blood rune') / 4, inv_qty('Water rune') / 6)) / 100) / 10) + 'k') + '  <col=FF4D4D>Power: 30  '}"
+    ]
+  ]
+},
+{
+  "items": ["Saradomin staff", "Air rune", "Fire rune", "Blood rune"],
+  "condition": "inv_qty('Saradomin staff') >= 1 && inv_qty('Air rune') >= 2 && inv_qty('Fire rune') >= 2 && inv_qty('Blood rune') >= 1",
+  "hovers": [
+    [
+      "${'<col=66B2FF>Saradomin Strike: <col=C266FF>Casts: ' + floor(min(inv_qty('Air rune') / 2, inv_qty('Fire rune') / 2, inv_qty('Blood rune'))) + '  <col=FFFF88>Price: 400g  > ' + (400 * floor(min(inv_qty('Air rune') / 2, inv_qty('Fire rune') / 2, inv_qty('Blood rune'))) < 1000 ? 400 * floor(min(inv_qty('Air rune') / 2, inv_qty('Fire rune') / 2, inv_qty('Blood rune'))) + 'g' : floor((400 * floor(min(inv_qty('Air rune') / 2, inv_qty('Fire rune') / 2, inv_qty('Blood rune'))) / 100) / 10) + 'k') + '  <col=FF4D4D>Power: 20  '}"
+    ]
+  ]
+},
+{
+  "items": ["Guthix staff", "Air rune", "Mind rune", "Blood rune"],
+  "condition": "inv_qty('Guthix staff') >= 1 && inv_qty('Air rune') >= 2 && inv_qty('Mind rune') >= 4 && inv_qty('Blood rune') >= 1",
+  "hovers": [
+    [
+      "${'<col=66B2FF>Claws of Guthix: <col=C266FF>Casts: ' + floor(min(inv_qty('Air rune') / 2, inv_qty('Mind rune') / 4, inv_qty('Blood rune'))) + '  <col=FFFF88>Price: 400g  > ' + (400 * floor(min(inv_qty('Air rune') / 2, inv_qty('Mind rune') / 4, inv_qty('Blood rune'))) < 1000 ? 400 * floor(min(inv_qty('Air rune') / 2, inv_qty('Mind rune') / 4, inv_qty('Blood rune'))) + 'g' : floor((400 * floor(min(inv_qty('Air rune') / 2, inv_qty('Mind rune') / 4, inv_qty('Blood rune'))) / 100) / 10) + 'k') + '  <col=FF4D4D>Power: 20  '}"
+    ]
+  ]
+},
+{
+  "items": ["Zamorak staff", "Fire rune", "Air rune", "Blood rune"],
+  "condition": "inv_qty('Zamorak staff') >= 1 && inv_qty('Fire rune') >= 2 && inv_qty('Air rune') >= 2 && inv_qty('Blood rune') >= 1",
+  "hovers": [
+    [
+      "${'<col=66B2FF>Flames of Zamorak: <col=C266FF>Casts: ' + floor(min(inv_qty('Fire rune') / 2, inv_qty('Air rune') / 2, inv_qty('Blood rune'))) + '  <col=FFFF88>Price: 400g  > ' + (400 * floor(min(inv_qty('Fire rune') / 2, inv_qty('Air rune') / 2, inv_qty('Blood rune'))) < 1000 ? 400 * floor(min(inv_qty('Fire rune') / 2, inv_qty('Air rune') / 2, inv_qty('Blood rune'))) + 'g' : floor((400 * floor(min(inv_qty('Fire rune') / 2, inv_qty('Air rune') / 2, inv_qty('Blood rune'))) / 100) / 10) + 'k') + '  <col=FF4D4D>Power: 20  '}"
+    ]
+  ]
+},
+{
+  "items": ["Chaos rune"],
+  "condition": "inv_qty('Chaos rune') >= 2 && inv_qty('Earth rune') >= 1 && inv_qty('Air rune') >= 2",
+  "hovers": [
+    [
+      "${'<col=66B2FF>Crumble Undead: <col=C266FF>Casts: ' + floor(min(inv_qty('Chaos rune') / 2, inv_qty('Earth rune'), inv_qty('Air rune') / 2)) + '  <col=FFFF88>Price: 400g  > ' + (400 * floor(min(inv_qty('Chaos rune') / 2, inv_qty('Earth rune'), inv_qty('Air rune') / 2)) < 1000 ? 400 * floor(min(inv_qty('Chaos rune') / 2, inv_qty('Earth rune'), inv_qty('Air rune') / 2)) + 'g' : floor((400 * floor(min(inv_qty('Chaos rune') / 2, inv_qty('Earth rune'), inv_qty('Air rune') / 2)) / 100) / 10) + 'k') + '  <col=FF4D4D>Power: 15 '}"
+    ]
+  ]
+}
+  ]
+}

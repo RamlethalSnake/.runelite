@@ -1,0 +1,1 @@
+{"internalName":"pack-Girlypop-Pack","commit":"b9bdb5a185aed0b9828c86e3c8628391394c2c3d","displayName":"Girlypop Pack","compatibleVersion":"1.4.9","author":"W 0 N D 3 R","tags":["pink","white","marble","lightmode","feminine","bright","cute","pixel","cozy","wonder"],"repo":"https://github.com/melkypie/resource-packs/tree/pack-Girlypop-Pack","hasIcon":true}

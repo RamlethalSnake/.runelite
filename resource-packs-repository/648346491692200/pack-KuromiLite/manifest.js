@@ -1,0 +1,1 @@
+{"internalName":"pack-KuromiLite","commit":"91ce44b6b8e7c2878f502a46fcc8a4628780c228","displayName":"KuromiLite","compatibleVersion":"1.4.9","author":"W 0 N D 3 R","tags":["dark","pastel","pink","purple","lavender","black","goth","girly","cozy","cute","pixel","sanrio","kuromi","wonder"],"repo":"https://github.com/melkypie/resource-packs/tree/pack-KuromiLite","hasIcon":true}

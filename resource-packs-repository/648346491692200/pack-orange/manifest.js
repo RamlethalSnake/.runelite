@@ -1,0 +1,1 @@
+{"internalName":"pack-orange","commit":"775161c6faa20493f0469acc33d0d0813612744d","displayName":"Orange Pack 1.4.3","compatibleVersion":"1.4.3","author":"BasVonSpace","tags":["Orange"," Pixel"," Amazing"," Ms Paint FTW"],"repo":"https://github.com/melkypie/resource-packs/tree/pack-orange","hasIcon":true}

@@ -1,0 +1,1 @@
+{"internalName":"pack-twisted-theme","commit":"d498d1173470f2ccd60e11ac93a67afbd13845e5","displayName":"Twisted Theme","compatibleVersion":"1.1.4","author":"100k","tags":["dark","modern","twisted"],"repo":"https://github.com/melkypie/resource-packs/tree/pack-twisted-theme","hasIcon":true}

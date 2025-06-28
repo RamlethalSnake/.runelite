@@ -1,0 +1,1 @@
+{"internalName":"pack-dark-side","commit":"64577f35b02c5c1270b0be54ec4ee39aebc9d601","displayName":"Dark Side of Gilenor","compatibleVersion":"1.1.2","author":"Axdrew","tags":["dark","music","clean"],"repo":"https://github.com/melkypie/resource-packs/tree/pack-dark-side","hasIcon":true}

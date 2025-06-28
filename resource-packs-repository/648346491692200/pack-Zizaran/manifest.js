@@ -1,0 +1,1 @@
+{"internalName":"pack-Zizaran","commit":"9a587a96b7e0d39de7b214f8b04f812aabd088eb","displayName":"Zizaran","compatibleVersion":"1.4.4","author":"Rokuta","tags":["Zizaran"," Blue"," Dark"," Night mode","resizable only"],"repo":"https://github.com/melkypie/resource-packs/tree/pack-Zizaran","hasIcon":true}

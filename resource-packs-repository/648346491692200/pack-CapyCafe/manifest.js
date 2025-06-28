@@ -1,0 +1,1 @@
+{"internalName":"pack-CapyCafe","commit":"cc8a0d0f55201947d859675d5edbe0574f2b86c6","displayName":"CapyCafe","compatibleVersion":"1.4.9","author":"W 0 N D 3 R","tags":["brown","taupe","lightmode","cafe","capybara","varlamore","cute","pixel","cozy","warm","wonder"],"repo":"https://github.com/melkypie/resource-packs/tree/pack-CapyCafe","hasIcon":true}

@@ -1,0 +1,1 @@
+{"internalName":"pack-420scape","commit":"2df580817c2299d1b1f62674074f10b2f246aadd","displayName":"420Scape","compatibleVersion":"1.4.4","author":"ColesieTV","tags":["420","weed","marijuanna","smoke","green"],"repo":"https://github.com/melkypie/resource-packs/tree/pack-420scape","hasIcon":true}

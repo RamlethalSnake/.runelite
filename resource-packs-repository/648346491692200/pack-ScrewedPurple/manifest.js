@@ -1,0 +1,1 @@
+{"internalName":"pack-ScrewedPurple","commit":"d3775d355baf0d1b12a3972da4e485e2ab856a4c","displayName":"pack-ScrewedPurple","compatibleVersion":"1.5.0","author":"JaidenW","tags":["purple","modern","hd","screwed"],"repo":"https://github.com/melkypie/resource-packs/tree/pack-ScrewedPurple","hasIcon":true}

@@ -1,0 +1,1 @@
+{"internalName":"pack-psyda-midnight","commit":"57d1a2d7f8ffe2abe08491c913fb02aebc6e18a9","displayName":"psyda Midnight","compatibleVersion":"1.0.5","author":"psyda","tags":["night","dark","rpg","modern","dungeon"],"repo":"https://github.com/melkypie/resource-packs/tree/pack-psyda-midnight","hasIcon":true}
