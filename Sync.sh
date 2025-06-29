@@ -4,13 +4,13 @@ set -e
 set -o pipefail
 
 # Step 0: Clean up any previous temp workspace
-echo "🧹 Removing old .sync-tmp-debug directory and pruning orphaned worktrees..."
+echo "🧹 Removing leftover .sync-tmp-debug and pruning worktrees..."
 rm -rf ".sync-tmp-debug"
 git worktree prune
 
 echo "🔧 Starting verbose sync from master to individual branches..."
 
-# Step 1: Commit any outstanding changes to master
+# Step 1: Commit any changes on master
 git checkout master
 git pull origin master
 
@@ -19,10 +19,10 @@ git commit -m "Sync: staged updates from master" || echo "✅ No changes to comm
 git push origin master
 echo "🚀 Master branch updated."
 
-# Step 2: Fetch all remote branches to ensure they're visible
+# Step 2: Ensure all remote branches are visible
 git fetch origin
 
-# Step 3: Define mapping of branch → folders
+# Step 3: Define folder mapping for each branch
 declare -A branch_folders=(
   [customhovers]="customitemhovers/"
   [dropsounds]="drop-sounds/"
@@ -32,11 +32,10 @@ declare -A branch_folders=(
   [minimal]="notifications/ drop-sounds/ customitemhovers/ c-engineer-sounds/ ResourceCustom/"
 )
 
-# Step 4: Create clean temp workspace
+# Step 4: Loop through each branch and sync relevant folders
 WORKTREE_BASE=".sync-tmp-debug"
 mkdir -p "$WORKTREE_BASE"
 
-# Step 5: Loop through and sync each target branch
 for branch in "${!branch_folders[@]}"; do
   folders="${branch_folders[$branch]}"
   worktree_path="$WORKTREE_BASE/$branch"
@@ -44,17 +43,24 @@ for branch in "${!branch_folders[@]}"; do
   echo ""
   echo "🔄 Syncing [$branch] with folders: $folders"
 
-  # Ensure local tracking branch exists
+  # Ensure local branch exists
   if ! git show-ref --quiet --verify "refs/heads/$branch"; then
-    echo "🛠️ Creating local branch [$branch] from origin/$branch"
+    echo "🛠️ Creating local tracking branch [$branch] from origin/$branch"
     git branch "$branch" "origin/$branch"
   fi
 
-  git worktree remove --force "$worktree_path" 2>/dev/null || true
+  # Force remove stale worktree
+  if [ -d "$worktree_path" ]; then
+    echo "🧹 Removing existing worktree for [$branch]"
+    git worktree remove --force "$worktree_path" || rm -rf "$worktree_path"
+  fi
+
+  # Add fresh worktree
   git worktree add --quiet "$worktree_path" "$branch"
 
+  # Sync folders into worktree
   for folder in $folders; do
-    echo "📁 Overwriting [$folder] from master into [$branch]"
+    echo "📁 Syncing [$folder] into [$branch]"
     rsync -a --delete "$folder" "$worktree_path/"
   done
 
@@ -65,11 +71,11 @@ for branch in "${!branch_folders[@]}"; do
     echo "📦 Git status for [$branch]:"
     git status --short || true
 
-    echo "📄 Git diff summary:"
+    echo "📄 Git diff:"
     git diff --cached --name-status || true
 
     if git diff --cached --quiet; then
-      echo "⚠️ [$branch] No changes detected — skipping commit."
+      echo "⚠️ [$branch] No changes to commit."
     else
       git commit -m "Force-sync: replace $folders from master"
       git push origin HEAD:"$branch"
@@ -78,11 +84,11 @@ for branch in "${!branch_folders[@]}"; do
   )
 done
 
-# Step 6: Cleanup workspace
+# Step 5: Cleanup
 echo ""
-echo "🧹 Cleaning up .sync-tmp-debug"
+echo "🧼 Final cleanup..."
 rm -rf "$WORKTREE_BASE"
 git worktree prune
 git checkout master
 
-echo "🎉 Full sync complete! All branches reflect master folder state."
+echo "🎉 All branches synced successfully from master!"
