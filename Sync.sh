@@ -84,7 +84,7 @@ for branch in customitemhovers dropsounds notifications cengineersounds Resource
 
     for folder in "${folder_array[@]}"; do
       echo "📁 Syncing [$folder] into [$branch]"
-      rsync -a --delete "$folder" "$worktree_path/"
+      rsync --src "$folder" --dest "$worktree_path/" --delete
     done
 
     (
