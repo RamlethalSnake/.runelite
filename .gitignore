@@ -12,3 +12,5 @@ profiles2/$rsprofile--1.properties
 *.dat2
 sync-branches.shplugins/
 sync-branches.sh
+plugins/
+sync-branches.sh
