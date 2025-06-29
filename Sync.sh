@@ -3,11 +3,11 @@
 set -e
 set -o pipefail
 
+# ✅ Check for rsync availability
 if ! command -v rsync >/dev/null 2>&1; then
   echo "❌ Error: rsync not found in PATH. Please install or adjust your environment."
   exit 1
 fi
-
 
 # Step 0: Cleanup
 echo "🧹 Cleaning up old worktrees..."
@@ -78,8 +78,11 @@ for branch in customhovers dropsounds notifications cengineersounds ResourceCust
 
     git worktree add --quiet "$worktree_path" "$branch"
 
+    # ➕ Robust folder splitting
+    IFS=' ' read -r -a folder_array <<< "$folders"
+
     # Rsync folders into branch worktree
-    for folder in $folders; do
+    for folder in "${folder_array[@]}"; do
       echo "📁 Syncing [$folder] into [$branch]"
       rsync -a --delete "$folder" "$worktree_path/"
     done
@@ -89,12 +92,12 @@ for branch in customhovers dropsounds notifications cengineersounds ResourceCust
 
       echo "" >> "$log_file"
       echo "🔎 Synced folder contents:" >> "$log_file"
-      for folder in $folders; do
+      for folder in "${folder_array[@]}"; do
         echo "🗂 $folder" >> "$log_file"
         ls -lR "$folder" >> "$log_file" 2>&1 || echo "⚠️ Folder [$folder] missing after rsync." >> "$log_file"
       done
 
-      git add $folders .gitignore >> "$log_file" 2>&1 || true
+      git add "${folder_array[@]}" .gitignore >> "$log_file" 2>&1 || true
 
       echo "" >> "$log_file"
       echo "📦 Git status:" >> "$log_file"
