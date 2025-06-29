@@ -3,19 +3,18 @@
 set -e
 set -o pipefail
 
-echo "🔧 Starting clean sync from master to each folder-branch..."
+echo "🔧 Starting clean sync from [master] to individual folder-branches..."
 
-# Commit changes from master first
+# Step 1: Update master branch with latest edits
 git checkout master
 git pull origin master
 
-# Stage all changes in master (safe to add/remove/rename within 28 folders)
 git add -A
 git commit -m "Sync: staged updates from master" || echo "✅ No changes to commit in master."
 git push origin master
-echo "🚀 Master branch updated."
+echo "🚀 Master updated."
 
-# Map branch names to the folders they should own
+# Step 2: Define folder-branch mapping
 declare -A branch_folders=(
   [customhovers]="customitemhovers/"
   [dropsounds]="drop-sounds/"
@@ -25,44 +24,41 @@ declare -A branch_folders=(
   [minimal]="notifications/ drop-sounds/ customitemhovers/ c-engineer-sounds/ ResourceCustom/"
 )
 
-# Create temp sync directory
+# Step 3: Set up temporary workspace
 WORKTREE_BASE=".sync-tmp"
 mkdir -p "$WORKTREE_BASE"
 
-# Sync each branch folder from master
+# Step 4: Sync each branch from master’s working directory
 for branch in "${!branch_folders[@]}"; do
-  folder_paths="${branch_folders[$branch]}"
-  path="$WORKTREE_BASE/$branch"
+  folders="${branch_folders[$branch]}"
+  worktree_path="$WORKTREE_BASE/$branch"
 
   echo ""
-  echo "🔄 Syncing branch [$branch]..."
+  echo "🔄 Syncing [$branch]..."
 
-  # Remove existing worktree if it exists
-  git worktree remove --force "$path" 2>/dev/null || true
+  git worktree remove --force "$worktree_path" 2>/dev/null || true
+  git worktree add --quiet "$worktree_path" "$branch"
 
-  # Add branch into isolated worktree folder
-  git worktree add --quiet "$path" "$branch"
+  for folder in $folders; do
+    echo "📁 Syncing folder [$folder] → branch [$branch]"
 
-  cd "$path"
-
-  # Replace only designated folders from master
-  for folder in $folder_paths; do
-    git checkout master -- "$folder"
+    rsync -a --delete "$folder" "$worktree_path/"
   done
 
-  git add $folder_paths .gitignore || true
-  git commit -m "Sync: update $folder_paths from master" || echo "⚠️ No changes to commit in [$branch]."
-  git push origin "$branch"
-  echo "✅ [$branch] synced with master."
-
-  cd - >/dev/null
+  (
+    cd "$worktree_path"
+    git add $folders .gitignore || true
+    git commit -m "Force-sync: replace $folders from master" || echo "⚠️ [$branch] No changes to commit."
+    git push origin "$branch"
+    echo "✅ [$branch] updated."
+  )
 done
 
+# Step 5: Clean up
 echo ""
-echo "🧹 Cleaning up worktrees..."
+echo "🧹 Cleaning temporary worktrees..."
 rm -rf "$WORKTREE_BASE"
-
 git worktree prune
 git checkout master
 
-echo "🎉 All branches synced cleanly from master folder state."
+echo "🎉 All branches successfully synced from master."
