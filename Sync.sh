@@ -27,7 +27,7 @@ declare -A branch_folders=(
   [customhovers]="customitemhovers/"
   [dropsounds]="drop-sounds/"
   [notifications]="notifications/"
-  [engineersounds]="c-engineer-sounds/"
+  [cengineersounds]="c-engineer-sounds/"
   [ResourceCustom]="ResourceCustom/"
   [minimal]="notifications/ drop-sounds/ customitemhovers/ c-engineer-sounds/ ResourceCustom/"
 )
@@ -37,7 +37,7 @@ mkdir -p "$WORKTREE_BASE"
 FAILED_BRANCHES=()
 
 # Step 4: Loop through branches with fault isolation
-for branch in customhovers dropsounds notifications engineersounds ResourceCustom minimal; do
+for branch in customhovers dropsounds notifications cengineersounds ResourceCustom minimal; do
   folders="${branch_folders[$branch]}"
   worktree_path="$WORKTREE_BASE/$branch"
 
