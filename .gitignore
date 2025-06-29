@@ -10,3 +10,5 @@ resource-packs-repository/44043289836600/
 profiles2/$rsprofile--1.properties
 *.dat
 *.dat2
+plugins/
+sync-branches.sh
