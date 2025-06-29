@@ -3,6 +3,12 @@
 set -e
 set -o pipefail
 
+if ! command -v rsync >/dev/null 2>&1; then
+  echo "❌ Error: rsync not found in PATH. Please install or adjust your environment."
+  exit 1
+fi
+
+
 # Step 0: Cleanup
 echo "🧹 Cleaning up old worktrees..."
 rm -rf ".sync-tmp-debug"
