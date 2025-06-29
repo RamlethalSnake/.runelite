@@ -46,7 +46,7 @@ WORKTREE_BASE=".sync-tmp-debug"
 mkdir -p "$WORKTREE_BASE"
 FAILED_BRANCHES=()
 
-# Step 4: Per-branch sync loop
+# Step 4: Per-branch sync loop with command tracing
 for branch in customhovers dropsounds notifications cengineersounds ResourceCustom minimal; do
   folders="${branch_folders[$branch]}"
   worktree_path="$WORKTREE_BASE/$branch"
@@ -58,6 +58,8 @@ for branch in customhovers dropsounds notifications cengineersounds ResourceCust
   echo "Folders: $folders" >> "$log_file"
 
   {
+    set -x  # 🔍 Begin command trace for this branch
+
     # Ensure local branch exists
     if git show-ref --quiet --verify "refs/heads/$branch"; then
       echo "🔁 Local branch [$branch] exists."
@@ -78,10 +80,8 @@ for branch in customhovers dropsounds notifications cengineersounds ResourceCust
 
     git worktree add --quiet "$worktree_path" "$branch"
 
-    # ➕ Robust folder splitting
     IFS=' ' read -r -a folder_array <<< "$folders"
 
-    # Rsync folders into branch worktree
     for folder in "${folder_array[@]}"; do
       echo "📁 Syncing [$folder] into [$branch]"
       rsync -a --delete "$folder" "$worktree_path/"
@@ -116,6 +116,8 @@ for branch in customhovers dropsounds notifications cengineersounds ResourceCust
         echo "✅ Sync complete for [$branch]" >> "$log_file"
       fi
     )
+
+    set +x  # 🔚 End command trace
   } || {
     echo "❌ Sync for [$branch] failed — see $log_file"
     echo "❌ Error syncing branch." >> "$log_file"
