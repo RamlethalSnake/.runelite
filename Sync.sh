@@ -34,7 +34,7 @@ git fetch origin
 
 # Step 3: Branch-folder mapping
 declare -A branch_folders=(
-  [customhovers]="customitemhovers/"
+  [customitemhovers]="customitemhovers/"
   [dropsounds]="drop-sounds/"
   [notifications]="notifications/"
   [cengineersounds]="c-engineer-sounds/"
@@ -47,7 +47,7 @@ mkdir -p "$WORKTREE_BASE"
 FAILED_BRANCHES=()
 
 # Step 4: Per-branch sync loop with command tracing
-for branch in customhovers dropsounds notifications cengineersounds ResourceCustom minimal; do
+for branch in customitemhovers dropsounds notifications cengineersounds ResourceCustom minimal; do
   folders="${branch_folders[$branch]}"
   worktree_path="$WORKTREE_BASE/$branch"
   log_file=".sync-logs/$branch.log"
