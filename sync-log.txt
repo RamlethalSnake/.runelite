@@ -1,11 +1,1 @@
 🔧 Starting verbose sync from master to individual branches...
-Your branch is up to date with 'origin/master'.
-Already up to date.
-[master 18b22a7f] Sync: staged updates from master
- 2 files changed, 1 insertion(+)
- create mode 160000 .sync-tmp-debug/minimal
- create mode 100644 sync-log.txt
-🚀 Master branch updated.
-
-🔄 Syncing [minimal] with folders: notifications/ drop-sounds/ customitemhovers/ c-engineer-sounds/ ResourceCustom/
-📁 Overwriting [notifications/] from master into [minimal]
