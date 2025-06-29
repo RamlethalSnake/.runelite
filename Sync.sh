@@ -8,7 +8,7 @@ echo "🧹 Cleaning up old worktrees..."
 rm -rf ".sync-tmp-debug"
 git worktree prune
 
-# Prepare log dir
+# Prepare log directory
 mkdir -p ".sync-logs"
 log_ts=$(date +"%Y-%m-%d %H:%M:%S")
 
@@ -23,10 +23,10 @@ git commit -m "Sync: staged updates from master" || echo "✅ No changes to comm
 git push origin master
 echo "🚀 Master branch updated."
 
-# Step 2: Fetch remotes
+# Step 2: Fetch latest remotes
 git fetch origin
 
-# Step 3: Mapping
+# Step 3: Branch-folder mapping
 declare -A branch_folders=(
   [customhovers]="customitemhovers/"
   [dropsounds]="drop-sounds/"
@@ -40,7 +40,7 @@ WORKTREE_BASE=".sync-tmp-debug"
 mkdir -p "$WORKTREE_BASE"
 FAILED_BRANCHES=()
 
-# Step 4: Loop per branch
+# Step 4: Per-branch sync loop
 for branch in customhovers dropsounds notifications cengineersounds ResourceCustom minimal; do
   folders="${branch_folders[$branch]}"
   worktree_path="$WORKTREE_BASE/$branch"
@@ -52,7 +52,7 @@ for branch in customhovers dropsounds notifications cengineersounds ResourceCust
   echo "Folders: $folders" >> "$log_file"
 
   {
-    # Local branch check
+    # Ensure local branch exists
     if git show-ref --quiet --verify "refs/heads/$branch"; then
       echo "🔁 Local branch [$branch] exists."
     else
@@ -64,15 +64,15 @@ for branch in customhovers dropsounds notifications cengineersounds ResourceCust
       }
     fi
 
-    # Remove old worktree
+    # Remove prior worktree if needed
     if [ -d "$worktree_path" ]; then
-      echo "🧹 Removing worktree dir for [$branch]"
+      echo "🧹 Removing existing worktree dir for [$branch]"
       git worktree remove --force "$worktree_path" || rm -rf "$worktree_path"
     fi
 
     git worktree add --quiet "$worktree_path" "$branch"
 
-    # Rsync folders
+    # Rsync folders into branch worktree
     for folder in $folders; do
       echo "📁 Syncing [$folder] into [$branch]"
       rsync -a --delete "$folder" "$worktree_path/"
@@ -80,6 +80,14 @@ for branch in customhovers dropsounds notifications cengineersounds ResourceCust
 
     (
       cd "$worktree_path"
+
+      echo "" >> "$log_file"
+      echo "🔎 Synced folder contents:" >> "$log_file"
+      for folder in $folders; do
+        echo "🗂 $folder" >> "$log_file"
+        ls -lR "$folder" >> "$log_file" 2>&1 || echo "⚠️ Folder [$folder] missing after rsync." >> "$log_file"
+      done
+
       git add $folders .gitignore >> "$log_file" 2>&1 || true
 
       echo "" >> "$log_file"
@@ -106,9 +114,9 @@ for branch in customhovers dropsounds notifications cengineersounds ResourceCust
   }
 done
 
-# Final cleanup
+# Step 5: Final cleanup
 echo ""
-echo "🧼 Final cleanup..."
+echo "🧼 Final cleanup of temp worktrees..."
 rm -rf "$WORKTREE_BASE"
 git worktree prune
 git checkout master
