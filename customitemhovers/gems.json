@@ -1,205 +1,205 @@
 {
   "is_hover_map": "absolutely",
   "hovers": [
-    {
-      "items": ["Opal", "Uncut opal"],
-      "hovers": [
-        [
-        	"<col=47cfd4>Can Create</col>",
-          "<col=2ecc71>Ring of Pursuit</col>",
-          "-Level: 1",
-          "-Alch: 630",
-          "<col=2ecc71>Dodgy Necklace</col>",
-          "-Level: 16",
-          "-Alch: 630",
-          "<col=2ecc71>Expeditious Bracelet</col>",
-          "-Level: 22",
-          "-Alch: 690",
-          "<col=2ecc71>Amulet of Bounty</col>",
-          "-Level: 27",
-          "-Alch: 540"
-        ]
-      ]
-    },
-    {
-      "items": ["Jade", "Uncut jade"],
-      "hovers": [
-        [
-          "<col=47cfd4>Can Create</col>",
-          "<col=2ecc71>Ring of Returning</col>",
-          "-Level: 13",
-          "-Alch: 765",
-          "<col=2ecc71>Necklace of Passage</col>",
-          "-Level: 25",
-          "-Alch: 765",
-          "<col=2ecc71>Flamtaer Bracelet</col>",
-          "-Level: 29",
-          "-Alch: 780",
-          "<col=2ecc71>Amulet of Chemistry</col>",
-          "-Level: 34",
-          "-Alch: 630"
-        ]
-      ]
-    },
-    {
-      "items": ["Red topaz", "Uncut red topaz"],
-      "hovers": [
-        [
-          "<col=47cfd4>Can Create</col>",
-          "<col=2ecc71>Efaritay's Aid</col>",
-          "-Level: 16",
-          "-Alch: 855",
-          "<col=2ecc71>Necklace of Faith</col>",
-          "-Level: 32",
-          "-Alch: 855",
-          "<col=2ecc71>Bracelet of Slaughter</col>",
-          "-Level: 38",
-          "-Alch: 900",
-          "<col=2ecc71>Burning Amulet</col>",
-          "-Level: 45",
-          "-Alch: 750"
-        ]
-      ]
-    },
-    {
-      "items": ["Sapphire", "Uncut sapphire"],
-      "hovers": [
-        [
-          "<col=47cfd4>Can Create</col>",
-          "<col=2ecc71>Ring of Recoil</col>",
-          "-Level: 20",
-          "-Alch: 540",
-          "<col=2ecc71>Games Necklace</col>",
-          "-Level: 22",
-          "-Alch: 630",
-          "<col=2ecc71>Bracelet of Clay</col>",
-          "-Level: 23",
-          "-Alch: 690",
-          "<col=2ecc71>Amulet of Magic</col>",
-          "-Level: 24",
-          "-Alch: 540"
-        ]
-      ]
-    },
-    {
-      "items": ["Emerald", "Uncut emerald"],
-      "hovers": [
-        [
-          "<col=47cfd4>Can Create</col>",
-          "<col=2ecc71>Ring of Dueling</col>",
-          "-Level: 27",
-          "-Alch: 765",
-          "<col=2ecc71>Binding Necklace</col>",
-          "-Level: 29",
-          "-Alch: 855",
-          "<col=2ecc71>Castle Wars Bracelet</col>",
-          "-Level: 30",
-          "-Alch: 915",
-          "<col=2ecc71>Amulet of Nature</col>",
-          "-Level: 31",
-          "-Alch: 765"
-        ]
-      ]
-    },
-    {
-      "items": ["Ruby", "Uncut ruby"],
-      "hovers": [
-        [
-          "<col=47cfd4>Can Create</col>",
-          "<col=2ecc71>Ring of Forging</col>",
-          "-Level: 34",
-          "-Alch: 1,215",
-          "<col=2ecc71>Digsite Pendant</col>",
-          "-Level: 40",
-          "-Alch: 1,305",
-          "<col=2ecc71>Inoculation Bracelet</col>",
-          "-Level: 42",
-          "-Alch: 1,395",
-          "<col=2ecc71>Amulet of Strength</col>",
-          "-Level: 50",
-          "-Alch: 1,215"
-        ]
-      ]
-    },
-    {
-      "items": ["Diamond", "Uncut diamond"],
-      "hovers": [
-        [
-          "<col=47cfd4>Can Create</col>",
-          "<col=2ecc71>Ring of Life</col>",
-          "-Level: 43",
-          "-Alch: 2,115",
-          "<col=2ecc71>Phoenix Necklace</col>",
-          "-Level: 56",
-          "-Alch: 2,205",
-          "<col=2ecc71>Abyssal Bracelet</col>",
-          "-Level: 58",
-          "-Alch: 2,295",
-          "<col=2ecc71>Amulet of Power</col>",
-          "-Level: 70",
-          "-Alch: 2,115"
-        ]
-      ]
-    },
-    {
-      "items": ["Dragonstone", "Uncut dragonstone"],
-      "hovers": [
-        [
-          "<col=47cfd4>Can Create</col>",
-          "<col=2ecc71>Ring of Wealth</col>",
-          "-Level: 55",
-          "-Alch: 10,575",
-          "<col=2ecc71>Skills Necklace</col>",
-          "-Level: 72",
-          "-Alch: 11,025",
-          "<col=2ecc71>Combat Bracelet</col>",
-          "-Level: 74",
-          "-Alch: 11,475",
-          "<col=2ecc71>Amulet of Glory</col>",
-          "-Level: 80",
-          "-Alch: 10,575"
-        ]
-      ]
-    },
-    {
-      "items": ["Onyx", "Uncut onyx"],
-      "hovers": [
-        [
-          "<col=47cfd4>Can Create</col>",
-          "<col=2ecc71>Ring of Stone</col>",
-          "-Level: 67",
-          "-Alch: 120,600",
-          "<col=2ecc71>Berserker Necklace</col>",
-          "-Level: 82",
-          "-Alch: 120,600",
-          "<col=2ecc71>Regen Bracelet</col>",
-          "-Level: 84",
-          "-Alch: 120,600",
-          "<col=2ecc71>Amulet of Fury</col>",
-          "-Level: 90",
-          "-Alch: 120,600"
-        ]
-      ]
-    },
-    {
-      "items": ["Zenyte", "Uncut zenyte"],
-      "hovers": [
-        [
-          "<col=47cfd4>Can Create</col>",
-          "<col=2ecc71>Ring of Suffering</col>",
-          "-Level: 89",
-          "-Alch: 120,600",
-          "<col=2ecc71>Necklace of Anguish</col>",
-          "-Level: 92",
-          "-Alch: 121,200",
-          "<col=2ecc71>Tormented Bracelet</col>",
-          "-Level: 95",
-          "-Alch: 120,600",
-          "<col=2ecc71>Amulet of Torture</col>",
-          "-Level: 98",
-          "-Alch: 121,200"
-        ]
-      ]
-    }
-  ]
+  {
+    "items": ["Opal", "Uncut opal"],
+	"condition": "inv_qty('Uncut opal') >= 1 || inv_qty('Opal') >= 1",
+    "hovers": [
+      ["?${magic_level >= 7}", "<col=2ecc71>Enchant: 1 (LVL 7)</col>"],
+      ["?${magic_level < 7}", "<col=e74c3c>Enchant: 1 (LVL 7)</col>"],
+
+      ["?${crafting_level >= 1}", "<col=2ecc71>Craft LVL 1: Ring of Pursuit</col>"],
+      ["?${crafting_level < 1}", "<col=e74c3c>Craft LVL 1: Ring of Pursuit</col>"],
+
+      ["?${crafting_level >= 16}", "<col=2ecc71>Craft LVL 16: Dodgy Necklace</col>"],
+      ["?${crafting_level < 16}", "<col=e74c3c>Craft LVL 16: Dodgy Necklace</col>"],
+
+      ["?${crafting_level >= 22}", "<col=2ecc71>Craft LVL 22: Expeditious Bracelet</col>"],
+      ["?${crafting_level < 22}", "<col=e74c3c>Craft LVL 22: Expeditious Bracelet</col>"],
+
+      ["?${crafting_level >= 27}", "<col=2ecc71>Craft LVL 27: Amulet of Bounty</col>"],
+      ["?${crafting_level < 27}", "<col=e74c3c>Craft LVL 27: Amulet of Bounty</col>"]
+    ]
+  },
+  {
+    "items": ["Jade", "Uncut jade"],
+	"condition": "inv_qty('Uncut jade') >= 1 || inv_qty('Jade') >= 1",
+    "hovers": [
+      ["?${magic_level >= 14}", "<col=2ecc71>Enchant: 2 (LVL 14)</col>"],
+      ["?${magic_level < 14}", "<col=e74c3c>Enchant: 2 (LVL 14)</col>"],
+
+      ["?${crafting_level >= 13}", "<col=2ecc71>Craft LVL 13: Ring of Returning</col>"],
+      ["?${crafting_level < 13}", "<col=e74c3c>Craft LVL 13: Ring of Returning</col>"],
+
+      ["?${crafting_level >= 25}", "<col=2ecc71>Craft LVL 25: Necklace of Passage</col>"],
+      ["?${crafting_level < 25}", "<col=e74c3c>Craft LVL 25: Necklace of Passage</col>"],
+
+      ["?${crafting_level >= 29}", "<col=2ecc71>Craft LVL 29: Flamtaer Bracelet</col>"],
+      ["?${crafting_level < 29}", "<col=e74c3c>Craft LVL 29: Flamtaer Bracelet</col>"],
+
+      ["?${crafting_level >= 34}", "<col=2ecc71>Craft LVL 34: Amulet of Chemistry</col>"],
+      ["?${crafting_level < 34}", "<col=e74c3c>Craft LVL 34: Amulet of Chemistry</col>"]
+    ]
+  },
+  {
+    "items": ["Red topaz", "Uncut red topaz"],
+	"condition": "inv_qty('Uncut red topaz') >= 1 || inv_qty('Red topaz') >= 1",
+    "hovers": [
+      ["?${magic_level >= 27}", "<col=2ecc71>Enchant: 3 (LVL 27)</col>"],
+      ["?${magic_level < 27}", "<col=e74c3c>Enchant: 3 (LVL 27)</col>"],
+
+      ["?${crafting_level >= 16}", "<col=2ecc71>Craft LVL 16: Efaritay's Aid</col>"],
+      ["?${crafting_level < 16}", "<col=e74c3c>Craft LVL 16: Efaritay's Aid</col>"],
+
+      ["?${crafting_level >= 32}", "<col=2ecc71>Craft LVL 32: Necklace of Faith</col>"],
+      ["?${crafting_level < 32}", "<col=e74c3c>Craft LVL 32: Necklace of Faith</col>"],
+
+      ["?${crafting_level >= 38}", "<col=2ecc71>Craft LVL 38: Bracelet of Slaughter</col>"],
+      ["?${crafting_level < 38}", "<col=e74c3c>Craft LVL 38: Bracelet of Slaughter</col>"],
+
+      ["?${crafting_level >= 45}", "<col=2ecc71>Craft LVL 45: Burning Amulet</col>"],
+      ["?${crafting_level < 45}", "<col=e74c3c>Craft LVL 45: Burning Amulet</col>"]
+    ]
+  },
+ {
+    "items": ["Sapphire", "Uncut sapphire"],
+	"condition": "inv_qty('Uncut sapphire') >= 1 || inv_qty('Sapphire') >= 1",
+    "hovers": [
+      ["?${magic_level >= 7}", "<col=2ecc71>Enchant: 1 (LVL 7)</col>"],
+      ["?${magic_level < 7}", "<col=e74c3c>Enchant: 1 (LVL 7)</col>"],
+
+      ["?${crafting_level >= 20}", "<col=2ecc71>Craft LVL 20: Ring of Recoil</col>"],
+      ["?${crafting_level < 20}", "<col=e74c3c>Craft LVL 20: Ring of Recoil</col>"],
+
+      ["?${crafting_level >= 22}", "<col=2ecc71>Craft LVL 22: Games Necklace</col>"],
+      ["?${crafting_level < 22}", "<col=e74c3c>Craft LVL 22: Games Necklace</col>"],
+
+      ["?${crafting_level >= 23}", "<col=2ecc71>Craft LVL 23: Bracelet of Clay</col>"],
+      ["?${crafting_level < 23}", "<col=e74c3c>Craft LVL 23: Bracelet of Clay</col>"],
+
+      ["?${crafting_level >= 24}", "<col=2ecc71>Craft LVL 24: Amulet of Magic</col>"],
+      ["?${crafting_level < 24}", "<col=e74c3c>Craft LVL 24: Amulet of Magic</col>"]
+    ]
+  },
+  {
+    "items": ["Emerald", "Uncut emerald"],
+	"condition": "inv_qty('Uncut emerald') >= 1 || inv_qty('Emerald') >= 1",
+    "hovers": [
+      ["?${magic_level >= 27}", "<col=2ecc71>Enchant: 2 (LVL 27)</col>"],
+      ["?${magic_level < 27}", "<col=e74c3c>Enchant: 2 (LVL 27)</col>"],
+
+      ["?${crafting_level >= 27}", "<col=2ecc71>Craft LVL 27: Ring of Dueling</col>"],
+      ["?${crafting_level < 27}", "<col=e74c3c>Craft LVL 27: Ring of Dueling</col>"],
+
+      ["?${crafting_level >= 29}", "<col=2ecc71>Craft LVL 29: Binding Necklace</col>"],
+      ["?${crafting_level < 29}", "<col=e74c3c>Craft LVL 29: Binding Necklace</col>"],
+
+      ["?${crafting_level >= 30}", "<col=2ecc71>Craft LVL 30: Castle Wars Bracelet</col>"],
+      ["?${crafting_level < 30}", "<col=e74c3c>Craft LVL 30: Castle Wars Bracelet</col>"],
+
+      ["?${crafting_level >= 31}", "<col=2ecc71>Craft LVL 31: Amulet of Nature</col>"],
+      ["?${crafting_level < 31}", "<col=e74c3c>Craft LVL 31: Amulet of Nature</col>"]
+    ]
+  },
+  {
+    "items": ["Ruby", "Uncut ruby"],
+	"condition": "inv_qty('Uncut ruby') >= 1 || inv_qty('Ruby') >= 1",
+    "hovers": [
+      ["?${magic_level >= 49}", "<col=2ecc71>Enchant: 3 (LVL 49)</col>"],
+      ["?${magic_level < 49}", "<col=e74c3c>Enchant: 3 (LVL 49)</col>"],
+
+      ["?${crafting_level >= 34}", "<col=2ecc71>Craft LVL 34: Ring of Forging</col>"],
+      ["?${crafting_level < 34}", "<col=e74c3c>Craft LVL 34: Ring of Forging</col>"],
+
+      ["?${crafting_level >= 40}", "<col=2ecc71>Craft LVL 40: Digsite Pendant</col>"],
+      ["?${crafting_level < 40}", "<col=e74c3c>Craft LVL 40: Digsite Pendant</col>"],
+
+      ["?${crafting_level >= 42}", "<col=2ecc71>Craft LVL 42: Inoculation Bracelet</col>"],
+      ["?${crafting_level < 42}", "<col=e74c3c>Craft LVL 42: Inoculation Bracelet</col>"],
+
+      ["?${crafting_level >= 50}", "<col=2ecc71>Craft LVL 50: Amulet of Strength</col>"],
+      ["?${crafting_level < 50}", "<col=e74c3c>Craft LVL 50: Amulet of Strength</col>"]
+    ]
+  },
+  {
+    "items": ["Diamond", "Uncut diamond"],
+	"condition": "inv_qty('Uncut diamond') >= 1 || inv_qty('Diamond') >= 1",
+    "hovers": [
+      ["?${magic_level >= 57}", "<col=2ecc71>Enchant: 4 (LVL 57)</col>"],
+      ["?${magic_level < 57}", "<col=e74c3c>Enchant: 4 (LVL 57)</col>"],
+
+      ["?${crafting_level >= 43}", "<col=2ecc71>Craft LVL 43: Ring of Life</col>"],
+      ["?${crafting_level < 43}", "<col=e74c3c>Craft LVL 43: Ring of Life</col>"],
+
+      ["?${crafting_level >= 56}", "<col=2ecc71>Craft LVL 56: Phoenix Necklace</col>"],
+      ["?${crafting_level < 56}", "<col=e74c3c>Craft LVL 56: Phoenix Necklace</col>"],
+
+      ["?${crafting_level >= 58}", "<col=2ecc71>Craft LVL 58: Abyssal Bracelet</col>"],
+      ["?${crafting_level < 58}", "<col=e74c3c>Craft LVL 58: Abyssal Bracelet</col>"],
+
+      ["?${crafting_level >= 70}", "<col=2ecc71>Craft LVL 70: Amulet of Power</col>"],
+      ["?${crafting_level < 70}", "<col=e74c3c>Craft LVL 70: Amulet of Power</col>"]
+    ]
+  },
+  {
+    "items": ["Dragonstone", "Uncut dragonstone"],
+	"condition": "inv_qty('Uncut dragonstone') >= 1 || inv_qty('Dragonstone') >= 1",
+    "hovers": [
+      ["?${magic_level >= 68}", "<col=2ecc71>Enchant: 5 (LVL 68)</col>"],
+      ["?${magic_level < 68}", "<col=e74c3c>Enchant: 5 (LVL 68)</col>"],
+
+      ["?${crafting_level >= 55}", "<col=2ecc71>Craft LVL 55: Ring of Wealth</col>"],
+      ["?${crafting_level < 55}", "<col=e74c3c>Craft LVL 55: Ring of Wealth</col>"],
+
+      ["?${crafting_level >= 72}", "<col=2ecc71>Craft LVL 72: Skills Necklace</col>"],
+      ["?${crafting_level < 72}", "<col=e74c3c>Craft LVL 72: Skills Necklace</col>"],
+
+      ["?${crafting_level >= 74}", "<col=2ecc71>Craft LVL 74: Combat Bracelet</col>"],
+      ["?${crafting_level < 74}", "<col=e74c3c>Craft LVL 74: Combat Bracelet</col>"],
+
+      ["?${crafting_level >= 80}", "<col=2ecc71>Craft LVL 80: Amulet of Glory</col>"],
+      ["?${crafting_level < 80}", "<col=e74c3c>Craft LVL 80: Amulet of Glory</col>"]
+    ]
+  },
+  {
+    "items": ["Onyx", "Uncut onyx"],
+	"condition": "inv_qty('Uncut onyx') >= 1 || inv_qty('Onyx') >= 1",
+    "hovers": [
+      ["?${magic_level >= 87}", "<col=2ecc71>Enchant: 6 (LVL 87)</col>"],
+      ["?${magic_level < 87}", "<col=e74c3c>Enchant: 6 (LVL 87)</col>"],
+
+      ["?${crafting_level >= 67}", "<col=2ecc71>Craft LVL 67: Ring of Stone</col>"],
+      ["?${crafting_level < 67}", "<col=e74c3c>Craft LVL 67: Ring of Stone</col>"],
+
+      ["?${crafting_level >= 82}", "<col=2ecc71>Craft LVL 82: Berserker Necklace</col>"],
+      ["?${crafting_level < 82}", "<col=e74c3c>Craft LVL 82: Berserker Necklace</col>"],
+
+      ["?${crafting_level >= 84}", "<col=2ecc71>Craft LVL 84: Regen Bracelet</col>"],
+      ["?${crafting_level < 84}", "<col=e74c3c>Craft LVL 84: Regen Bracelet</col>"],
+
+      ["?${crafting_level >= 90}", "<col=2ecc71>Craft LVL 90: Amulet of Fury</col>"],
+      ["?${crafting_level < 90}", "<col=e74c3c>Craft LVL 90: Amulet of Fury</col>"]
+    ]
+  },
+  {
+    "items": ["Zenyte", "Uncut zenyte"],
+	"condition": "inv_qty('Uncut zenyte') >= 1 || inv_qty('Zenyte') >= 1",
+    "hovers": [
+      ["?${magic_level >= 93}", "<col=2ecc71>Enchant: 7 (LVL 93)</col>"],
+      ["?${magic_level < 93}", "<col=e74c3c>Enchant: 7 (LVL 93)</col>"],
+
+      ["?${crafting_level >= 89}", "<col=2ecc71>Craft LVL 89: Ring of Suffering</col>"],
+      ["?${crafting_level < 89}", "<col=e74c3c>Craft LVL 89: Ring of Suffering</col>"],
+
+      ["?${crafting_level >= 92}", "<col=2ecc71>Craft LVL 92: Necklace of Anguish</col>"],
+      ["?${crafting_level < 92}", "<col=e74c3c>Craft LVL 92: Necklace of Anguish</col>"],
+
+      ["?${crafting_level >= 95}", "<col=2ecc71>Craft LVL 95: Tormented Bracelet</col>"],
+      ["?${crafting_level < 95}", "<col=e74c3c>Craft LVL 95: Tormented Bracelet</col>"],
+
+      ["?${crafting_level >= 98}", "<col=2ecc71>Craft LVL 98: Amulet of Torture</col>"],
+      ["?${crafting_level < 98}", "<col=e74c3c>Craft LVL 98: Amulet of Torture</col>"]
+    ]
+  } 
+]
 }
