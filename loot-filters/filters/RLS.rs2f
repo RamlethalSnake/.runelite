@@ -8,6 +8,7 @@ name: header
 meta { name = "RLS"; description = "Offers an original color scheme with extensive support for category-based styling/filtering."; }
 
 
+
 /*@ define:module:default_styling
 ---
 name: Default Styling
@@ -24,7 +25,7 @@ label: Default Style
 exampleItem: Santa hat
 exampleItemId: 1050
 */
-#define VAR_GLOBAL_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#00000000";borderColor = "#00000000";textAccent = 3;fontType = 2;showValue = false;showDespawn = true;icon = CurrentItem();
+#define VAR_GLOBAL_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#00000000";borderColor = "#00000000";textAccent = 3;fontType = 2;showValue = false;showDespawn = true;highlightTile = false;icon = CurrentItem();
 
 apply (true) {
     VAR_GLOBAL_CUSTOMSTYLE 
@@ -36,7 +37,7 @@ label: "Default Stackable/Noted Style"
 exampleItem: Magic shortbow (u)
 exampleItemId: 73
 */
-#define VAR_DEFAULT_STACKABLE_NOTED_CUSTOMSTYLE backgroundColor = "#00000000";borderColor = "#00000000";fontType = 2;showDespawn = true;icon = CurrentItem();
+#define VAR_DEFAULT_STACKABLE_NOTED_CUSTOMSTYLE backgroundColor = "#00000000";borderColor = "#00000000";fontType = 2;showDespawn = true;highlightTile = false;icon = CurrentItem();
 
 apply (stackable:true || noted:true) {
     VAR_DEFAULT_STACKABLE_NOTED_CUSTOMSTYLE 
@@ -48,7 +49,7 @@ label: Default Untradeable Style
 exampleItem: Long bone
 exampleItemId: 10976
 */
-#define VAR_DEFAULT_UNTRADEABLE_CUSTOMSTYLE fontType = 2;showDespawn = true;icon = CurrentItem();
+#define VAR_DEFAULT_UNTRADEABLE_CUSTOMSTYLE fontType = 2;showDespawn = true;highlightTile = false;icon = CurrentItem();
 
 apply (tradeable:false) {
     VAR_DEFAULT_UNTRADEABLE_CUSTOMSTYLE 
@@ -118,6 +119,7 @@ apply (name:VAR_GLOBAL_SHOW_ICONS_ITEMLIST) {
     icon = CurrentItem();
 }
 
+
 /*@ define:module:sorting
 ---
 name: Sorting
@@ -150,7 +152,8 @@ label: Prioritize Untradeables
 type: stringlist
 label: Items to always show first
 */
-#define VAR_MENU_SORT_ITEMS_FIRST ["Clue scroll (elite)","Clue scroll (hard)","Clue scroll (medium)","Clue scroll (easy)","Clue scroll (beginner)","Key","Brimstone key","Ecumenical key","Larran's key"]
+#define VAR_MENU_SORT_ITEMS_FIRST ["Clue scroll (elite)","Clue scroll (hard)","Clue scroll (medium)","Clue scroll (easy)","Clue scroll (beginner)","Key","Brimstone key","Ecumenical key","Larran's key","Clue scroll (master)","Scroll box (master)","Scroll box (elite)","Scroll box (hard)","Scroll box (medium)","Scroll box (easy)","Scroll box (beginner)"]
+
 
 /*@ define:module:filtering
 ---
@@ -3925,6 +3928,7 @@ apply ((name:CONST_DRAGON_ONE_HANDED_MELEE_WEAPONS || name:CONST_DRAGON_TWO_HAND
     hidden = true;
 }
 
+
 /*@ define:module:area_based_filtering
 ---
 name: Area-Based Filtering
@@ -5787,6 +5791,7 @@ apply (area:CONST_LAST_MAN_STANDING_WILD_VARROCK_AREA && name:VAR_LAST_MAN_STAND
     hidden = true;
 }
 
+
 /*@ define:module:item_tiers
 ---
 name: Item tiers
@@ -5818,7 +5823,7 @@ group: Tier 1
 exampleItem: Helm of neitiznot
 exampleItemId: 10828
 */
-#define VAR_VALUES_TIER_1_CUSTOMSTYLE textColor = "#ff0080ff";backgroundColor = "#0d4c82b5";textAccentColor = "#FF000000";menuTextColor = "#ff198cff";fontType = 2;sound = "Alchable.wav";icon = CurrentItem();
+#define VAR_VALUES_TIER_1_CUSTOMSTYLE textColor = "#ff0080ff";backgroundColor = "#0d4c82b5";textAccentColor = "#FF000000";menuTextColor = "#ff198cff";fontType = 2;highlightTile = true;sound = "Alchable.wav";icon = CurrentItem();
 
 apply ((value:>=VAR_VALUES_TIER_1_VALUE && value:<VAR_VALUES_TIER_2_VALUE) || name:VAR_VALUES_TIER_1_SHOW) {
     VAR_VALUES_TIER_1_CUSTOMSTYLE 
@@ -5847,7 +5852,7 @@ group: Tier 2
 exampleItem: Infinity boots
 exampleItemId: 6920
 */
-#define VAR_VALUES_TIER_2_CUSTOMSTYLE textColor = "#FF99FF99";backgroundColor = "#08ade66c";textAccentColor = "#FF000000";menuTextColor = "#FF99FF99";textAccent = 1;fontType = 2;showLootbeam = true;showValue = true;showDespawn = true;notify = true;sound = "Alchable.wav";icon = CurrentItem();
+#define VAR_VALUES_TIER_2_CUSTOMSTYLE textColor = "#FF99FF99";backgroundColor = "#08ade66c";textAccentColor = "#FF000000";menuTextColor = "#FF99FF99";textAccent = 1;fontType = 2;showLootbeam = true;showValue = true;showDespawn = true;notify = true;highlightTile = true;sound = "Alchable.wav";icon = CurrentItem();
 
 apply ((value:>=VAR_VALUES_TIER_2_VALUE && value:<VAR_VALUES_TIER_3_VALUE) || name:VAR_VALUES_TIER_2_SHOW) {
     VAR_VALUES_TIER_2_CUSTOMSTYLE 
@@ -5875,7 +5880,7 @@ group: Tier 3
 exampleItem: Abyssal whip
 exampleItemId: 4151
 */
-#define VAR_VALUES_TIER_3_CUSTOMSTYLE textColor = "#FFFF9600";backgroundColor = "#24e8b23c";borderColor = "#00ff9500";textAccentColor = "#FF000000";lootbeamColor = "#FFFF9600";menuTextColor = "#ffffcf00";textAccent = 1;fontType = 2;showLootbeam = true;showValue = true;showDespawn = true;notify = true;sound = "Loot.wav";icon = CurrentItem();
+#define VAR_VALUES_TIER_3_CUSTOMSTYLE textColor = "#FFFF9600";backgroundColor = "#24e8b23c";borderColor = "#00ff9500";textAccentColor = "#FF000000";lootbeamColor = "#FFFF9600";menuTextColor = "#ffffcf00";textAccent = 1;fontType = 2;showLootbeam = true;showValue = true;showDespawn = true;notify = true;highlightTile = true;sound = "Loot.wav";icon = CurrentItem();
 
 apply ((value:>=VAR_VALUES_TIER_3_VALUE && value:<VAR_VALUES_TIER_4_VALUE) || name:VAR_VALUES_TIER_3_SHOW) {
     VAR_VALUES_TIER_3_CUSTOMSTYLE 
@@ -5904,7 +5909,7 @@ group: Tier 4
 exampleItem: Twisted bow
 exampleItemId: 20997
 */
-#define VAR_VALUES_TIER_4_CUSTOMSTYLE textColor = "#fff407a4";backgroundColor = "#1f962fc2";borderColor = "#00ed519f";textAccentColor = "#6b8c2020";lootbeamColor = "#e8e86fac";menuTextColor = "#ffff349a";textAccent = 1;fontType = 2;showLootbeam = true;showValue = true;showDespawn = true;notify = true;highlightTile = false;sound = "Loot.wav";icon = CurrentItem();
+#define VAR_VALUES_TIER_4_CUSTOMSTYLE textColor = "#fff407a4";backgroundColor = "#1f962fc2";borderColor = "#00ed519f";textAccentColor = "#6b8c2020";lootbeamColor = "#e8e86fac";menuTextColor = "#ffff349a";textAccent = 1;fontType = 2;showLootbeam = true;showValue = true;showDespawn = true;notify = true;highlightTile = true;sound = "Loot.wav";icon = CurrentItem();
 
 apply (value:>=VAR_VALUES_TIER_4_VALUE || name:VAR_VALUES_TIER_4_SHOW) {
     VAR_VALUES_TIER_4_CUSTOMSTYLE 
@@ -5946,6 +5951,7 @@ rule (VAR_VALUES_TIER_3_TERMINATE && ((value:>=VAR_VALUES_TIER_3_VALUE && value:
 rule (VAR_VALUES_TIER_4_TERMINATE && ((value:>=VAR_VALUES_TIER_4_VALUE) || name:VAR_VALUES_TIER_4_SHOW)) {}
 
 
+
 /*@ define:module:uniques
 ---
 name: Uniques
@@ -5960,7 +5966,7 @@ label: Uniques custom style
 exampleItem: Tanzanite fang
 exampleItemId: 12922
 */
-#define VAR_UNIQUES_CUSTOMSTYLE textColor = "#ff793ad3";backgroundColor = "#305c1eb3";textAccentColor = "#00000000";lootbeamColor = "#c49e66ed";menuTextColor = "#ffbe3aed";textAccent = 3;fontType = 2;showLootbeam = true;showValue = true;showDespawn = true;notify = true;sound = "Loot.wav";icon = CurrentItem();
+#define VAR_UNIQUES_CUSTOMSTYLE textColor = "#ffefb257";backgroundColor = "#245718af";textAccentColor = "#00000000";lootbeamColor = "#c49e66ed";menuTextColor = "#ffeb8e4b";textAccent = 3;fontType = 2;showLootbeam = true;showValue = true;showDespawn = true;notify = true;highlightTile = true;sound = "Loot.wav";icon = Sprite(4567, 0);
 
 
 
@@ -5969,7 +5975,7 @@ type: stringlist
 label: Uniques
 group: Uniques List
 */
-#define VAR_UNIQUES_LIST ["Jar of dirt","Jar of swamp","Jar of sand","Jar of souls","Jar of miasma","Jar of darkness","Jar of stone","Jar of decay","Jar of chemicals","Jar of eyes","Jar of dreams","Jar of spirits","Jar of smoke","Jar of venom","Black tourmaline core","Granite gloves","Granite ring","Granite hammer","Abyssal head","Bludgeon spine","Bludgeon claw","Bludgeon axon","Abyssal dagger","Abyssal whip","Kraken tentacle","Trident of the seas","Eternal crystal","Pegasian crystal","Primordial crystal","Smouldering stone","Araxyte fang","Noxious point","Noxious blade","Noxious pommel","Araxyte head","Occult necklace","Smoke battlestaff","Dragon chainbody","Hydra's claw","Hydra tail","Hydra leather","Hydra's fang","Hydra's eye","Hydra's heart","Alchemical hydra heads","Ahrim's hood","Ahrim's robetop","Ahrim's robeskirt","Ahrim's staff","Karil's coif","Karil's leathertop","Karil's leatherskirt","Karil's crossbow","Dharok's helm","Dharok's platebody","Dharok's platelegs","Dharok's greataxe","Guthan's helm","Guthan's platebody","Guthan's chainskirt","Guthan's warspear","Torag's helm","Torag's platebody","Torag's platelegs","Torag's hammers","Verac's helm","Verac's brassard","Verac's plateskirt","Verac's flail","Archers ring","Berserker ring","Warrior ring","Seers ring","Dragon axe","Seercull","Mud battlestaff","Sarachnis cudgel","Blood moon helm","Blood moon chestplate","Blood moon tassets","Dual macuahuitl","Blue moon helm","Blue moon chestplate","Blue moon tassets","Blue moon spear","Eclipse moon helm","Eclipse moon chestplate","Eclipse moon tassets","Eclipse atlatl","Godsword shard 1","Godsword shard 2","Godsword shard 3","Armadyl helmet","Armadyl chestplate","Armadyl chainskirt","Armadyl hilt","Armadyl crossbow","Saradomin hilt","Saradomin sword","Saradomin's light","Bandos chestplate","Bandos tassets","Bandos boots","Bandos hilt","Staff of the dead","Zamorakian spear","Steam battlestaff","Zamorak hilt","Ancient hilt","Nihil horn","Zaryte vambraces","Torva full helm (damaged)","Torva platebody (damaged)","Torva platelegs (damaged)","Elder chaos top","Elder chaos robe","Elder chaos hood","Odium shard 1","Malediction shard 1","Odium shard 2","Malediction shard 2","Fedora","Odium shard 3","Malediction shard 3","Kbd heads","Draconic visage","Amulet of avarice","Craw's bow (u)","Thammaron's sceptre (u)","Viggora's chainmace (u)","Ancient crystal","Ring of the gods","Skull of vet'ion","Voidwaker blade","Treasonous ring","Fangs of venenatis","Voidwaker gem","Tyrannical ring","Claws of callisto","Voidwaker hilt","Elysian sigil","Spectral sigil","Arcane sigil","Holy elixir","Spirit shield","Kq head","Dragon chainbody","Dragon hunter wand","Hueycoatl hide","Tome of earth (empty)","Glacial temotli","Fire element staff crown","Ice element staff crown","Tanzanite mutagen","Magma mutagen","Magic fang","Serpentine visage","Tanzanite fang","Uncut onyx","Draconic visage","Skeletal visage","Dragonbone necklace","Venator shard","Inquisitor's mace","Inquisitor's great helm","Inquisitor's hauberk","Inquisitor's plateskirt","Nightmare staff","Volatile orb","Harmonised orb","Eldritch orb","Parasitic egg","Virtus mask","Virtus robe top","Virtus robe bottom","Magus vestige","Eye of the duke","Ice quartz","Venator vestige","Leviathan's lure","Smoke quartz","Bellator vestige","Siren's staff","Shadow quartz","Ultor vestige","Executioner's axe head","Blood quartz","Hill giant club","Bryophyta's essence","Ring of 3rd age","Bottomless compost bucket","Dark claw","Dark totem","Crystal armour seed","Crystal weapon seed","Enhanced crystal weapon seed","Sunfire fanatic cuirass","Sunfire fanatic chausses","Sunfire fanatic helm","Echo crystal","Tonalztics of ralos (uncharged)","Big harpoonfish","Tome of water (empty)","Tackle box","Fish barrel","Dragon harpoon","Tome of fire (empty)","Crystal tool seed","Zalcano shard","Dexterous prayer scroll","Arcane prayer scroll","Twisted buckler","Dragon hunter crossbow","Dinh's bulwark","Ancestral hat","Ancestral robe top","Ancestral robe bottom","Dragon claws","Elder maul","Kodai insignia","Twisted bow","Twisted ancestral colour kit","Metamorphic dust","Avernic defender hilt","Ghrazi rapier","Sanguinesti staff (uncharged)","Justiciar faceguard","Justiciar chestguard","Justiciar legguards","Scythe of vitur (uncharged)","Holy ornament kit","Sanguine ornament kit","Sanguine dust","Masori mask","Masori body","Masori chaps","Lightbearer","Osmumten's fang","Elidinis' ward","Tumeken's shadow","Breach of the scarab","Eye of the corruptor","Jewel of the sun","Zenyte shard","Light frame","Heavy frame","Ballista limbs","Monkey tail","Ballista spring","Tormented synapse","Burning claw","Dragon warhammer","Big swordfish","Big shark","Big bass","Dragonstone full helm","Dragonstone platebody","Dragonstone platelegs","Dragonstone gauntlets","Dragonstone boots","Evil chicken head","Evil chicken wings","Evil chicken legs","Evil chicken feet","Mask of ranul","Elven signet","Dragon metal slice","Dragon metal lump","Obsidian cape","Toktz-ket-xil","Tzhaar-ket-om","Toktz-xil-ak","Toktz-xil-ek","Toktz-mej-tal","Toktz-xil-ul","Obsidian helmet","Obsidian platebody","Obsidian platelegs","Imbued heart","Eternal gem","Dust battlestaff","Mist battlestaff","Broken dragon hasta","Mystic hat (dusk)","Mystic robe top (dusk)","Mystic robe bottom (dusk)","Mystic gloves (dusk)","Mystic boots (dusk)","Basilisk jaw","Dagon'hai hat","Dagon'hai robe top","Dagon'hai robe bottom","Dark bow","Uncharged trident","Dragon sword","Drake's tooth","Drake's claw","Crawling hand","Cockatrice head","Basilisk head","Kurask head","Soulflame horn","Oathplate helm","Oathplate chest","Oathplate legs","Bronze defender","Iron defender","Steel defender","Black defender","Mithril defender","Adamant defender","Rune defender","Dragon defender","Earth Warrior champion scroll","Ghoul champion scroll","Giant champion scroll","Goblin champion scroll","Hobgoblin champion scroll","Imp champion scroll","Jogre champion scroll","Lesser Demon champion scroll","Skeleton champion scroll","Zombie champion scroll"]
+#define VAR_UNIQUES_LIST ["Jar of dirt","Jar of swamp","Jar of sand","Jar of souls","Jar of miasma","Jar of darkness","Jar of stone","Jar of decay","Jar of chemicals","Jar of eyes","Jar of dreams","Jar of spirits","Jar of smoke","Jar of venom","Black tourmaline core","Granite gloves","Granite ring","Granite hammer","Abyssal head","Bludgeon spine","Bludgeon claw","Bludgeon axon","Abyssal dagger","Abyssal whip","Kraken tentacle","Trident of the seas","Eternal crystal","Pegasian crystal","Primordial crystal","Smouldering stone","Araxyte fang","Noxious point","Noxious blade","Noxious pommel","Araxyte head","Occult necklace","Smoke battlestaff","Dragon chainbody","Hydra's claw","Hydra tail","Hydra leather","Hydra's fang","Hydra's eye","Hydra's heart","Alchemical hydra heads","Ahrim's hood","Ahrim's robetop","Ahrim's robeskirt","Ahrim's staff","Karil's coif","Karil's leathertop","Karil's leatherskirt","Karil's crossbow","Dharok's helm","Dharok's platebody","Dharok's platelegs","Dharok's greataxe","Guthan's helm","Guthan's platebody","Guthan's chainskirt","Guthan's warspear","Torag's helm","Torag's platebody","Torag's platelegs","Torag's hammers","Verac's helm","Verac's brassard","Verac's plateskirt","Verac's flail","Archers ring","Berserker ring","Warrior ring","Seers ring","Dragon axe","Seercull","Mud battlestaff","Sarachnis cudgel","Blood moon helm","Blood moon chestplate","Blood moon tassets","Dual macuahuitl","Blue moon helm","Blue moon chestplate","Blue moon tassets","Blue moon spear","Eclipse moon helm","Eclipse moon chestplate","Eclipse moon tassets","Eclipse atlatl","Godsword shard 1","Godsword shard 2","Godsword shard 3","Armadyl helmet","Armadyl chestplate","Armadyl chainskirt","Armadyl hilt","Armadyl crossbow","Saradomin hilt","Saradomin sword","Saradomin's light","Bandos chestplate","Bandos tassets","Bandos boots","Bandos hilt","Staff of the dead","Zamorakian spear","Steam battlestaff","Zamorak hilt","Ancient hilt","Nihil horn","Zaryte vambraces","Torva full helm (damaged)","Torva platebody (damaged)","Torva platelegs (damaged)","Elder chaos top","Elder chaos robe","Elder chaos hood","Odium shard 1","Malediction shard 1","Odium shard 2","Malediction shard 2","Fedora","Odium shard 3","Malediction shard 3","Kbd heads","Draconic visage","Amulet of avarice","Craw's bow (u)","Thammaron's sceptre (u)","Viggora's chainmace (u)","Ancient crystal","Ring of the gods","Skull of vet'ion","Voidwaker blade","Treasonous ring","Fangs of venenatis","Voidwaker gem","Tyrannical ring","Claws of callisto","Voidwaker hilt","Elysian sigil","Spectral sigil","Arcane sigil","Holy elixir","Spirit shield","Kq head","Dragon chainbody","Dragon hunter wand","Hueycoatl hide","Tome of earth (empty)","Glacial temotli","Fire element staff crown","Ice element staff crown","Tanzanite mutagen","Magma mutagen","Magic fang","Serpentine visage","Tanzanite fang","Uncut onyx","Draconic visage","Skeletal visage","Dragonbone necklace","Venator shard","Inquisitor's mace","Inquisitor's great helm","Inquisitor's hauberk","Inquisitor's plateskirt","Nightmare staff","Volatile orb","Harmonised orb","Eldritch orb","Parasitic egg","Virtus mask","Virtus robe top","Virtus robe bottom","Magus vestige","Eye of the duke","Ice quartz","Venator vestige","Leviathan's lure","Smoke quartz","Bellator vestige","Siren's staff","Shadow quartz","Ultor vestige","Executioner's axe head","Blood quartz","Hill giant club","Bryophyta's essence","Ring of 3rd age","Bottomless compost bucket","Dark claw","Dark totem","Crystal armour seed","Crystal weapon seed","Enhanced crystal weapon seed","Sunfire fanatic cuirass","Sunfire fanatic chausses","Sunfire fanatic helm","Echo crystal","Tonalztics of ralos (uncharged)","Big harpoonfish","Tome of water (empty)","Tackle box","Fish barrel","Dragon harpoon","Tome of fire (empty)","Crystal tool seed","Zalcano shard","Dexterous prayer scroll","Arcane prayer scroll","Twisted buckler","Dragon hunter crossbow","Dinh's bulwark","Ancestral hat","Ancestral robe top","Ancestral robe bottom","Dragon claws","Elder maul","Kodai insignia","Twisted bow","Twisted ancestral colour kit","Metamorphic dust","Avernic defender hilt","Ghrazi rapier","Sanguinesti staff (uncharged)","Justiciar faceguard","Justiciar chestguard","Justiciar legguards","Scythe of vitur (uncharged)","Holy ornament kit","Sanguine ornament kit","Sanguine dust","Masori mask","Masori body","Masori chaps","Lightbearer","Osmumten's fang","Elidinis' ward","Tumeken's shadow","Breach of the scarab","Eye of the corruptor","Jewel of the sun","Zenyte shard","Light frame","Heavy frame","Ballista limbs","Monkey tail","Ballista spring","Tormented synapse","Burning claw","Dragon warhammer","Big swordfish","Big shark","Big bass","Dragonstone full helm","Dragonstone platebody","Dragonstone platelegs","Dragonstone gauntlets","Dragonstone boots","Evil chicken head","Evil chicken wings","Evil chicken legs","Evil chicken feet","Mask of ranul","Elven signet","Dragon metal slice","Dragon metal lump","Obsidian cape","Toktz-ket-xil","Tzhaar-ket-om","Toktz-xil-ak","Toktz-xil-ek","Toktz-mej-tal","Toktz-xil-ul","Obsidian helmet","Obsidian platebody","Obsidian platelegs","Imbued heart","Eternal gem","Dust battlestaff","Mist battlestaff","Broken dragon hasta","Mystic hat (dusk)","Mystic robe top (dusk)","Mystic robe bottom (dusk)","Mystic gloves (dusk)","Mystic boots (dusk)","Basilisk jaw","Dagon'hai hat","Dagon'hai robe top","Dagon'hai robe bottom","Dark bow","Uncharged trident","Dragon sword","Drake's tooth","Drake's claw","Crawling hand","Cockatrice head","Basilisk head","Kurask head","Soulflame horn","Oathplate helm","Oathplate chest","Oathplate legs","Bronze defender","Iron defender","Steel defender","Black defender","Mithril defender","Adamant defender","Rune defender","Dragon defender","Earth Warrior champion scroll","Ghoul champion scroll","Giant champion scroll","Goblin champion scroll","Hobgoblin champion scroll","Imp champion scroll","Jogre champion scroll","Lesser Demon champion scroll","Skeleton champion scroll","Zombie champion scroll","Scroll box (master)","Scroll box (elite)","Scroll box (hard)","Scroll box (medium)","Scroll box (easy)","Scroll box (beginner)"]
 
 apply (name:VAR_UNIQUES_LIST) {
     VAR_UNIQUES_CUSTOMSTYLE 
@@ -5998,6 +6004,7 @@ group: Power User
 
 rule (VAR_UNIQUES_TERMINATE && name:VAR_UNIQUES_LIST) {}
 
+
 /*@ define:module:alchs
 ---
 name: Alchs
@@ -6022,7 +6029,7 @@ label: Custom style for items on the alchs list
 exampleItem: Rune platelegs
 exampleItemId: 1079
 */
-#define VAR_ALCHS_CUSTOMSTYLE textColor = "#ffffed00";backgroundColor = "#17e4c358";menuTextColor = "#ffffed00";textAccent = 2;fontType = 2;showValue = true;showDespawn = true;highlightTile = false;sound = "Alchable.wav";icon = File("Alchable.png");
+#define VAR_ALCHS_CUSTOMSTYLE textColor = "#ffffed00";backgroundColor = "#17e4c358";menuTextColor = "#ffffed00";textAccent = 2;fontType = 2;showValue = true;showDespawn = true;highlightTile = true;sound = "Alchable.wav";icon = File("Alchable.png");
 
 apply (name:VAR_ALCHS_ITEM_LIST) {
     VAR_ALCHS_CUSTOMSTYLE
@@ -6048,6 +6055,7 @@ group: Power User
 
 rule (VAR_ALCHS_TERMINATE && name:VAR_ALCHS_ITEM_LIST) {}
 
+
 /*@ define:module:item_category_styles
 ---
 name: Item Category Styles
@@ -6066,7 +6074,7 @@ group: Currency
 exampleItem: Coins
 exampleItemId: 1004
 */
-#define VAR_CURRENCY_CUSTOMSTYLE textColor = "#ffffc805";menuTextColor = "#ffffc805";textAccent = 1;fontType = 2;showValue = true;showDespawn = true;icon = CurrentItem();
+#define VAR_CURRENCY_CUSTOMSTYLE textColor = "#ffffc805";menuTextColor = "#ffffc805";textAccent = 1;fontType = 2;showValue = true;showDespawn = true;highlightTile = true;icon = CurrentItem();
 
 apply (name:CONST_CURRENCY_LIST) {
     VAR_CURRENCY_CUSTOMSTYLE 
@@ -6080,7 +6088,7 @@ group: Food
 exampleItem: Anglerfish
 exampleItemId: 13441
 */
-#define VAR_CATEGORY_FOOD_CUSTOMSTYLE textColor = "#ffff7070";backgroundColor = "#00000000";borderColor = "#00000000";menuTextColor = "#ffff7070";icon = CurrentItem();
+#define VAR_CATEGORY_FOOD_CUSTOMSTYLE textColor = "#ffff7070";backgroundColor = "#00000000";borderColor = "#00000000";menuTextColor = "#ffff7070";showValue = false;showDespawn = true;highlightTile = false;icon = CurrentItem();
 
 apply(name:CONST_FISH_FOODS_LIST || name:CONST_POTATOES_FOODS_LIST || name:CONST_HUNTER_FOODS_LIST || name:CONST_PIE_FOODS_LIST || name:CONST_PIZZA_FOODS_LIST || name:CONST_CAKE_FOODS_LIST) {
     VAR_CATEGORY_FOOD_CUSTOMSTYLE
@@ -6741,7 +6749,7 @@ group: Fletching
 exampleItem: Magic longbow (u)
 exampleItemId: 70
 */
-#define VAR_CATEGORY_FLETCHING_CUSTOMSTYLE textColor = "#ffe0d7cf";menuTextColor = "#ffede1d6";fontType = 2;icon = CurrentItem();
+#define VAR_CATEGORY_FLETCHING_CUSTOMSTYLE textColor = "#ff7e4d32";menuTextColor = "#ffaf5e33";fontType = 2;icon = CurrentItem();
 
 apply (name:CONST_FLETCHING_UNSTRUNG_SHORTBOW_LIST || name:CONST_FLETCHING_UNSTRUNG_LONGBOW_LIST || name:CONST_FLETCHING_UNSTRUNG_CROSSBOW_LIST || name:CONST_FLETCHING_ARROW_TIPS_LIST || name:CONST_FLETCHING_DART_TIP_LIST || name:CONST_FLETCHING_JAVELIN_HEADS_LIST || name:CONST_FLETCHING_UNFINISHED_BOLTS_LIST || name:CONST_FLETCHING_BOLT_TIPS_LIST || name:CONST_FLETCHING_MISC_LIST || name:CONST_FLETCHING_CROSSBOW_LIMBS_LIST || name:CONST_FLETCHING_CROSSBOW_STOCK_LIST) {
   VAR_CATEGORY_FLETCHING_CUSTOMSTYLE
@@ -6846,7 +6854,7 @@ group: Construction
 exampleItem: Mahogany plank
 exampleItemId: 8782
 */
-#define VAR_CATEGORY_CONSTRUCTION_CUSTOMSTYLE icon = Sprite(3208, 0);
+#define VAR_CATEGORY_CONSTRUCTION_CUSTOMSTYLE textColor = "#ffd58b5c";backgroundColor = "#0f7d5325";borderColor = "#00000000";menuTextColor = "#ffd58b5c";showDespawn = true;icon = CurrentItem();
 
 apply (name:CONST_CONSTRUCTION_PLANKS_LIST || name:CONST_CONSTRUCTION_NAILS_LIST || name:CONST_CONSTRUCTION_STONEMASON_LIST || name:CONST_CONSTRUCTION_MISC_LIST) {
   VAR_CATEGORY_CONSTRUCTION_CUSTOMSTYLE
@@ -6909,7 +6917,7 @@ group: Metal Equipment
 exampleItem: Bronze platelegs
 exampleItemId: 1075
 */
-#define VAR_BRONZE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#8043341d";borderColor = "#FF43341d";textAccentColor = "#FF000000";menuTextColor = "#FF6a5432";icon = CurrentItem();
+#define VAR_BRONZE_CUSTOMSTYLE textColor = "#ffd9a268";backgroundColor = "#215c3f1c";borderColor = "#003d3428";textAccentColor = "#FF000000";menuTextColor = "#ffc39743";fontType = 2;
 
 apply (name:CONST_BRONZE_ONE_HANDED_MELEE_WEAPONS || name:CONST_BRONZE_TWO_HANDED_MELEE_WEAPONS || name:CONST_BRONZE_RANGED_WEAPONS || name:CONST_BRONZE_AMMO || name:CONST_BRONZE_ARMOUR || name:CONST_BRONZE_OTHER) {
     VAR_BRONZE_CUSTOMSTYLE 
@@ -6922,7 +6930,7 @@ group: Metal Equipment
 exampleItem: Iron platelegs
 exampleItemId: 1067
 */
-#define VAR_IRON_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#804f4948";borderColor = "#FF4f4948";textAccentColor = "#FF000000";menuTextColor = "#FF6b5f58";
+#define VAR_IRON_CUSTOMSTYLE textColor = "#ff95928f";backgroundColor = "#21474747";borderColor = "#003d3428";textAccentColor = "#FF000000";menuTextColor = "#ffa6a4a1";fontType = 2;showDespawn = false;
 
 apply (name:CONST_IRON_ONE_HANDED_MELEE_WEAPONS || name:CONST_IRON_TWO_HANDED_MELEE_WEAPONS || name:CONST_IRON_RANGED_WEAPONS || name:CONST_IRON_AMMO || name:CONST_IRON_ARMOUR || name:CONST_IRON_OTHER) {
     VAR_IRON_CUSTOMSTYLE 
@@ -6935,7 +6943,7 @@ group: Metal Equipment
 exampleItem: Steel platelegs
 exampleItemId: 1069
 */
-#define VAR_STEEL_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#80857c7b";borderColor = "#FF857c7b";textAccentColor = "#FF000000";menuTextColor = "#FFa09a8b";
+#define VAR_STEEL_CUSTOMSTYLE textColor = "#ffcccccc";backgroundColor = "#213a3a3a";borderColor = "#003d3428";textAccentColor = "#FF000000";menuTextColor = "#ffcac3b7";fontType = 2;showDespawn = false;
 
 apply (name:CONST_STEEL_ONE_HANDED_MELEE_WEAPONS || name:CONST_STEEL_TWO_HANDED_MELEE_WEAPONS || name:CONST_STEEL_RANGED_WEAPONS || name:CONST_STEEL_AMMO || name:CONST_STEEL_ARMOUR || name:CONST_STEEL_OTHER) {
     VAR_STEEL_CUSTOMSTYLE 
@@ -6948,7 +6956,7 @@ group: Metal Equipment
 exampleItem: Black platelegs
 exampleItemId: 1077
 */
-#define VAR_BLACK_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#801d1b1b";borderColor = "#FF1d1b1b";textAccentColor = "#FF000000";menuTextColor = "#FF2b3a3a";
+#define VAR_BLACK_CUSTOMSTYLE textColor = "#ff5f5f5f";backgroundColor = "#12000000";borderColor = "#003d3428";textAccentColor = "#FF000000";menuTextColor = "#ff000000";fontType = 2;showDespawn = false;icon = CurrentItem();
 
 apply (name:CONST_BLACK_ONE_HANDED_MELEE_WEAPONS || name:CONST_BLACK_TWO_HANDED_MELEE_WEAPONS || name:CONST_BLACK_RANGED_WEAPONS || name:CONST_BLACK_AMMO || name:CONST_BLACK_ARMOUR || name:CONST_BLACK_OTHER) {
     VAR_BLACK_CUSTOMSTYLE 
@@ -6961,7 +6969,7 @@ group: Metal Equipment
 exampleItem: Mithril platelegs
 exampleItemId: 1071
 */
-#define VAR_MITHRIL_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#80414161";borderColor = "#FF414161";textAccentColor = "#FF000000";menuTextColor = "#FF5a5a7a";
+#define VAR_MITHRIL_CUSTOMSTYLE textColor = "#ff707285";backgroundColor = "#210f1d3e";borderColor = "#003d3428";textAccentColor = "#FF000000";menuTextColor = "#ff151a40";fontType = 2;showDespawn = false;icon = CurrentItem();
 
 apply (name:CONST_MITHRIL_ONE_HANDED_MELEE_WEAPONS || name:CONST_MITHRIL_TWO_HANDED_MELEE_WEAPONS || name:CONST_MITHRIL_RANGED_WEAPONS || name:CONST_MITHRIL_AMMO || name:CONST_MITHRIL_ARMOUR || name:CONST_MITHRIL_OTHER) {
     VAR_MITHRIL_CUSTOMSTYLE 
@@ -6974,7 +6982,7 @@ group: Metal Equipment
 exampleItem: Adamant platelegs
 exampleItemId: 1073
 */
-#define VAR_ADAMANT_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#80405140";borderColor = "#FF405140";textAccentColor = "#FF000000";menuTextColor = "#FF5a7a5a";
+#define VAR_ADAMANT_CUSTOMSTYLE textColor = "#ff4bb14f";backgroundColor = "#38142614";borderColor = "#003d3428";textAccentColor = "#FF000000";menuTextColor = "#ff4bb14f";fontType = 2;showDespawn = false;icon = CurrentItem();
 
 apply (name:CONST_ADAMANT_ONE_HANDED_MELEE_WEAPONS || name:CONST_ADAMANT_TWO_HANDED_MELEE_WEAPONS || name:CONST_ADAMANT_RANGED_WEAPONS || name:CONST_ADAMANT_AMMO || name:CONST_ADAMANT_ARMOUR || name:CONST_ADAMANT_OTHER) {
     VAR_ADAMANT_CUSTOMSTYLE 
@@ -6987,7 +6995,7 @@ group: Metal Equipment
 exampleItem: Rune platelegs
 exampleItemId: 1079
 */
-#define VAR_RUNE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#80415760";borderColor = "#FF415760";textAccentColor = "#FF000000";menuTextColor = "#FF5a7a90";
+#define VAR_RUNE_CUSTOMSTYLE textColor = "#ff68bad9";backgroundColor = "#0a2f6f87";borderColor = "#003d3428";textAccentColor = "#FF000000";menuTextColor = "#ff68bad9";fontType = 2;showValue = false;showDespawn = false;icon = CurrentItem();
 
 apply (name:CONST_RUNE_ONE_HANDED_MELEE_WEAPONS || name:CONST_RUNE_TWO_HANDED_MELEE_WEAPONS || name:CONST_RUNE_RANGED_WEAPONS || name:CONST_RUNE_AMMO || name:CONST_RUNE_ARMOUR || name:CONST_RUNE_OTHER) {
     VAR_RUNE_CUSTOMSTYLE 
@@ -7000,7 +7008,7 @@ group: Metal Equipment
 exampleItem: Dragon platelegs
 exampleItemId: 4087
 */
-#define VAR_DRAGON_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#80541109";borderColor = "#FF541109";textAccentColor = "#FF000000";menuTextColor = "#FF7a3a19";
+#define VAR_DRAGON_CUSTOMSTYLE textColor = "#ffd96868";backgroundColor = "#215c3f1c";borderColor = "#003d3428";textAccentColor = "#FF000000";menuTextColor = "#ffd96868";fontType = 2;showLootbeam = false;showValue = true;showDespawn = true;highlightTile = true;sound = "Alchable.wav";icon = CurrentItem();
 
 apply (name:CONST_DRAGON_ONE_HANDED_MELEE_WEAPONS || name:CONST_DRAGON_TWO_HANDED_MELEE_WEAPONS || name:CONST_DRAGON_RANGED_WEAPONS || name:CONST_DRAGON_AMMO || name:CONST_DRAGON_ARMOUR) {
     VAR_DRAGON_CUSTOMSTYLE 
@@ -7012,7 +7020,7 @@ label: Bronze (t) Armour
 group: Metal Equipment
 exampleItem: Bronze platelegs (t)
 */
-#define VAR_BRONZE_TRIMMED_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#8043341d";borderColor = "#FF615c2d";textAccentColor = "#FF000000";menuTextColor = "#FF7a5a2d";
+#define VAR_BRONZE_TRIMMED_CUSTOMSTYLE textColor = "#ffd9a268";backgroundColor = "#215c3f1c";borderColor = "#ff8a7457";textAccentColor = "#FF000000";menuTextColor = "#ffc39743";fontType = 2;showDespawn = false;highlightTile = true;icon = CurrentItem();
 
 apply (name:CONST_BRONZE_TRIMMED_ARMOUR) {
     VAR_BRONZE_TRIMMED_CUSTOMSTYLE 
@@ -7024,7 +7032,7 @@ label: Iron (t) Armour
 group: Metal Equipment
 exampleItem: Iron platelegs (t)
 */
-#define VAR_IRON_TRIMMED_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#804f4948";borderColor = "#FF151111";textAccentColor = "#FF000000";menuTextColor = "#FF7a6a68";
+#define VAR_IRON_TRIMMED_CUSTOMSTYLE textColor = "#ff95928f";backgroundColor = "#21474747";borderColor = "#ff646464";textAccentColor = "#FF000000";menuTextColor = "#ffa6a4a1";fontType = 2;showDespawn = false;
 
 apply (name:CONST_IRON_TRIMMED_ARMOUR) {
     VAR_IRON_TRIMMED_CUSTOMSTYLE 
@@ -7036,7 +7044,7 @@ label: Steel (t) Armour
 group: Metal Equipment
 exampleItem: Steel platelegs (t)
 */
-#define VAR_STEEL_TRIMMED_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#80857c7b";borderColor = "#FFb1a6a6";textAccentColor = "#FF000000";menuTextColor = "#FFb0a09b";
+#define VAR_STEEL_TRIMMED_CUSTOMSTYLE textColor = "#ffcccccc";backgroundColor = "#213a3a3a";borderColor = "#ff71675b";textAccentColor = "#FF000000";menuTextColor = "#ffcac3b7";fontType = 2;showDespawn = false;
 
 apply (name:CONST_STEEL_TRIMMED_ARMOUR) {
     VAR_STEEL_TRIMMED_CUSTOMSTYLE 
@@ -7048,7 +7056,7 @@ label: Black (t) Armour
 group: Metal Equipment
 exampleItem: Black platelegs (t)
 */
-#define VAR_BLACK_TRIMMED_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#801d1b1b";borderColor = "#FF423e3e";textAccentColor = "#FF000000";menuTextColor = "#FF3b4a4a";
+#define VAR_BLACK_TRIMMED_CUSTOMSTYLE textColor = "#ff5f5f5f";backgroundColor = "#12000000";borderColor = "#ff0b0b0b";textAccentColor = "#FF000000";menuTextColor = "#ff000000";fontType = 2;showDespawn = false;icon = CurrentItem();
 
 apply (name:CONST_BLACK_TRIMMED_ARMOUR) {
     VAR_BLACK_TRIMMED_CUSTOMSTYLE 
@@ -7060,7 +7068,7 @@ label: Mithril (t) Armour
 group: Metal Equipment
 exampleItem: Mithril platelegs (t)
 */
-#define VAR_MITHRIL_TRIMMED_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#80414161";borderColor = "#FF6e8aa3";textAccentColor = "#FF000000";menuTextColor = "#FF6a6a8a";
+#define VAR_MITHRIL_TRIMMED_CUSTOMSTYLE textColor = "#ff707285";backgroundColor = "#210f1d3e";borderColor = "#ff1c3450";textAccentColor = "#FF000000";menuTextColor = "#ff151a40";fontType = 2;showDespawn = false;icon = CurrentItem();
 
 apply (name:CONST_MITHRIL_TRIMMED_ARMOUR) {
     VAR_MITHRIL_TRIMMED_CUSTOMSTYLE 
@@ -7072,7 +7080,7 @@ label: Adamant (t) Armour
 group: Metal Equipment
 exampleItem: Adamant platelegs (t)
 */
-#define VAR_ADAMANT_TRIMMED_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#80405140";borderColor = "#FF6a725a";textAccentColor = "#FF000000";menuTextColor = "#FF6a8a6a";
+#define VAR_ADAMANT_TRIMMED_CUSTOMSTYLE textColor = "#ff4bb14f";backgroundColor = "#38142614";borderColor = "#a32a6b12";textAccentColor = "#FF000000";menuTextColor = "#ff4bb14f";fontType = 2;showDespawn = false;icon = CurrentItem();
 
 apply (name:CONST_ADAMANT_TRIMMED_ARMOUR) {
     VAR_ADAMANT_TRIMMED_CUSTOMSTYLE 
@@ -7084,7 +7092,7 @@ label: Rune (t) Armour
 group: Metal Equipment
 exampleItem: Rune platelegs (t)
 */
-#define VAR_RUNE_TRIMMED_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#80415760";borderColor = "#FF6d88a1";textAccentColor = "#FF000000";menuTextColor = "#FF6a8a9a";
+#define VAR_RUNE_TRIMMED_CUSTOMSTYLE textColor = "#ff68bad9";backgroundColor = "#0a2f6f87";borderColor = "#d92d6787";textAccentColor = "#FF000000";menuTextColor = "#ff68bad9";fontType = 2;showValue = false;showDespawn = false;icon = CurrentItem();
 
 apply (name:CONST_RUNE_TRIMMED_ARMOUR) {
     VAR_RUNE_TRIMMED_CUSTOMSTYLE 
@@ -7096,7 +7104,7 @@ label: Bronze (g) Armour
 group: Metal Equipment
 exampleItem: Bronze platelegs (g)
 */
-#define VAR_BRONZE_GOLD_TRIMMED_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#8043341d";borderColor = "#FFdea71a";textAccentColor = "#FF000000";menuTextColor = "#FF7a6a2d";
+#define VAR_BRONZE_GOLD_TRIMMED_CUSTOMSTYLE textColor = "#ffd9a268";backgroundColor = "#665c3f1c";borderColor = "#ff8a7457";textAccentColor = "#FF000000";menuTextColor = "#ffc39743";fontType = 2;showDespawn = false;highlightTile = true;icon = CurrentItem();
 
 apply (name:CONST_BRONZE_GOLD_TRIMMED_ARMOUR) {
     VAR_BRONZE_GOLD_TRIMMED_CUSTOMSTYLE 
@@ -7108,7 +7116,7 @@ label: Iron (g) Armour
 group: Metal Equipment
 exampleItem: Iron platelegs (g)
 */
-#define VAR_IRON_GOLD_TRIMMED_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#804f4948";borderColor = "#FFdea71a";textAccentColor = "#FF000000";menuTextColor = "#FF7a7a58";
+#define VAR_IRON_GOLD_TRIMMED_CUSTOMSTYLE textColor = "#ff95928f";backgroundColor = "#52575757";borderColor = "#ff646464";textAccentColor = "#FF000000";menuTextColor = "#ffa6a4a1";fontType = 2;showDespawn = false;
 
 apply (name:CONST_IRON_GOLD_TRIMMED_ARMOUR) {
     VAR_IRON_GOLD_TRIMMED_CUSTOMSTYLE 
@@ -7120,7 +7128,7 @@ label: Steel (g) Armour
 group: Metal Equipment
 exampleItem: Steel platelegs (g)
 */
-#define VAR_STEEL_GOLD_TRIMMED_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#80857c7b";borderColor = "#FFdea71a";textAccentColor = "#FF000000";menuTextColor = "#FFb0b08b";
+#define VAR_STEEL_GOLD_TRIMMED_CUSTOMSTYLE textColor = "#ffcccccc";backgroundColor = "#943b3b3b";borderColor = "#ff71675b";textAccentColor = "#FF000000";menuTextColor = "#ffcac3b7";fontType = 2;showDespawn = false;
 
 apply (name:CONST_STEEL_GOLD_TRIMMED_ARMOUR) {
     VAR_STEEL_GOLD_TRIMMED_CUSTOMSTYLE 
@@ -7132,7 +7140,7 @@ label: Black (g) Armour
 group: Metal Equipment
 exampleItem: Black platelegs (g)
 */
-#define VAR_BLACK_GOLD_TRIMMED_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#801d1b1b";borderColor = "#FFdea71a";textAccentColor = "#FF000000";menuTextColor = "#FF2b4a4a";
+#define VAR_BLACK_GOLD_TRIMMED_CUSTOMSTYLE textColor = "#ff5f5f5f";backgroundColor = "#47000000";borderColor = "#ff0b0b0b";textAccentColor = "#FF000000";menuTextColor = "#ff000000";fontType = 2;showDespawn = false;icon = CurrentItem();
 
 apply (name:CONST_BLACK_GOLD_TRIMMED_ARMOUR) {
     VAR_BLACK_GOLD_TRIMMED_CUSTOMSTYLE 
@@ -7144,7 +7152,7 @@ label: Mithril (g) Armour
 group: Metal Equipment
 exampleItem: Mithril platelegs (g)
 */
-#define VAR_MITHRIL_GOLD_TRIMMED_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#80414161";borderColor = "#FFdea71a";textAccentColor = "#FF000000";menuTextColor = "#FF7a7a6a";
+#define VAR_MITHRIL_GOLD_TRIMMED_CUSTOMSTYLE textColor = "#ff707285";backgroundColor = "#660f1d3d";borderColor = "#ff1c3450";textAccentColor = "#FF000000";menuTextColor = "#ff151a40";fontType = 2;showDespawn = false;icon = CurrentItem();
 
 apply (name:CONST_MITHRIL_GOLD_TRIMMED_ARMOUR) {
     VAR_MITHRIL_GOLD_TRIMMED_CUSTOMSTYLE 
@@ -7156,7 +7164,7 @@ label: Adamant (g) Armour
 group: Metal Equipment
 exampleItem: Adamant platelegs (g)
 */
-#define VAR_ADAMANT_GOLD_TRIMMED_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#80405140";borderColor = "#FFdea71a";textAccentColor = "#FF000000";menuTextColor = "#FF7a8a6a";
+#define VAR_ADAMANT_GOLD_TRIMMED_CUSTOMSTYLE textColor = "#ff4bb14f";backgroundColor = "#69142614";borderColor = "#a32a6b12";textAccentColor = "#FF000000";menuTextColor = "#ff4bb14f";fontType = 2;showDespawn = false;icon = CurrentItem();
 
 apply (name:CONST_ADAMANT_GOLD_TRIMMED_ARMOUR) {
     VAR_ADAMANT_GOLD_TRIMMED_CUSTOMSTYLE 
@@ -7168,7 +7176,7 @@ label: Rune (g) Armour
 group: Metal Equipment
 exampleItem: Rune platelegs (g)
 */
-#define VAR_RUNE_GOLD_TRIMMED_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#80415760";borderColor = "#FFdea71a";textAccentColor = "#FF000000";menuTextColor = "#FF7a9a8a";
+#define VAR_RUNE_GOLD_TRIMMED_CUSTOMSTYLE textColor = "#ff68bad9";backgroundColor = "#332f7087";borderColor = "#d92d6787";textAccentColor = "#FF000000";menuTextColor = "#ff68bad9";fontType = 2;showValue = false;showDespawn = false;icon = CurrentItem();
 
 apply (name:CONST_RUNE_GOLD_TRIMMED_ARMOUR) {
     VAR_RUNE_GOLD_TRIMMED_CUSTOMSTYLE 
@@ -7180,7 +7188,7 @@ label: Black heraldic Armour
 group: Metal Equipment
 exampleItem: Black helm (h1)
 */
-#define VAR_BLACK_HERALDIC_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#801d1b1b";borderColor = "#FF1d1b1b";textAccentColor = "#FF000000";menuTextColor = "#FF2b3b3a";
+#define VAR_BLACK_HERALDIC_CUSTOMSTYLE textColor = "#ff181818";backgroundColor = "#307a4bca";borderColor = "#ff000000";textAccentColor = "#FF000000";menuTextColor = "#ff000000";fontType = 2;showDespawn = false;icon = CurrentItem();
 
 apply (name:CONST_BLACK_HERALDIC_ARMOUR) {
     VAR_BLACK_HERALDIC_CUSTOMSTYLE 
@@ -7192,7 +7200,7 @@ label: Adamant heraldic Armour
 group: Metal Equipment
 exampleItem: Adamant helm (h1)
 */
-#define VAR_ADAMANT_HERALDIC_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#80405140";borderColor = "#FF405140";textAccentColor = "#FF000000";menuTextColor = "#FF5a7a6a";
+#define VAR_ADAMANT_HERALDIC_CUSTOMSTYLE textColor = "#ff4bb14f";backgroundColor = "#36732682";borderColor = "#a32a6b12";textAccentColor = "#FF000000";menuTextColor = "#ff4bb14f";fontType = 2;showDespawn = false;icon = CurrentItem();
 
 apply (name:CONST_ADAMANT_HERALDIC_ARMOUR) {
     VAR_ADAMANT_HERALDIC_CUSTOMSTYLE 
@@ -7204,7 +7212,7 @@ label: Rune heraldic Armour
 group: Metal Equipment
 exampleItem: Rune helm (h1)
 */
-#define VAR_RUNE_HERALDIC_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#80415760";borderColor = "#FF415760";textAccentColor = "#FF000000";menuTextColor = "#FF5a7a8a";
+#define VAR_RUNE_HERALDIC_CUSTOMSTYLE textColor = "#ff68bad9";backgroundColor = "#14582bab";borderColor = "#d92d6787";textAccentColor = "#FF000000";menuTextColor = "#ff68bad9";fontType = 2;showValue = false;showDespawn = false;icon = CurrentItem();
 
 apply (name:CONST_RUNE_HERALDIC_ARMOUR) {
     VAR_RUNE_HERALDIC_CUSTOMSTYLE 
@@ -7216,7 +7224,7 @@ label: Rune saradomin Armour
 group: Metal Equipment
 exampleItem: Saradomin platelegs
 */
-#define VAR_RUNE_SARADOMIN_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#80415760";borderColor = "#FFacab88";textAccentColor = "#FF000000";menuTextColor = "#FFbcbba8";
+#define VAR_RUNE_SARADOMIN_CUSTOMSTYLE textColor = "#c47df0ff";backgroundColor = "#21569bb3";borderColor = "#ff95d5dc";textAccentColor = "#FF000000";menuTextColor = "#ff5fb6b6";fontType = 2;showDespawn = false;icon = CurrentItem();
 
 apply (name:CONST_RUNE_SARADOMIN_TRIMMED_ARMOUR) {
     VAR_RUNE_SARADOMIN_CUSTOMSTYLE 
@@ -7228,7 +7236,7 @@ label: Rune guthix Armour
 group: Metal Equipment
 exampleItem: Guthix platelegs
 */
-#define VAR_RUNE_GUTHIX_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#80415760";borderColor = "#FF437745";textAccentColor = "#FF000000";menuTextColor = "#FF63a755";
+#define VAR_RUNE_GUTHIX_CUSTOMSTYLE textColor = "#ff88b867";backgroundColor = "#1c8fe47c";borderColor = "#e3beffb5";textAccentColor = "#FF000000";menuTextColor = "#ff78e761";fontType = 2;showDespawn = false;icon = CurrentItem();
 
 apply (name:CONST_RUNE_GUTHIX_TRIMMED_ARMOUR) {
     VAR_RUNE_GUTHIX_CUSTOMSTYLE 
@@ -7240,7 +7248,7 @@ label: Rune zamorak Armour
 group: Metal Equipment
 exampleItem: Zamorak platelegs
 */
-#define VAR_RUNE_ZAMORAK_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#80415760";borderColor = "#FF801a0d";textAccentColor = "#FF000000";menuTextColor = "#FFa03a2d";
+#define VAR_RUNE_ZAMORAK_CUSTOMSTYLE textColor = "#ffab1f1f";backgroundColor = "#0fa30808";borderColor = "#bd952222";textAccentColor = "#FF000000";menuTextColor = "#ffbf213d";fontType = 2;showDespawn = false;icon = CurrentItem();
 
 apply (name:CONST_RUNE_ZAMORAK_TRIMMED_ARMOUR) {
     VAR_RUNE_ZAMORAK_CUSTOMSTYLE 
@@ -7252,7 +7260,7 @@ label: Rune ancient Armour
 group: Metal Equipment
 exampleItem: Ancient platelegs
 */
-#define VAR_RUNE_ANCIENT_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#80415760";borderColor = "#FF552f53";textAccentColor = "#FF000000";menuTextColor = "#FF7a4f73";
+#define VAR_RUNE_ANCIENT_CUSTOMSTYLE textColor = "#ffbe6ce4";backgroundColor = "#30722894";borderColor = "#e84f1f85";textAccentColor = "#FF000000";menuTextColor = "#ff4a1961";fontType = 2;showDespawn = false;icon = CurrentItem();
 
 apply (name:CONST_RUNE_ANCIENT_TRIMMED_ARMOUR) {
     VAR_RUNE_ANCIENT_CUSTOMSTYLE 
@@ -7264,7 +7272,7 @@ label: Rune armadyl Armour
 group: Metal Equipment
 exampleItem: Armadyl platelegs
 */
-#define VAR_RUNE_ARMADYL_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#80415760";borderColor = "#FF706868";textAccentColor = "#FF000000";menuTextColor = "#FF908888";
+#define VAR_RUNE_ARMADYL_CUSTOMSTYLE textColor = "#ffffbd29";backgroundColor = "#21f7ff61";borderColor = "#a8fffc54";textAccentColor = "#FF000000";menuTextColor = "#ffffbd29";fontType = 2;showDespawn = false;icon = CurrentItem();
 
 apply (name:CONST_RUNE_ARMADYL_TRIMMED_ARMOUR) {
     VAR_RUNE_ARMADYL_CUSTOMSTYLE 
@@ -7276,7 +7284,7 @@ label: Rune bandos Armour
 group: Metal Equipment
 exampleItem: Bandos platelegs
 */
-#define VAR_RUNE_BANDOS_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#80415760";borderColor = "#FF746228";textAccentColor = "#FF000000";menuTextColor = "#FFa48238";
+#define VAR_RUNE_BANDOS_CUSTOMSTYLE textColor = "#ff879114";backgroundColor = "#7d3b2105";borderColor = "#5cfa8e00";textAccentColor = "#FF000000";menuTextColor = "#ff879114";fontType = 2;showDespawn = false;icon = CurrentItem();
 
 apply (name:CONST_RUNE_BANDOS_TRIMMED_ARMOUR) {
     VAR_RUNE_BANDOS_CUSTOMSTYLE 
@@ -7288,11 +7296,12 @@ label: Gilded Armour and Weapons
 group: Metal Equipment
 exampleItem: Gilded platelegs
 */
-#define VAR_RUNE_GILDED_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#80c39318";borderColor = "#FF7c540c";textAccentColor = "#FF000000";menuTextColor = "#FFbca41c";
+#define VAR_RUNE_GILDED_CUSTOMSTYLE textColor = "#ffffcf00";backgroundColor = "#47ffb75e";borderColor = "#ffff9100";textAccentColor = "#FF000000";menuTextColor = "#ffe9cb00";fontType = 2;showDespawn = false;icon = CurrentItem();
 
 apply (name:CONST_RUNE_GILDED) {
     VAR_RUNE_GILDED_CUSTOMSTYLE 
 }
+
 
 /*@ define:module:individual_item_styles
 ---
@@ -7311,7 +7320,7 @@ group: Misc Styles
 exampleItem: Ancient blood ornament kit
 exampleItemId: 28336
 */
-#define VAR_ANCIENT_BLOOD_ORNAMENT_KIT_CUSTOMSTYLE textColor = "#ffff00a1";backgroundColor = "#8fb291db";borderColor = "#001a1616";textAccentColor = "#FF000000";lootbeamColor = "#ffff6cc9";menuTextColor = "#ffff00a1";textAccent = 1;fontType = 2;showLootbeam = true;showValue = true;showDespawn = true;notify = true;icon = CurrentItem();
+#define VAR_ANCIENT_BLOOD_ORNAMENT_KIT_CUSTOMSTYLE textColor = "#ffff00a1";backgroundColor = "#8fb291db";borderColor = "#001a1616";textAccentColor = "#FF000000";lootbeamColor = "#ffff6cc9";menuTextColor = "#ffff00a1";textAccent = 1;fontType = 2;showLootbeam = true;showValue = true;showDespawn = true;notify = true;highlightTile = true;icon = CurrentItem();
 
 apply (name:"Ancient blood ornament kit") {
     VAR_ANCIENT_BLOOD_ORNAMENT_KIT_CUSTOMSTYLE 
@@ -7324,7 +7333,7 @@ group: Misc Styles
 exampleItem: Purifying sigil
 exampleItemId: 30793
 */
-#define VAR_PURIFYING_SIGIL_CUSTOMSTYLE textColor = "#ffe9c00f";backgroundColor = "#45d1b536";borderColor = "#00ffffff";textAccentColor = "#FF000000";lootbeamColor = "#adccb966";menuTextColor = "#ffe9c00f";textAccent = 1;fontType = 3;showLootbeam = true;showValue = true;showDespawn = true;notify = true;icon = CurrentItem();
+#define VAR_PURIFYING_SIGIL_CUSTOMSTYLE textColor = "#ffe9c00f";backgroundColor = "#45d1b536";borderColor = "#00ffffff";textAccentColor = "#FF000000";lootbeamColor = "#adccb966";menuTextColor = "#ffe9c00f";textAccent = 1;fontType = 3;showLootbeam = true;showValue = true;showDespawn = true;notify = true;highlightTile = true;icon = CurrentItem();
 
 apply (name:"Purifying sigil*") {
     VAR_PURIFYING_SIGIL_CUSTOMSTYLE 
@@ -7337,7 +7346,7 @@ group: Misc Styles
 exampleItem: "Avernic defender"
 exampleItemId: 24186
 */
-#define VAR_AVERNIC_DEFENDER_CUSTOMSTYLE textColor = "#ffe9c00f";backgroundColor = "#47b8b844";borderColor = "#001f1c1c";textAccentColor = "#FF000000";lootbeamColor = "#dbf5db69";menuTextColor = "#ffe9c00f";fontType = 3;showLootbeam = true;showValue = true;showDespawn = true;notify = true;icon = CurrentItem();
+#define VAR_AVERNIC_DEFENDER_CUSTOMSTYLE textColor = "#ffe9c00f";backgroundColor = "#47b8b844";borderColor = "#001f1c1c";textAccentColor = "#FF000000";lootbeamColor = "#dbf5db69";menuTextColor = "#ffe9c00f";fontType = 3;showLootbeam = true;showValue = true;showDespawn = true;notify = true;highlightTile = true;icon = CurrentItem();
 
 apply (name:"Avernic defender*") {
   VAR_AVERNIC_DEFENDER_CUSTOMSTYLE 
@@ -7350,7 +7359,7 @@ group: Misc Styles
 exampleItem: "Ghommal's avernic defender 5"
 exampleItemId: 27550
 */
-#define VAR_GHOMMALS_AVERNIC_DEFENDER_5_CUSTOMSTYLE textColor = "#ffe9c00f";backgroundColor = "#3dd4d43d";borderColor = "#00b88811";textAccentColor = "#FF000000";lootbeamColor = "#ffe1e944";menuTextColor = "#ffe9c00f";fontType = 3;showLootbeam = true;showValue = true;showDespawn = true;notify = true;icon = CurrentItem();
+#define VAR_GHOMMALS_AVERNIC_DEFENDER_5_CUSTOMSTYLE textColor = "#ffe9c00f";backgroundColor = "#3dd4d43d";borderColor = "#00b88811";textAccentColor = "#FF000000";lootbeamColor = "#ffe1e944";menuTextColor = "#ffe9c00f";fontType = 3;showLootbeam = true;showValue = true;showDespawn = true;notify = true;highlightTile = true;icon = CurrentItem();
 
 apply (name:"Ghommal's avernic defender 5*") {
   VAR_GHOMMALS_AVERNIC_DEFENDER_5_CUSTOMSTYLE 
@@ -7363,7 +7372,7 @@ group: Misc Styles
 exampleItem: "Ghommal's avernic defender 6"
 exampleItemId: 27552
 */
-#define VAR_GHOMMALS_AVERNIC_DEFENDER_6_CUSTOMSTYLE textColor = "#ffff00a1";backgroundColor = "#8fcba1db";borderColor = "#00000000";textAccentColor = "#FF000000";lootbeamColor = "#ffff67c7";menuTextColor = "#ffff00a1";fontType = 3;showLootbeam = true;icon = CurrentItem();
+#define VAR_GHOMMALS_AVERNIC_DEFENDER_6_CUSTOMSTYLE textColor = "#ffff00a1";backgroundColor = "#8fcba1db";borderColor = "#00000000";textAccentColor = "#FF000000";lootbeamColor = "#ffff67c7";menuTextColor = "#ffff00a1";fontType = 3;showLootbeam = true;highlightTile = true;icon = CurrentItem();
 
 apply (name:"Ghommal's avernic defender 6*") {
   VAR_GHOMMALS_AVERNIC_DEFENDER_6_CUSTOMSTYLE 
@@ -7376,7 +7385,7 @@ group: Misc Styles
 exampleItem: "Gold ring"
 exampleItemId: 1635
 */
-#define VAR_DT2_GOLD_RING_CUSTOMSTYLE textColor = "#ffffd703";backgroundColor = "#50c6b120";borderColor = "#00fce42d";textAccentColor = "#FF000000";lootbeamColor = "#f0cfdb4d";menuTextColor = "#fffce22d";fontType = 2;showLootbeam = true;icon = CurrentItem();
+#define VAR_DT2_GOLD_RING_CUSTOMSTYLE textColor = "#ffffd703";backgroundColor = "#50c6b120";borderColor = "#00fce42d";textAccentColor = "#FF000000";lootbeamColor = "#f0cfdb4d";menuTextColor = "#fffce22d";fontType = 2;showLootbeam = true;highlightTile = true;icon = CurrentItem();
 
 apply (name:"Gold ring" && (area:CONST_THE_WHISPERER_AREA || area:CONST_VARDORVIS_AREA || area:CONST_DUKE_SUCELLUS_AREA || area:CONST_THE_LEVIATHAN_AREA)) {
   VAR_DT2_GOLD_RING_CUSTOMSTYLE 
@@ -7390,7 +7399,7 @@ group: Clue Scrolls Styles
 exampleItem: Clue scroll (beginner)
 exampleItemId: 23182
 */
-#define VAR_CLUE_SCROLLS_BEGINNER_CUSTOMSTYLE textColor = "#ff90a0af";backgroundColor = "#407a8ca1";borderColor = "#00cfc8c8";textAccentColor = "#FF000000";lootbeamColor = "#ffb8cfe4";menuTextColor = "#ff90a0af";fontType = 2;showLootbeam = true;showValue = false;showDespawn = true;notify = true;icon = CurrentItem();
+#define VAR_CLUE_SCROLLS_BEGINNER_CUSTOMSTYLE textColor = "#ff90a0af";backgroundColor = "#407a8ca1";borderColor = "#00cfc8c8";textAccentColor = "#FF000000";lootbeamColor = "#ffb8cfe4";menuTextColor = "#ff90a0af";fontType = 2;showLootbeam = true;showValue = false;showDespawn = true;notify = true;highlightTile = true;sound = "Loot.wav";icon = CurrentItem();
 
 apply (name:"Clue scroll (beginner)") {
     VAR_CLUE_SCROLLS_BEGINNER_CUSTOMSTYLE 
@@ -7403,7 +7412,7 @@ group: Clue Scrolls Styles
 exampleItem: Clue scroll (easy)
 exampleItemId: 2677
 */
-#define VAR_CLUE_SCROLLS_EASY_CUSTOMSTYLE textColor = "#ff0080ff";backgroundColor = "#476cc1e2";borderColor = "#0099ff99";textAccentColor = "#FF000000";lootbeamColor = "#ff5cadfd";menuTextColor = "#ff0080ff";fontType = 2;showLootbeam = true;showDespawn = true;notify = true;icon = CurrentItem();
+#define VAR_CLUE_SCROLLS_EASY_CUSTOMSTYLE textColor = "#ff0080ff";backgroundColor = "#476cc1e2";borderColor = "#0099ff99";textAccentColor = "#FF000000";lootbeamColor = "#ff5cadfd";menuTextColor = "#ff0080ff";fontType = 2;showLootbeam = true;showDespawn = true;notify = true;highlightTile = true;sound = "Loot.wav";icon = CurrentItem();
 
 apply (name:"Clue scroll (easy)") {
     VAR_CLUE_SCROLLS_EASY_CUSTOMSTYLE 
@@ -7416,7 +7425,7 @@ group: Clue Scrolls Styles
 exampleItem: Clue scroll (medium)
 exampleItemId: 2801
 */
-#define VAR_CLUE_SCROLLS_MEDIUM_CUSTOMSTYLE textColor = "#FF99FF99";backgroundColor = "#4272c95d";borderColor = "#0099ff99";textAccentColor = "#FF000000";lootbeamColor = "#ffc9ffc9";menuTextColor = "#FF99FF99";fontType = 2;showLootbeam = true;showDespawn = true;notify = true;icon = CurrentItem();
+#define VAR_CLUE_SCROLLS_MEDIUM_CUSTOMSTYLE textColor = "#FF99FF99";backgroundColor = "#4272c95d";borderColor = "#0099ff99";textAccentColor = "#FF000000";lootbeamColor = "#ffc9ffc9";menuTextColor = "#FF99FF99";fontType = 2;showLootbeam = true;showDespawn = true;notify = true;highlightTile = true;sound = "Loot.wav";icon = CurrentItem();
 
 apply (name:"Clue scroll (medium)") {
     VAR_CLUE_SCROLLS_MEDIUM_CUSTOMSTYLE 
@@ -7429,7 +7438,7 @@ group: Clue Scrolls Styles
 exampleItem: Clue scroll (hard)
 exampleItemId: 2722
 */
-#define VAR_CLUE_SCROLLS_HARD_CUSTOMSTYLE textColor = "#fffff1a6";backgroundColor = "#29fdf198";borderColor = "#00a242bd";textAccentColor = "#FF000000";lootbeamColor = "#b0e3dbaf";menuTextColor = "#fffff1a6";fontType = 2;showLootbeam = true;showDespawn = true;notify = true;highlightTile = false;icon = CurrentItem();
+#define VAR_CLUE_SCROLLS_HARD_CUSTOMSTYLE textColor = "#fffff1a6";backgroundColor = "#29fdf198";borderColor = "#00a242bd";textAccentColor = "#FF000000";lootbeamColor = "#b0e3dbaf";menuTextColor = "#fffff1a6";fontType = 2;showLootbeam = true;showDespawn = true;notify = true;highlightTile = true;sound = "Loot.wav";icon = CurrentItem();
 
 apply (name:"Clue scroll (hard)") {
     VAR_CLUE_SCROLLS_HARD_CUSTOMSTYLE 
@@ -7442,7 +7451,7 @@ group: Clue Scrolls Styles
 exampleItem: Clue scroll (elite)
 exampleItemId: 12073
 */
-#define VAR_CLUE_SCROLLS_ELITE_CUSTOMSTYLE textColor = "#fff2b257";backgroundColor = "#2effa53d";borderColor = "#00ff9500";textAccentColor = "#FF000000";lootbeamColor = "#fff2b257";menuTextColor = "#ffffcf00";fontType = 2;showLootbeam = true;showDespawn = true;notify = true;icon = CurrentItem();
+#define VAR_CLUE_SCROLLS_ELITE_CUSTOMSTYLE textColor = "#fff2b257";backgroundColor = "#2effa53d";borderColor = "#00ff9500";textAccentColor = "#FF000000";lootbeamColor = "#fff2b257";menuTextColor = "#ffffcf00";fontType = 2;showLootbeam = true;showDespawn = true;notify = true;highlightTile = true;sound = "Loot.wav";icon = CurrentItem();
 
 apply (name:"Clue scroll (elite)") {
     VAR_CLUE_SCROLLS_ELITE_CUSTOMSTYLE 
@@ -7455,7 +7464,7 @@ group: Clue Scrolls Styles
 exampleItem: Clue scroll (master)
 exampleItemId: 19835
 */
-#define VAR_CLUE_SCROLLS_MASTER_CUSTOMSTYLE textColor = "#fff407a4";backgroundColor = "#42f588ff";borderColor = "#00c23d30";textAccentColor = "#FF000000";lootbeamColor = "#e8e86fac";menuTextColor = "#fff407a4";fontType = 2;showLootbeam = true;showDespawn = true;notify = true;icon = CurrentItem();
+#define VAR_CLUE_SCROLLS_MASTER_CUSTOMSTYLE textColor = "#fff407a4";backgroundColor = "#42f588ff";borderColor = "#00c23d30";textAccentColor = "#FF000000";lootbeamColor = "#e8e86fac";menuTextColor = "#fff407a4";fontType = 2;showLootbeam = true;showDespawn = true;notify = true;highlightTile = true;sound = "Loot.wav";icon = CurrentItem();
 
 apply (name:"Clue scroll (master)") {
     VAR_CLUE_SCROLLS_MASTER_CUSTOMSTYLE 
@@ -7468,7 +7477,7 @@ label: Larran's key
 group: Slayer Styles
 exampleItem: Larran's key
 */
-#define VAR_SLAYER_LARRANS_KEY_CUSTOMSTYLE textColor = "#FFfada1e";backgroundColor = "#38d3ce3a";borderColor = "#00ffffff";textAccentColor = "#FF000000";lootbeamColor = "#fff0c851";menuTextColor = "#FFfada1e";fontType = 2;showLootbeam = true;showDespawn = true;notify = true;highlightTile = false;icon = Item(23490);
+#define VAR_SLAYER_LARRANS_KEY_CUSTOMSTYLE textColor = "#FFfada1e";backgroundColor = "#38d3ce3a";borderColor = "#00ffffff";textAccentColor = "#FF000000";lootbeamColor = "#fff0c851";menuTextColor = "#FFfada1e";fontType = 2;showLootbeam = true;showDespawn = true;notify = true;highlightTile = true;icon = Item(23490);
 
 apply (name:"Larran's key") {
     VAR_SLAYER_LARRANS_KEY_CUSTOMSTYLE 
@@ -7480,7 +7489,7 @@ label: Brimstone key
 group: Slayer Styles
 exampleItem: Brimstone key
 */
-#define VAR_SLAYER_BRIMSTONE_KEY_CUSTOMSTYLE textColor = "#FF41a9b7";backgroundColor = "#2e27636b";borderColor = "#00ffffff";textAccentColor = "#FF000000";lootbeamColor = "#ff82dfeb";menuTextColor = "#FF41a9b7";fontType = 2;showLootbeam = true;icon = Item(23083);
+#define VAR_SLAYER_BRIMSTONE_KEY_CUSTOMSTYLE textColor = "#FF41a9b7";backgroundColor = "#2e27636b";borderColor = "#00ffffff";textAccentColor = "#FF000000";lootbeamColor = "#ff82dfeb";menuTextColor = "#FF41a9b7";fontType = 2;showLootbeam = true;highlightTile = true;icon = Item(23083);
 
 apply (name:"Brimstone key") {
     VAR_SLAYER_BRIMSTONE_KEY_CUSTOMSTYLE 
@@ -7492,7 +7501,7 @@ label: Dust battlestaff
 group: Slayer Styles
 exampleItem: Dust battlestaff
 */
-#define VAR_SLAYER_DUST_BATTLESTAFF_CUSTOMSTYLE textColor = "#ffbda06a";backgroundColor = "#3670603f";borderColor = "#00ffffff";textAccentColor = "#FF000000";lootbeamColor = "#cce0d0a8";menuTextColor = "#ffbda06a";fontType = 2;showLootbeam = true;showValue = false;showDespawn = true;notify = true;icon = Item(20736);
+#define VAR_SLAYER_DUST_BATTLESTAFF_CUSTOMSTYLE textColor = "#ffbda06a";backgroundColor = "#3670603f";borderColor = "#00ffffff";textAccentColor = "#FF000000";lootbeamColor = "#cce0d0a8";menuTextColor = "#ffbda06a";fontType = 2;showLootbeam = true;showValue = false;showDespawn = true;notify = true;highlightTile = true;icon = Item(20736);
 
 apply (name:"Dust battlestaff") {
     VAR_SLAYER_DUST_BATTLESTAFF_CUSTOMSTYLE 
@@ -7504,7 +7513,7 @@ label: Mist battlestaff
 group: Slayer Styles
 exampleItem: Mist battlestaff
 */
-#define VAR_SLAYER_MIST_BATTLESTAFF_CUSTOMSTYLE textColor = "#ffe7b1e0";backgroundColor = "#33857a84";borderColor = "#00d1c0cf";textAccentColor = "#FF000000";lootbeamColor = "#ffdcc4d9";menuTextColor = "#ffe7b1e0";fontType = 2;showLootbeam = true;showDespawn = true;notify = true;icon = Item(20730);
+#define VAR_SLAYER_MIST_BATTLESTAFF_CUSTOMSTYLE textColor = "#ffe7b1e0";backgroundColor = "#33857a84";borderColor = "#00d1c0cf";textAccentColor = "#FF000000";lootbeamColor = "#ffdcc4d9";menuTextColor = "#ffe7b1e0";fontType = 2;showLootbeam = true;showDespawn = true;notify = true;highlightTile = true;icon = Item(20730);
 
 apply (name:"Mist battlestaff") {
     VAR_SLAYER_MIST_BATTLESTAFF_CUSTOMSTYLE 
@@ -7516,7 +7525,7 @@ label: Eternal gem
 group: Slayer Styles
 exampleItem: Eternal gem
 */
-#define VAR_SLAYER_ETERNAL_GEM_CUSTOMSTYLE textColor = "#FF36aebc";backgroundColor = "#479ec24a";borderColor = "#00b4c24a";textAccentColor = "#FF000000";lootbeamColor = "#cf84dee8";menuTextColor = "#FF36aebc";fontType = 2;showLootbeam = true;showDespawn = true;notify = true;icon = Item(21270);
+#define VAR_SLAYER_ETERNAL_GEM_CUSTOMSTYLE textColor = "#FF36aebc";backgroundColor = "#479ec24a";borderColor = "#00b4c24a";textAccentColor = "#FF000000";lootbeamColor = "#cf84dee8";menuTextColor = "#FF36aebc";fontType = 2;showLootbeam = true;showDespawn = true;notify = true;highlightTile = true;icon = Item(21270);
 
 apply (name:"Eternal gem") {
     VAR_SLAYER_ETERNAL_GEM_CUSTOMSTYLE 
@@ -7528,7 +7537,7 @@ label: Imbued heart
 group: Slayer Styles
 exampleItem: Imbued heart
 */
-#define VAR_SLAYER_IMBUED_HEART_CUSTOMSTYLE textColor = "#FFad6284";backgroundColor = "#4fbd96ac";borderColor = "#00422e42";textAccentColor = "#FF000000";lootbeamColor = "#ffca9bb0";menuTextColor = "#FFad6284";fontType = 2;showLootbeam = true;showValue = false;showDespawn = true;notify = true;icon = Item(20724);
+#define VAR_SLAYER_IMBUED_HEART_CUSTOMSTYLE textColor = "#FFad6284";backgroundColor = "#4fbd96ac";borderColor = "#00422e42";textAccentColor = "#FF000000";lootbeamColor = "#ffca9bb0";menuTextColor = "#FFad6284";fontType = 2;showLootbeam = true;showValue = false;showDespawn = true;notify = true;highlightTile = true;icon = Item(20724);
 
 apply (name:"Imbued heart") {
     VAR_SLAYER_IMBUED_HEART_CUSTOMSTYLE 
@@ -7879,7 +7888,7 @@ group: Theatre of Blood Styles
 exampleItem: Dawnbringer
 backgroundImage: Verzik Vitur
 */
-#define VAR_TOB_DAWNBRINGER_CUSTOMSTYLE textColor = "#ffda94ff";backgroundColor = "#1fad63a7";borderColor = "#73b8a12e";textAccentColor = "#FF000000";menuTextColor = "#ffb76fde";fontType = 2;showDespawn = true;icon = Item(22516);
+#define VAR_TOB_DAWNBRINGER_CUSTOMSTYLE textColor = "#ffda94ff";backgroundColor = "#1fad63a7";borderColor = "#73b8a12e";textAccentColor = "#FF000000";menuTextColor = "#ffb76fde";fontType = 2;showDespawn = true;highlightTile = true;icon = Item(22516);
 
 /*@ define:input:individual_item_styles
 type: style
@@ -7888,7 +7897,7 @@ group: Theatre of Blood Styles
 exampleItem: Salve amulet (e)
 backgroundImage: Verzik Vitur
 */
-#define VAR_TOB_SALVE_CUSTOMSTYLE textColor = "#ffffeeee";backgroundColor = "#2be39db2";borderColor = "#12f5f2f2";textAccentColor = "#FF000000";menuTextColor = "#FFe39cb1";fontType = 2;showDespawn = true;icon = Item(10588);
+#define VAR_TOB_SALVE_CUSTOMSTYLE textColor = "#ffffeeee";backgroundColor = "#2be39db2";borderColor = "#12f5f2f2";textAccentColor = "#FF000000";menuTextColor = "#FFe39cb1";fontType = 2;showDespawn = true;highlightTile = true;icon = Item(10588);
 
 apply (name:"Dawnbringer") {
     VAR_TOB_DAWNBRINGER_CUSTOMSTYLE 
@@ -8062,7 +8071,7 @@ label: Smouldering gland
 group: Tormented Demons Drop Styles
 exampleItem: Smouldering gland
 */
-#define VAR_MONSTERS_TORMENTED_DEMONS_SMOULDERING_GLAND_CUSTOMSTYLE textColor = "#ff4fffc1";backgroundColor = "#2e59d4a9";borderColor = "#3859d4a9";textAccentColor = "#FF000000";menuTextColor = "#FF59D4A8";fontType = 2;showDespawn = true;icon = Item(29587);
+#define VAR_MONSTERS_TORMENTED_DEMONS_SMOULDERING_GLAND_CUSTOMSTYLE textColor = "#ff4fffc1";backgroundColor = "#2e59d4a9";borderColor = "#3859d4a9";textAccentColor = "#FF000000";menuTextColor = "#FF59D4A8";fontType = 2;showDespawn = true;highlightTile = true;icon = Item(29587);
 
 apply (name:"Smouldering gland") {
     VAR_MONSTERS_TORMENTED_DEMONS_SMOULDERING_GLAND_CUSTOMSTYLE
@@ -8074,7 +8083,7 @@ label: Smouldering heart
 group: Tormented Demons Drop Styles
 exampleItem: Smouldering heart
 */
-#define VAR_MONSTERS_TORMENTED_DEMONS_SMOULDERING_HEART_CUSTOMSTYLE textColor = "#ffff6a6a";backgroundColor = "#369c9494";borderColor = "#4ff099da";textAccentColor = "#FF000000";menuTextColor = "#ffff6a6a";fontType = 2;showDespawn = true;icon = Item(29583);
+#define VAR_MONSTERS_TORMENTED_DEMONS_SMOULDERING_HEART_CUSTOMSTYLE textColor = "#ffff6a6a";backgroundColor = "#369c9494";borderColor = "#4ff099da";textAccentColor = "#FF000000";menuTextColor = "#ffff6a6a";fontType = 2;showDespawn = true;highlightTile = true;icon = Item(29583);
 
 apply (name:"Smouldering heart") {
     VAR_MONSTERS_TORMENTED_DEMONS_SMOULDERING_HEART_CUSTOMSTYLE
@@ -8086,7 +8095,7 @@ label: Smouldering pile of flesh
 group: Tormented Demons Drop Styles
 exampleItem: Smouldering pile of flesh
 */
-#define VAR_MONSTERS_TORMENTED_DEMONS_SMOULDERING_PILE_OF_FLESH_CUSTOMSTYLE textColor = "#FFffd480";backgroundColor = "#50624b18";borderColor = "#FF624b18";textAccentColor = "#FF000000";menuTextColor = "#FFffd480";fontType = 2;showDespawn = true;icon = Item(29586);
+#define VAR_MONSTERS_TORMENTED_DEMONS_SMOULDERING_PILE_OF_FLESH_CUSTOMSTYLE textColor = "#FFffd480";backgroundColor = "#50624b18";borderColor = "#FF624b18";textAccentColor = "#FF000000";menuTextColor = "#FFffd480";fontType = 2;showDespawn = true;highlightTile = true;icon = Item(29586);
 
 apply (name:"Smouldering pile of flesh") {
     VAR_MONSTERS_TORMENTED_DEMONS_SMOULDERING_PILE_OF_FLESH_CUSTOMSTYLE
@@ -8098,7 +8107,7 @@ label: Tormented synapse
 group: Tormented Demons Drop Styles
 exampleItem: Tormented synapse
 */
-#define VAR_MONSTERS_TORMENTED_DEMONS_TORMENTED_SYNAPSE_CUSTOMSTYLE textColor = "#ffff00ed";backgroundColor = "#3d3c18b5";borderColor = "#00b725fa";lootbeamColor = "#a3d56ee0";menuTextColor = "#ffff00ed";fontType = 2;showLootbeam = true;showValue = true;showDespawn = true;notify = true;icon = Item(29582);
+#define VAR_MONSTERS_TORMENTED_DEMONS_TORMENTED_SYNAPSE_CUSTOMSTYLE textColor = "#ffff00ed";backgroundColor = "#3d3c18b5";borderColor = "#00b725fa";lootbeamColor = "#a3d56ee0";menuTextColor = "#ffff00ed";fontType = 2;showLootbeam = true;showValue = true;showDespawn = true;notify = true;highlightTile = true;icon = Item(29582);
 
 apply (name:"Tormented synapse") {
     VAR_MONSTERS_TORMENTED_DEMONS_TORMENTED_SYNAPSE_CUSTOMSTYLE
@@ -8110,7 +8119,7 @@ label: Burning claw
 group: Tormented Demons Drop Styles
 exampleItem: Burning claw
 */
-#define VAR_MONSTERS_TORMENTED_DEMONS_BURNING_CLAW_CUSTOMSTYLE textColor = "#ffebbe00";backgroundColor = "#297e670a";lootbeamColor = "#8ac5b33d";menuTextColor = "#ffebbe00";fontType = 2;showLootbeam = true;showValue = true;showDespawn = true;notify = true;icon = Item(29579);
+#define VAR_MONSTERS_TORMENTED_DEMONS_BURNING_CLAW_CUSTOMSTYLE textColor = "#ffebbe00";backgroundColor = "#297e670a";lootbeamColor = "#8ac5b33d";menuTextColor = "#ffebbe00";fontType = 2;showLootbeam = true;showValue = true;showDespawn = true;notify = true;highlightTile = true;icon = Item(29579);
 
 apply (name:"Burning claw") {
     VAR_MONSTERS_TORMENTED_DEMONS_BURNING_CLAW_CUSTOMSTYLE
@@ -8122,7 +8131,7 @@ label: Burning claws
 group: Tormented Demons Drop Styles
 exampleItem: Burning claws
 */
-#define VAR_MONSTERS_TORMENTED_DEMONS_BURNING_CLAW_CUSTOMSTYLE textColor = "#ffebbe00";backgroundColor = "#297e670a";lootbeamColor = "#8ac5b33d";menuTextColor = "#ffebbe00";fontType = 2;showLootbeam = true;showValue = true;showDespawn = true;notify = true;icon = Item(29579);
+#define VAR_MONSTERS_TORMENTED_DEMONS_BURNING_CLAW_CUSTOMSTYLE textColor = "#ffebbe00";backgroundColor = "#297e670a";lootbeamColor = "#8ac5b33d";menuTextColor = "#ffebbe00";fontType = 2;showLootbeam = true;showValue = true;showDespawn = true;notify = true;highlightTile = true;icon = Item(29579);
 
 apply (name:"Burning claws") {
     VAR_MONSTERS_TORMENTED_DEMONS_BURNING_CLAW_CUSTOMSTYLE
@@ -8134,7 +8143,7 @@ label: Emberlight
 group: Tormented Demons Drop Styles
 exampleItem: Emberlight
 */
-#define VAR_MONSTERS_TORMENTED_DEMONS_EMBERLIGHT_CUSTOMSTYLE textColor = "#ffff00ed";backgroundColor = "#3d3c18b5";menuTextColor = "#ffff00ed";fontType = 2;showValue = true;showDespawn = true;notify = true;icon = Item(29590);
+#define VAR_MONSTERS_TORMENTED_DEMONS_EMBERLIGHT_CUSTOMSTYLE textColor = "#ffff00ed";backgroundColor = "#3d3c18b5";menuTextColor = "#ffff00ed";fontType = 2;showValue = true;showDespawn = true;notify = true;highlightTile = true;icon = Item(29590);
 
 apply (name:"Emberlight") {
   VAR_MONSTERS_TORMENTED_DEMONS_EMBERLIGHT_CUSTOMSTYLE
@@ -8146,7 +8155,7 @@ label: Purging staff
 group: Tormented Demons Drop Styles
 exampleItem: Purging staff
 */
-#define VAR_MONSTERS_TORMENTED_DEMONS_PURGING_STAFF_CUSTOMSTYLE textColor = "#ffff00ed";backgroundColor = "#3d3c18b5";menuTextColor = "#ffff00ed";fontType = 2;showValue = true;showDespawn = true;notify = true;icon = Item(29595);
+#define VAR_MONSTERS_TORMENTED_DEMONS_PURGING_STAFF_CUSTOMSTYLE textColor = "#ffff00ed";backgroundColor = "#3d3c18b5";menuTextColor = "#ffff00ed";fontType = 2;showValue = true;showDespawn = true;notify = true;highlightTile = true;icon = Item(29595);
 
 apply (name:"Purging staff") {
   VAR_MONSTERS_TORMENTED_DEMONS_PURGING_STAFF_CUSTOMSTYLE
@@ -8158,7 +8167,7 @@ label: Scorching bow
 group: Tormented Demons Drop Styles
 exampleItem: Scorching bow
 */
-#define VAR_MONSTERS_TORMENTED_DEMONS_SCORCHING_BOW_CUSTOMSTYLE textColor = "#ffff00ed";backgroundColor = "#3d3c18b5";menuTextColor = "#ffff00ed";fontType = 2;showValue = true;showDespawn = true;notify = true;icon = Item(29593);
+#define VAR_MONSTERS_TORMENTED_DEMONS_SCORCHING_BOW_CUSTOMSTYLE textColor = "#ffff00ed";backgroundColor = "#3d3c18b5";menuTextColor = "#ffff00ed";fontType = 2;showValue = true;showDespawn = true;notify = true;highlightTile = true;icon = Item(29593);
 
 apply (name:"Scorching bow") {
   VAR_MONSTERS_TORMENTED_DEMONS_SCORCHING_BOW_CUSTOMSTYLE
@@ -9319,7 +9328,7 @@ label: Meat pizza custom style
 group: Pizza Styles
 exampleItem: Meat pizza
 */
-#define VAR_MEAT_PIZZA_CUSTOMSTYLE hidden = true;
+#define VAR_MEAT_PIZZA_CUSTOMSTYLE hidden = false;icon = CurrentItem();
 apply (name:["1/2 Meat pizza", "Meat pizza"]) {
     VAR_MEAT_PIZZA_CUSTOMSTYLE
 }
@@ -9330,7 +9339,7 @@ label: Plain pizza custom style
 group: Pizza Styles
 exampleItem: Plain pizza
 */
-#define VAR_PLAIN_PIZZA_CUSTOMSTYLE hidden = true;
+#define VAR_PLAIN_PIZZA_CUSTOMSTYLE hidden = false;icon = CurrentItem();
 apply (name:["1/2 Plain pizza", "Plain pizza"]) {
     VAR_PLAIN_PIZZA_CUSTOMSTYLE
 }
@@ -9961,7 +9970,7 @@ label: Dragonstone custom style
 group: Gems Styles
 exampleItem: Dragonstone
 */
-#define VAR_DRAGONSTONE_CUSTOMSTYLE textColor = "#ffdd50e9";backgroundColor = "#004b0b61";borderColor = "#004b0b61";textAccentColor = "#FF000000";menuTextColor = "#ffdd50e9";fontType = 2;showDespawn = true;icon = CurrentItem();
+#define VAR_DRAGONSTONE_CUSTOMSTYLE textColor = "#ffdd50e9";backgroundColor = "#004b0b61";borderColor = "#004b0b61";textAccentColor = "#FF000000";menuTextColor = "#ffdd50e9";fontType = 2;showDespawn = true;highlightTile = true;icon = CurrentItem();
 
 apply (name:["Uncut dragonstone",   "Dragonstone", ]) {
     VAR_DRAGONSTONE_CUSTOMSTYLE 
@@ -9973,7 +9982,7 @@ label: Onyx custom style
 group: Gems Styles
 exampleItem: Onyx
 */
-#define VAR_ONYX_CUSTOMSTYLE textColor = "#ffffe1db";backgroundColor = "#00ffffff";borderColor = "#001c1a1a";textAccentColor = "#ffffffff";menuTextColor = "#ffffe1db";textAccent = 3;fontType = 2;showValue = false;showDespawn = true;notify = false;icon = CurrentItem();
+#define VAR_ONYX_CUSTOMSTYLE textColor = "#ffffe1db";backgroundColor = "#00ffffff";borderColor = "#001c1a1a";textAccentColor = "#ffffffff";menuTextColor = "#ffffe1db";textAccent = 3;fontType = 2;showValue = false;showDespawn = true;notify = false;highlightTile = true;icon = CurrentItem();
 
 apply (name:["Uncut onyx",   "Onyx", ]) {
     VAR_ONYX_CUSTOMSTYLE 
@@ -11109,7 +11118,7 @@ group: Currency Styles
 exampleItem: Abyssal pearls
 exampleItemId: 26792
 */
-#define VAR_ABYSSAL_PEARLS_CUSTOMSTYLE hidden = false;textColor = "#ffffbf00";menuTextColor = "#ffffbf00";fontType = 2;showDespawn = true;icon = CurrentItem();
+#define VAR_ABYSSAL_PEARLS_CUSTOMSTYLE hidden = false;textColor = "#ffffbf00";menuTextColor = "#ffffbf00";fontType = 2;showDespawn = true;highlightTile = true;icon = CurrentItem();
 
 apply (name:"Abyssal pearls") {
     VAR_ABYSSAL_PEARLS_CUSTOMSTYLE
@@ -11122,7 +11131,7 @@ group: Currency Styles
 exampleItem: Agility arena ticket
 exampleItemId: 29480
 */
-#define VAR_AGILITY_ARENA_TICKET_CUSTOMSTYLE hidden = false;textColor = "#ffffbf00";menuTextColor = "#ffffbf00";fontType = 2;showDespawn = true;icon = CurrentItem();
+#define VAR_AGILITY_ARENA_TICKET_CUSTOMSTYLE hidden = false;textColor = "#ffffbf00";menuTextColor = "#ffffbf00";fontType = 2;showDespawn = true;highlightTile = true;icon = CurrentItem();
 
 apply (name:"Agility arena ticket") {
     VAR_AGILITY_ARENA_TICKET_CUSTOMSTYLE
@@ -11135,7 +11144,7 @@ group: Currency Styles
 exampleItem: Anima-infused bark
 exampleItemId: 28134
 */
-#define VAR_ANIMA_INFUSED_BARK_CUSTOMSTYLE hidden = false;textColor = "#ffffbf00";menuTextColor = "#ffffbf00";fontType = 2;showDespawn = true;icon = CurrentItem();
+#define VAR_ANIMA_INFUSED_BARK_CUSTOMSTYLE hidden = false;textColor = "#ffffbf00";menuTextColor = "#ffffbf00";fontType = 2;showDespawn = true;highlightTile = true;icon = CurrentItem();
 
 apply (name:"Anima-infused bark") {
     VAR_ANIMA_INFUSED_BARK_CUSTOMSTYLE
@@ -11148,7 +11157,7 @@ group: Currency Styles
 exampleItem: Archery ticket
 exampleItemId: 1464
 */
-#define VAR_ARCHERY_TICKET_CUSTOMSTYLE hidden = false;textColor = "#ffffbf00";menuTextColor = "#ffffbf00";fontType = 2;showDespawn = true;icon = CurrentItem();
+#define VAR_ARCHERY_TICKET_CUSTOMSTYLE hidden = false;textColor = "#ffffbf00";menuTextColor = "#ffffbf00";fontType = 2;showDespawn = true;highlightTile = true;icon = CurrentItem();
 
 apply (name:"Archery ticket") {
     VAR_ARCHERY_TICKET_CUSTOMSTYLE
@@ -11161,7 +11170,7 @@ group: Currency Styles
 exampleItem: Barronite shards
 exampleItemId: 25676
 */
-#define VAR_BARRONITE_SHARDS_CUSTOMSTYLE hidden = false;textColor = "#ffffbf00";menuTextColor = "#ffffbf00";fontType = 2;showDespawn = true;icon = CurrentItem();
+#define VAR_BARRONITE_SHARDS_CUSTOMSTYLE hidden = false;textColor = "#ffffbf00";menuTextColor = "#ffffbf00";fontType = 2;showDespawn = true;highlightTile = true;icon = CurrentItem();
 
 apply (name:"Barronite shards") {
     VAR_BARRONITE_SHARDS_CUSTOMSTYLE
@@ -11174,7 +11183,7 @@ group: Currency Styles
 exampleItem: Blood money
 exampleItemId: 13307
 */
-#define VAR_BLOOD_MONEY_CUSTOMSTYLE hidden = false;textColor = "#ffffbf00";menuTextColor = "#ffffbf00";fontType = 2;showDespawn = true;icon = CurrentItem();
+#define VAR_BLOOD_MONEY_CUSTOMSTYLE hidden = false;textColor = "#ffffbf00";menuTextColor = "#ffffbf00";fontType = 2;showDespawn = true;highlightTile = true;icon = CurrentItem();
 
 apply (name:"Blood money") {
     VAR_BLOOD_MONEY_CUSTOMSTYLE
@@ -11187,7 +11196,7 @@ group: Currency Styles
 exampleItem: Brimhaven voucher
 exampleItemId: 29482
 */
-#define VAR_BRIMHAVEN_VOUCHER_CUSTOMSTYLE hidden = false;textColor = "#ffffbf00";menuTextColor = "#ffffbf00";fontType = 2;showDespawn = true;icon = CurrentItem();
+#define VAR_BRIMHAVEN_VOUCHER_CUSTOMSTYLE hidden = false;textColor = "#ffffbf00";menuTextColor = "#ffffbf00";fontType = 2;showDespawn = true;highlightTile = true;icon = CurrentItem();
 
 apply (name:"Brimhaven voucher") {
     VAR_BRIMHAVEN_VOUCHER_CUSTOMSTYLE
@@ -11200,7 +11209,7 @@ group: Currency Styles
 exampleItem: Castle wars ticket
 exampleItemId: 4067
 */
-#define VAR_CASTLE_WARS_TICKET_CUSTOMSTYLE hidden = false;textColor = "#ffffbf00";menuTextColor = "#ffffbf00";fontType = 2;showDespawn = true;icon = CurrentItem();
+#define VAR_CASTLE_WARS_TICKET_CUSTOMSTYLE hidden = false;textColor = "#ffffbf00";menuTextColor = "#ffffbf00";fontType = 2;showDespawn = true;highlightTile = true;icon = CurrentItem();
 
 apply (name:"Castle wars ticket") {
     VAR_CASTLE_WARS_TICKET_CUSTOMSTYLE
@@ -11538,7 +11547,7 @@ label: Crystal sceptre custom style
 group: Gauntlet Styles
 exampleItem: Crystal sceptre
 */
-#define VAR_GAUNTLET_CRYSTAL_SCEPTRE_CUSTOMSTYLE hidden = false;textColor = "#ffd6fffe";backgroundColor = "#4f2c2c2c";borderColor = "#00667f80";textAccentColor = "#FF000000";menuTextColor = "#ff78dbd9";fontType = 2;showDespawn = true;icon = CurrentItem();
+#define VAR_GAUNTLET_CRYSTAL_SCEPTRE_CUSTOMSTYLE hidden = false;textColor = "#ffd6fffe";backgroundColor = "#4f2c2c2c";borderColor = "#00667f80";textAccentColor = "#FF000000";menuTextColor = "#ff78dbd9";fontType = 2;showDespawn = true;highlightTile = true;icon = CurrentItem();
 
 apply (area:CONST_GAUNTLET_AREA && name:"* sceptre") {
     VAR_GAUNTLET_CRYSTAL_SCEPTRE_CUSTOMSTYLE 
@@ -11550,7 +11559,7 @@ label: Crystal axe custom style
 group: Gauntlet Styles
 exampleItem: Crystal axe
 */
-#define VAR_GAUNTLET_CRYSTAL_AXE_CUSTOMSTYLE hidden = false;textColor = "#ffd6fffe";backgroundColor = "#4f2c2c2c";borderColor = "#00667f80";textAccentColor = "#FF000000";menuTextColor = "#ff78dbd9";fontType = 2;showDespawn = true;icon = CurrentItem();
+#define VAR_GAUNTLET_CRYSTAL_AXE_CUSTOMSTYLE hidden = false;textColor = "#ffd6fffe";backgroundColor = "#4f2c2c2c";borderColor = "#00667f80";textAccentColor = "#FF000000";menuTextColor = "#ff78dbd9";fontType = 2;showDespawn = true;highlightTile = true;icon = CurrentItem();
 
 apply (area:CONST_GAUNTLET_AREA && name:"* axe") {
     VAR_GAUNTLET_CRYSTAL_AXE_CUSTOMSTYLE 
@@ -11562,7 +11571,7 @@ label: Crystal pickaxe custom style
 group: Gauntlet Styles
 exampleItem: Crystal pickaxe
 */
-#define VAR_GAUNTLET_CRYSTAL_PICKAXE_CUSTOMSTYLE hidden = false;textColor = "#ffd6fffe";backgroundColor = "#4f2c2c2c";borderColor = "#00667f80";textAccentColor = "#FF000000";menuTextColor = "#ff78dbd9";fontType = 2;showDespawn = true;icon = CurrentItem();
+#define VAR_GAUNTLET_CRYSTAL_PICKAXE_CUSTOMSTYLE hidden = false;textColor = "#ffd6fffe";backgroundColor = "#4f2c2c2c";borderColor = "#00667f80";textAccentColor = "#FF000000";menuTextColor = "#ff78dbd9";fontType = 2;showDespawn = true;highlightTile = true;icon = CurrentItem();
 
 apply (area:CONST_GAUNTLET_AREA && name:"* pickaxe") {
     VAR_GAUNTLET_CRYSTAL_PICKAXE_CUSTOMSTYLE 
@@ -11574,7 +11583,7 @@ label: Crystal harpoon custom style
 group: Gauntlet Styles
 exampleItem: Crystal harpoon
 */
-#define VAR_GAUNTLET_CRYSTAL_HARPOON_CUSTOMSTYLE hidden = false;textColor = "#ffd6fffe";backgroundColor = "#4f2c2c2c";borderColor = "#00667f80";textAccentColor = "#FF000000";menuTextColor = "#ff78dbd9";fontType = 2;showDespawn = true;icon = CurrentItem();
+#define VAR_GAUNTLET_CRYSTAL_HARPOON_CUSTOMSTYLE hidden = false;textColor = "#ffd6fffe";backgroundColor = "#4f2c2c2c";borderColor = "#00667f80";textAccentColor = "#FF000000";menuTextColor = "#ff78dbd9";fontType = 2;showDespawn = true;highlightTile = true;icon = CurrentItem();
 
 apply (area:CONST_GAUNTLET_AREA && name:"* harpoon") {
     VAR_GAUNTLET_CRYSTAL_HARPOON_CUSTOMSTYLE 
@@ -11586,7 +11595,7 @@ label: Pestle and mortar custom style
 group: Gauntlet Styles
 exampleItem: Pestle and mortar
 */
-#define VAR_GAUNTLET_PESTLE_AND_MORTAR_CUSTOMSTYLE hidden = false;textColor = "#ffffffff";backgroundColor = "#4f2c2c2c";borderColor = "#00667f80";textAccentColor = "#FF000000";menuTextColor = "#ffffffff";fontType = 2;showDespawn = true;icon = CurrentItem();
+#define VAR_GAUNTLET_PESTLE_AND_MORTAR_CUSTOMSTYLE hidden = false;textColor = "#ffffffff";backgroundColor = "#4f2c2c2c";borderColor = "#00667f80";textAccentColor = "#FF000000";menuTextColor = "#ffffffff";fontType = 2;showDespawn = true;highlightTile = true;icon = CurrentItem();
 
 apply (area:CONST_GAUNTLET_AREA && name:"Pestle and mortar") {
     VAR_GAUNTLET_PESTLE_AND_MORTAR_CUSTOMSTYLE 
@@ -11598,7 +11607,7 @@ label: Teleport crystal custom style
 group: Gauntlet Styles
 exampleItem: Teleport crystal
 */
-#define VAR_GAUNTLET_TELEPORT_CRYSTAL_CUSTOMSTYLE hidden = false;textColor = "#ffd6fffe";backgroundColor = "#4f2c2c2c";borderColor = "#00667f80";textAccentColor = "#FF000000";menuTextColor = "#ff78dbd9";fontType = 2;showDespawn = true;icon = CurrentItem();
+#define VAR_GAUNTLET_TELEPORT_CRYSTAL_CUSTOMSTYLE hidden = false;textColor = "#ffd6fffe";backgroundColor = "#4f2c2c2c";borderColor = "#00667f80";textAccentColor = "#FF000000";menuTextColor = "#ff78dbd9";fontType = 2;showDespawn = true;highlightTile = true;icon = CurrentItem();
 
 apply (area:CONST_GAUNTLET_AREA && name:"*teleport crystal") {
     VAR_GAUNTLET_TELEPORT_CRYSTAL_CUSTOMSTYLE 
@@ -11610,7 +11619,7 @@ label: Escape crystal custom style
 group: Gauntlet Styles
 exampleItem: Escape crystal
 */
-#define VAR_GAUNTLET_ESCAPE_CRYSTAL_CUSTOMSTYLE hidden = false;textColor = "#ffd6fffe";backgroundColor = "#4f2c2c2c";borderColor = "#00667f80";textAccentColor = "#FF000000";menuTextColor = "#ff78dbd9";fontType = 2;showDespawn = true;icon = CurrentItem();
+#define VAR_GAUNTLET_ESCAPE_CRYSTAL_CUSTOMSTYLE hidden = false;textColor = "#ffd6fffe";backgroundColor = "#4f2c2c2c";borderColor = "#00667f80";textAccentColor = "#FF000000";menuTextColor = "#ff78dbd9";fontType = 2;showDespawn = true;highlightTile = true;icon = CurrentItem();
 
 apply (area:CONST_GAUNTLET_AREA && name:"*escape crystal") {
     VAR_GAUNTLET_ESCAPE_CRYSTAL_CUSTOMSTYLE 
@@ -11623,7 +11632,7 @@ label: Crystal shards custom style
 group: Gauntlet Styles
 exampleItem: Crystal shards
 */
-#define VAR_GAUNTLET_CRYSTAL_SHARDS_CUSTOMSTYLE hidden = false;textColor = "#ffd6fffe";backgroundColor = "#4f2c2c2c";borderColor = "#00667f80";textAccentColor = "#FF000000";menuTextColor = "#ff78dbd9";fontType = 2;showDespawn = true;icon = CurrentItem();
+#define VAR_GAUNTLET_CRYSTAL_SHARDS_CUSTOMSTYLE hidden = false;textColor = "#ffd6fffe";backgroundColor = "#4f2c2c2c";borderColor = "#00667f80";textAccentColor = "#FF000000";menuTextColor = "#ff78dbd9";fontType = 2;showDespawn = true;highlightTile = true;icon = CurrentItem();
 
 apply (area:CONST_GAUNTLET_AREA && name:"* shards") {
     VAR_GAUNTLET_CRYSTAL_SHARDS_CUSTOMSTYLE 
@@ -11635,7 +11644,7 @@ label: Crystal dust custom style
 group: Gauntlet Styles
 exampleItem: Crystal dust
 */
-#define VAR_GAUNTLET_CRYSTAL_DUST_CUSTOMSTYLE hidden = false;textColor = "#ffd6fffe";backgroundColor = "#4f2c2c2c";borderColor = "#00667f80";textAccentColor = "#FF000000";menuTextColor = "#ff78dbd9";fontType = 2;showDespawn = true;icon = CurrentItem();
+#define VAR_GAUNTLET_CRYSTAL_DUST_CUSTOMSTYLE hidden = false;textColor = "#ffd6fffe";backgroundColor = "#4f2c2c2c";borderColor = "#00667f80";textAccentColor = "#FF000000";menuTextColor = "#ff78dbd9";fontType = 2;showDespawn = true;highlightTile = true;icon = CurrentItem();
 
 apply (area:CONST_GAUNTLET_AREA && name:"Crystal dust") {
     VAR_GAUNTLET_CRYSTAL_DUST_CUSTOMSTYLE 
@@ -11671,7 +11680,7 @@ label: Grym leaf custom style
 group: Gauntlet Styles
 exampleItem: Grym leaf
 */
-#define VAR_GAUNTLET_GRYM_LEAF_CUSTOMSTYLE hidden = false;textColor = "#ffd6fffe";backgroundColor = "#4f2c2c2c";borderColor = "#00667f80";textAccentColor = "#FF000000";menuTextColor = "#ff78dbd9";fontType = 2;showDespawn = true;icon = CurrentItem();
+#define VAR_GAUNTLET_GRYM_LEAF_CUSTOMSTYLE hidden = false;textColor = "#ffd6fffe";backgroundColor = "#4f2c2c2c";borderColor = "#00667f80";textAccentColor = "#FF000000";menuTextColor = "#ff78dbd9";fontType = 2;showDespawn = true;highlightTile = false;icon = CurrentItem();
 
 apply (area:CONST_GAUNTLET_AREA && name:"Grym leaf") {
     VAR_GAUNTLET_GRYM_LEAF_CUSTOMSTYLE 
@@ -11683,7 +11692,7 @@ label: Grym potion (unf) custom style
 group: Gauntlet Styles
 exampleItem: Grym potion (unf)
 */
-#define VAR_GAUNTLET_GRYM_POTION_UNF_CUSTOMSTYLE hidden = false;textColor = "#ffd6fffe";backgroundColor = "#4f2c2c2c";borderColor = "#00667f80";textAccentColor = "#FF000000";menuTextColor = "#ff78dbd9";fontType = 2;showDespawn = true;icon = CurrentItem();
+#define VAR_GAUNTLET_GRYM_POTION_UNF_CUSTOMSTYLE hidden = false;textColor = "#ffd6fffe";backgroundColor = "#4f2c2c2c";borderColor = "#00667f80";textAccentColor = "#FF000000";menuTextColor = "#ff78dbd9";fontType = 2;showDespawn = true;highlightTile = false;icon = CurrentItem();
 
 apply (area:CONST_GAUNTLET_AREA && name:"Grym potion (unf)") {
     VAR_GAUNTLET_GRYM_POTION_UNF_CUSTOMSTYLE 
@@ -11695,7 +11704,7 @@ label: Raw paddlefish custom style
 group: Gauntlet Styles
 exampleItem: Raw paddlefish
 */
-#define VAR_GAUNTLET_RAW_PADDLEFISH_CUSTOMSTYLE hidden = false;textColor = "#ffd6fffe";backgroundColor = "#4f2c2c2c";borderColor = "#00667f80";textAccentColor = "#FF000000";menuTextColor = "#ff78dbd9";fontType = 2;showDespawn = true;icon = CurrentItem();
+#define VAR_GAUNTLET_RAW_PADDLEFISH_CUSTOMSTYLE hidden = false;textColor = "#ffd6fffe";backgroundColor = "#4f2c2c2c";borderColor = "#00667f80";textAccentColor = "#FF000000";menuTextColor = "#ff78dbd9";fontType = 2;showDespawn = true;highlightTile = false;icon = CurrentItem();
 
 apply (area:CONST_GAUNTLET_AREA && name:"Egniol potion (*") {
     VAR_GAUNTLET_EGNIOL_POTION_CUSTOMSTYLE
@@ -11707,7 +11716,7 @@ label: Weapon frame custom style
 group: Gauntlet Styles
 exampleItem: Weapon frame
 */
-#define VAR_GAUNTLET_WEAPON_FRAME_CUSTOMSTYLE hidden = false;textColor = "#ffd6fffe";backgroundColor = "#4f2c2c2c";borderColor = "#00667f80";textAccentColor = "#FF000000";menuTextColor = "#ff78dbd9";fontType = 2;showDespawn = true;icon = CurrentItem();
+#define VAR_GAUNTLET_WEAPON_FRAME_CUSTOMSTYLE hidden = false;textColor = "#ffd6fffe";backgroundColor = "#4f2c2c2c";borderColor = "#00667f80";textAccentColor = "#FF000000";menuTextColor = "#ff78dbd9";fontType = 2;showDespawn = true;highlightTile = false;icon = CurrentItem();
 
 apply (area:CONST_GAUNTLET_AREA && name:"Raw paddlefish") {
     VAR_GAUNTLET_RAW_PADDLEFISH_CUSTOMSTYLE
@@ -11719,7 +11728,7 @@ label: Crystal spike custom style
 group: Gauntlet Styles
 exampleItem: Crystal spike
 */
-#define VAR_GAUNTLET_CRYSTAL_SPIKE_CUSTOMSTYLE hidden = false;textColor = "#ffd6fffe";backgroundColor = "#4f2c2c2c";borderColor = "#00667f80";textAccentColor = "#FF000000";menuTextColor = "#ff78dbd9";fontType = 2;showDespawn = true;icon = CurrentItem();
+#define VAR_GAUNTLET_CRYSTAL_SPIKE_CUSTOMSTYLE hidden = false;textColor = "#ffd6fffe";backgroundColor = "#4f2c2c2c";borderColor = "#00667f80";textAccentColor = "#FF000000";menuTextColor = "#ff78dbd9";fontType = 2;showDespawn = true;highlightTile = false;icon = CurrentItem();
 
 apply (area:CONST_GAUNTLET_AREA && name:"Paddlefish") {
     VAR_GAUNTLET_PADDLEFISH_CUSTOMSTYLE
@@ -11731,7 +11740,7 @@ label: Crystal orb custom style
 group: Gauntlet Styles
 exampleItem: Crystal orb
 */
-#define VAR_GAUNTLET_CRYSTAL_ORB_CUSTOMSTYLE hidden = false;textColor = "#ffd6fffe";backgroundColor = "#4f2c2c2c";borderColor = "#00667f80";textAccentColor = "#FF000000";menuTextColor = "#ff78dbd9";fontType = 2;showDespawn = true;icon = CurrentItem();
+#define VAR_GAUNTLET_CRYSTAL_ORB_CUSTOMSTYLE hidden = false;textColor = "#ffd6fffe";backgroundColor = "#4f2c2c2c";borderColor = "#00667f80";textAccentColor = "#FF000000";menuTextColor = "#ff78dbd9";fontType = 2;showDespawn = true;highlightTile = false;icon = CurrentItem();
 
 apply (area:CONST_GAUNTLET_AREA && name:"Crystal paddlefish" || name:"Corrupted paddlefish") {
      VAR_GAUNTLET_CRYSTAL_PADDLEFISH_CUSTOMSTYLE
@@ -11743,7 +11752,7 @@ label: Crystalline bowstring custom style
 group: Gauntlet Styles
 exampleItem: Crystalline bowstring
 */
-#define VAR_GAUNTLET_CRYSTALLINE_BOWSTRING_CUSTOMSTYLE hidden = false;textColor = "#ffd6fffe";backgroundColor = "#4f2c2c2c";borderColor = "#00667f80";textAccentColor = "#FF000000";menuTextColor = "#ff78dbd9";fontType = 2;showDespawn = true;icon = CurrentItem();
+#define VAR_GAUNTLET_CRYSTALLINE_BOWSTRING_CUSTOMSTYLE hidden = false;textColor = "#ffd6fffe";backgroundColor = "#4f2c2c2c";borderColor = "#00667f80";textAccentColor = "#FF000000";menuTextColor = "#ff78dbd9";fontType = 2;showDespawn = true;highlightTile = true;icon = CurrentItem();
 
 apply (area:CONST_GAUNTLET_AREA && name:"Weapon frame") {
      VAR_GAUNTLET_WEAPON_FRAME_CUSTOMSTYLE
@@ -11755,7 +11764,7 @@ label: Linum tirinum custom style
 group: Gauntlet Styles
 exampleItem: Linum tirinum
 */
-#define VAR_GAUNTLET_LINUM_TIRINUM_CUSTOMSTYLE hidden = false;textColor = "#ffd6fffe";backgroundColor = "#4f2c2c2c";borderColor = "#00667f80";textAccentColor = "#FF000000";menuTextColor = "#ff78dbd9";fontType = 2;showDespawn = true;icon = CurrentItem();
+#define VAR_GAUNTLET_LINUM_TIRINUM_CUSTOMSTYLE hidden = false;textColor = "#ffd6fffe";backgroundColor = "#4f2c2c2c";borderColor = "#00667f80";textAccentColor = "#FF000000";menuTextColor = "#ff78dbd9";fontType = 2;showDespawn = true;highlightTile = true;icon = CurrentItem();
 
 apply (area:CONST_GAUNTLET_AREA && name:"* spike") {
     VAR_GAUNTLET_CRYSTAL_SPIKE_CUSTOMSTYLE
@@ -11767,7 +11776,7 @@ label: Phren bark custom style
 group: Gauntlet Styles
 exampleItem: Phren bark
 */
-#define VAR_GAUNTLET_PHREN_BARK_CUSTOMSTYLE hidden = false;textColor = "#ffd6fffe";backgroundColor = "#4f2c2c2c";borderColor = "#00667f80";textAccentColor = "#FF000000";menuTextColor = "#ff78dbd9";fontType = 2;showDespawn = true;icon = CurrentItem();
+#define VAR_GAUNTLET_PHREN_BARK_CUSTOMSTYLE hidden = false;textColor = "#ffd6fffe";backgroundColor = "#4f2c2c2c";borderColor = "#00667f80";textAccentColor = "#FF000000";menuTextColor = "#ff78dbd9";fontType = 2;showDespawn = true;highlightTile = true;icon = CurrentItem();
 
 apply (area:CONST_GAUNTLET_AREA && name:"* orb") {
     VAR_GAUNTLET_CRYSTAL_ORB_CUSTOMSTYLE
@@ -11779,7 +11788,7 @@ label: Crystal ore custom style
 group: Gauntlet Styles
 exampleItem: Crystal ore
 */
-#define VAR_GAUNTLET_CRYSTAL_ORE_CUSTOMSTYLE hidden = false;textColor = "#ffd6fffe";backgroundColor = "#4f2c2c2c";borderColor = "#00667f80";textAccentColor = "#FF000000";menuTextColor = "#ff78dbd9";fontType = 2;showDespawn = true;icon = CurrentItem();
+#define VAR_GAUNTLET_CRYSTAL_ORE_CUSTOMSTYLE hidden = false;textColor = "#ffd6fffe";backgroundColor = "#4f2c2c2c";borderColor = "#00667f80";textAccentColor = "#FF000000";menuTextColor = "#ff78dbd9";fontType = 2;showDespawn = true;highlightTile = true;icon = CurrentItem();
 
 apply (area:CONST_GAUNTLET_AREA && name:"* bowstring") {
     VAR_GAUNTLET_CRYSTALLINE_BOWSTRING_CUSTOMSTYLE
@@ -11791,7 +11800,7 @@ label: Egniol potion custom style
 group: Gauntlet Styles
 exampleItem: Egniol potion (3)
 */
-#define VAR_GAUNTLET_EGNIOL_POTION_CUSTOMSTYLE hidden = false;textColor = "#ffd6fffe";backgroundColor = "#4f2c2c2c";borderColor = "#00667f80";textAccentColor = "#FF000000";menuTextColor = "#ff78dbd9";fontType = 2;showDespawn = true;icon = CurrentItem();
+#define VAR_GAUNTLET_EGNIOL_POTION_CUSTOMSTYLE hidden = false;textColor = "#ffd6fffe";backgroundColor = "#4f2c2c2c";borderColor = "#00667f80";textAccentColor = "#FF000000";menuTextColor = "#ff78dbd9";fontType = 2;showDespawn = true;highlightTile = true;icon = CurrentItem();
 
 apply (area:CONST_GAUNTLET_AREA && name:"* halberd *") {
     VAR_GAUNTLET_CRYSTAL_HALBERD_CUSTOMSTYLE
@@ -11803,7 +11812,7 @@ label: Paddlefish custom style
 group: Gauntlet Styles
 exampleItem: Paddlefish
 */
-#define VAR_GAUNTLET_PADDLEFISH_CUSTOMSTYLE hidden = false;textColor = "#ffd6fffe";backgroundColor = "#4f2c2c2c";borderColor = "#00667f80";textAccentColor = "#FF000000";menuTextColor = "#ff78dbd9";fontType = 2;showDespawn = true;icon = CurrentItem();
+#define VAR_GAUNTLET_PADDLEFISH_CUSTOMSTYLE hidden = false;textColor = "#ffd6fffe";backgroundColor = "#4f2c2c2c";borderColor = "#00667f80";textAccentColor = "#FF000000";menuTextColor = "#ff78dbd9";fontType = 2;showDespawn = true;highlightTile = true;icon = CurrentItem();
 
 apply (area:CONST_GAUNTLET_AREA && name:"* bow *") {
     VAR_GAUNTLET_CRYSTAL_BOW_CUSTOMSTYLE
@@ -11815,7 +11824,7 @@ label: Crystal paddlefish custom style
 group: Gauntlet Styles
 exampleItem: Crystal paddlefish
 */
-#define VAR_GAUNTLET_CRYSTAL_PADDLEFISH_CUSTOMSTYLE hidden = false;textColor = "#ffd6fffe";backgroundColor = "#4f2c2c2c";borderColor = "#00667f80";textAccentColor = "#FF000000";menuTextColor = "#ff78dbd9";fontType = 2;showDespawn = true;icon = CurrentItem();
+#define VAR_GAUNTLET_CRYSTAL_PADDLEFISH_CUSTOMSTYLE hidden = false;textColor = "#ffd6fffe";backgroundColor = "#4f2c2c2c";borderColor = "#00667f80";textAccentColor = "#FF000000";menuTextColor = "#ff78dbd9";fontType = 2;showDespawn = true;highlightTile = true;icon = CurrentItem();
 
 apply (area:CONST_GAUNTLET_AREA && name:"* staff *") {
     VAR_GAUNTLET_CRYSTAL_STAFF_CUSTOMSTYLE
@@ -11827,7 +11836,7 @@ label: Crystal halberd custom style
 group: Gauntlet Styles
 exampleItem: Crystal halberd
 */
-#define VAR_GAUNTLET_CRYSTAL_HALBERD_CUSTOMSTYLE hidden = false;textColor = "#ffd6fffe";backgroundColor = "#4f2c2c2c";borderColor = "#00667f80";textAccentColor = "#FF000000";menuTextColor = "#ff78dbd9";fontType = 2;showDespawn = true;icon = CurrentItem();
+#define VAR_GAUNTLET_CRYSTAL_HALBERD_CUSTOMSTYLE hidden = false;textColor = "#ffd6fffe";backgroundColor = "#4f2c2c2c";borderColor = "#00667f80";textAccentColor = "#FF000000";menuTextColor = "#ff78dbd9";fontType = 2;showDespawn = true;highlightTile = true;icon = CurrentItem();
 
 apply (area:CONST_GAUNTLET_AREA && name:"Linum tirinum*") {
     VAR_GAUNTLET_LINUM_TIRINUM_CUSTOMSTYLE
@@ -11839,7 +11848,7 @@ label: Crystal bow custom style
 group: Gauntlet Styles
 exampleItem: Crystal bow
 */
-#define VAR_GAUNTLET_CRYSTAL_BOW_CUSTOMSTYLE hidden = false;textColor = "#ffd6fffe";backgroundColor = "#4f2c2c2c";borderColor = "#00667f80";textAccentColor = "#FF000000";menuTextColor = "#ff78dbd9";fontType = 2;showDespawn = true;icon = CurrentItem();
+#define VAR_GAUNTLET_CRYSTAL_BOW_CUSTOMSTYLE hidden = false;textColor = "#ffd6fffe";backgroundColor = "#4f2c2c2c";borderColor = "#00667f80";textAccentColor = "#FF000000";menuTextColor = "#ff78dbd9";fontType = 2;showDespawn = true;highlightTile = true;icon = CurrentItem();
 
 apply (area:CONST_GAUNTLET_AREA && name:"Phren bark*") {
     VAR_GAUNTLET_PHREN_BARK_CUSTOMSTYLE
@@ -11851,7 +11860,7 @@ label: Crystal staff custom style
 group: Gauntlet Styles
 exampleItem: Crystal staff
 */
-#define VAR_GAUNTLET_CRYSTAL_STAFF_CUSTOMSTYLE hidden = false;textColor = "#ffd6fffe";backgroundColor = "#4f2c2c2c";borderColor = "#00667f80";textAccentColor = "#FF000000";menuTextColor = "#ff78dbd9";fontType = 2;showDespawn = true;icon = CurrentItem();
+#define VAR_GAUNTLET_CRYSTAL_STAFF_CUSTOMSTYLE hidden = false;textColor = "#ffd6fffe";backgroundColor = "#4f2c2c2c";borderColor = "#00667f80";textAccentColor = "#FF000000";menuTextColor = "#ff78dbd9";fontType = 2;showDespawn = true;highlightTile = true;icon = CurrentItem();
 
 apply (area:CONST_GAUNTLET_AREA && name:"* ore") {
     VAR_GAUNTLET_CRYSTAL_ORE_CUSTOMSTYLE
@@ -11863,7 +11872,7 @@ label: Crystal helm custom style
 group: Gauntlet Styles
 exampleItem: Crystal helm
 */
-#define VAR_GAUNTLET_CRYSTAL_HELM_CUSTOMSTYLE hidden = false;textColor = "#ffd6fffe";backgroundColor = "#4f2c2c2c";borderColor = "#00667f80";textAccentColor = "#FF000000";menuTextColor = "#ff78dbd9";fontType = 2;showDespawn = true;icon = CurrentItem();
+#define VAR_GAUNTLET_CRYSTAL_HELM_CUSTOMSTYLE hidden = false;textColor = "#ffd6fffe";backgroundColor = "#4f2c2c2c";borderColor = "#00667f80";textAccentColor = "#FF000000";menuTextColor = "#ff78dbd9";fontType = 2;showDespawn = true;highlightTile = true;icon = CurrentItem();
 
 apply (area:CONST_GAUNTLET_AREA && name:"* helm *") {
     VAR_GAUNTLET_CRYSTAL_HELM_CUSTOMSTYLE 
@@ -11875,7 +11884,7 @@ label: Crystal body custom style
 group: Gauntlet Styles
 exampleItem: Crystal body
 */
-#define VAR_GAUNTLET_CRYSTAL_BODY_CUSTOMSTYLE hidden = false;textColor = "#ffd6fffe";backgroundColor = "#4f2c2c2c";borderColor = "#00667f80";textAccentColor = "#FF000000";menuTextColor = "#ff78dbd9";fontType = 2;showDespawn = true;icon = CurrentItem();
+#define VAR_GAUNTLET_CRYSTAL_BODY_CUSTOMSTYLE hidden = false;textColor = "#ffd6fffe";backgroundColor = "#4f2c2c2c";borderColor = "#00667f80";textAccentColor = "#FF000000";menuTextColor = "#ff78dbd9";fontType = 2;showDespawn = true;highlightTile = true;icon = CurrentItem();
 
 apply (area:CONST_GAUNTLET_AREA && name:"* body *") {
     VAR_GAUNTLET_CRYSTAL_BODY_CUSTOMSTYLE 
@@ -11887,11 +11896,12 @@ label: Crystal legs custom style
 group: Gauntlet Styles
 exampleItem: Crystal legs
 */
-#define VAR_GAUNTLET_CRYSTAL_LEGS_CUSTOMSTYLE hidden = false;textColor = "#ffd6fffe";backgroundColor = "#4f2c2c2c";borderColor = "#00667f80";textAccentColor = "#FF000000";menuTextColor = "#ff78dbd9";fontType = 2;showDespawn = true;icon = CurrentItem();
+#define VAR_GAUNTLET_CRYSTAL_LEGS_CUSTOMSTYLE hidden = false;textColor = "#ffd6fffe";backgroundColor = "#4f2c2c2c";borderColor = "#00667f80";textAccentColor = "#FF000000";menuTextColor = "#ff78dbd9";fontType = 2;showDespawn = true;highlightTile = true;icon = CurrentItem();
 
 apply (area:CONST_GAUNTLET_AREA && name:"* legs *") {
     VAR_GAUNTLET_CRYSTAL_LEGS_CUSTOMSTYLE 
 }
+
 
 /*@ define:module:rare_drop_table
 ---
@@ -11907,7 +11917,7 @@ label: Rare Drop Table Item Style
 exampleItem: Dragon spear
 exampleItemId: 1249
 */
-#define VAR_RDT_CUSTOMSTYLE textColor = "#ffef4343";backgroundColor = "#00000000";borderColor = "#00f7b100";menuTextColor = "#ffef4343";fontType = 2;showValue = true;showDespawn = true;icon = Sprite(4567, 0);
+#define VAR_RDT_CUSTOMSTYLE textColor = "#ffe4a4a4";backgroundColor = "#00000000";borderColor = "#00f7b100";menuTextColor = "#ffff9d9d";fontType = 2;showValue = true;showDespawn = true;icon = CurrentItem();
 
 
 apply (name:"Nature rune" && quantity:==67) {
@@ -11999,6 +12009,7 @@ apply (name:"Dragon spear" && quantity:==1) {
 }
 
 
+
 /*@ define:module:utilities
 ---
 name: Utilities
@@ -12054,6 +12065,7 @@ apply (VAR_LAST_MAN_STANDING_SOUND_AND_NOTIFICATIONS_DISABLE && (area:CONST_LAST
     sound = 2411; // sound name: silence
     notify = false;
 }
+
 
 /*@ define:module:final
 hidden: true
@@ -12839,6 +12851,7 @@ apply (VAR_SORTING_MENU_SORT_UNTRADEABLE_FIRST && tradeable:false && value:>=200
 apply (name:VAR_MENU_SORT_ITEMS_FIRST) {
     menuSort = 300;
 }
+
 
 /*@ define:module:constants
 hidden: true
