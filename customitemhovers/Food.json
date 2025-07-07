@@ -19,16 +19,23 @@
     { "items": ["Shark"], "hovers": [["<col=FFB84D>Heals: 20</col>"]] },
     { "items": ["Sea turtle"], "hovers": [["<col=FFB84D>Heals: 21</col>"]] },
     { "items": ["Tuna potato"], "hovers": [["<col=FFB84D>Heals: 22</col>"]] },
-    { "items": ["Anglerfish"], "hovers": [["<col=FFB84D>Heals: up to 22</col>"]] },
+    { "items": ["Anglerfish"], "hovers": [["<col=66B2FF>Heals: 3 to 22</col>"]] },
     { "items": ["Dark crab", "Manta ray"], "hovers": [["<col=FFB84D>Heals: 22</col>"]] },
     { "items": ["Plain pizza"], "hovers": [["<col=66FF66>Heals: 7 per slice</col>"]] },
     { "items": ["Meat pizza"], "hovers": [["<col=66FF66>Heals: 8 per slice</col>"]] },
     { "items": ["Anchovy pizza"], "hovers": [["<col=66FF66>Heals: 9 per slice</col>"]] },
     { "items": ["Pineapple pizza"], "hovers": [["<col=FFB84D>Heals: 11 per slice</col>"]] },
     { "items": ["Half a meat pie"], "hovers": [["<col=66B2FF>Heals: 6</col>"]] },
-    { "items": ["Half a summer pie", "Half a pineapple pizza"], "hovers": [["<col=FFB84D>Heals: 11</col>"]] },
+    { "items": ["Half a summer pie", "1/2 pineapple pizza"], "hovers": [["<col=FFB84D>Heals: 11</col>"]] },
     { "items": ["Chocolate cake"], "hovers": [["<col=66B2FF>Heals: 5 per bite</col>"]] },
     { "items": ["Peach"], "hovers": [["<col=66FF66>Heals: 8</col>"]] },
+	{ "items": ["Cooked lava eel"], "hovers": [["<col=66B2FF>Heals: 12</col>"]] },
+	{ "items": ["Cooked cave eel"], "hovers": [["<col=66B2FF>Heals: 9</col>"]] },
+	{ "items": ["Cooked slimy eel"], "hovers": [["<col=66FF66>Heals: 6</col>"]] },
+	{ "items": ["Cooked frog spawn"], "hovers": [["<col=66FF66>Heals: 5</col>"]] },
+	{ "items": ["Cooked giant frog legs"], "hovers": [["<col=66B2FF>Heals: 10</col>"]] },
+	{ "items": ["Cooked crab meat"], "hovers": [["<col=66FF66>Heals: 6</col>"]] },
+
 	
     // 🧪 Gnome Cuisine
     { "items": ["Toad batta", "Worm batta", "Vegetable batta"], "hovers": [["<col=66B2FF>Heals: 11</col>"]] },
@@ -39,6 +46,7 @@
     { "items": ["Worm hole"], "hovers": [["<col=66B2FF>Heals: 15</col>"]] },
     { "items": ["Chocolate bomb"], "hovers": [["<col=66B2FF>Heals: 15</col>"]] },
     { "items": ["Half a chocolate cake"], "hovers": [["<col=66B2FF>Heals: 5 per bite</col>"]] },
+	{ "items": ["Blurberry special", "Fruit blast", "Drunk dragon", "Wizard blizzard", "Short green guy", "Choc saturday", "Pink skirt", "Dirty blast"], "hovers": [["<col=C266FF>Heals: 14</col>"]] },
 
     // 🧪 Combo & Stat-Boosting Foods
     { "items": ["Summer pie"], "hovers": [["<col=FFB84D>Heals: 11 per bite</col>"]] },
@@ -66,7 +74,7 @@
     { "items": ["Christmas pudding", "Christmas cracker", "Easter carrot"], "hovers": [["<col=66FF66>Heals: 5</col>"]] },
     { "items": ["Easter egg helm"], "hovers": [["<col=FFFFFF>Heals: 0 (cosmetic)</col>"]] },
 
-    // 🧅 Basic Gatherables
+    // 🧅 Gatherables
     { "items": ["Cabbage", "Onion", "Potato"], "hovers": [["<col=FFFFFF>Heals: 1</col>"]] },
     { "items": ["Banana"], "hovers": [["<col=FFFFFF>Heals: 2</col>"]] },
     { "items": ["Kebab"], "hovers": [["<col=66FF66>Heals: 0–30 (random)</col>"]] },
@@ -111,6 +119,18 @@
     { "items": ["Karamjan rum"], "hovers": [["<col=66FF66>Heals: 5</col>"]] },
     { "items": ["Cup of nettle tea"], "hovers": [["<col=66FF66>Heals: 3</col>"]] },
     { "items": ["Bruised banana"], "hovers": [["<col=FFFFFF>Heals: 0</col>"]] },
-    { "items": ["Poison chalice"], "hovers": [["<col=FFB84D>Heals: Varies (random effects)</col>"]] }
+    { "items": ["Poison chalice"], "hovers": [["<col=FFB84D>Heals: Varies (random effects)</col>"]] },
+	
+	// 🍕 Partial Pies & Pizzas
+	{ "items": ["1/2 plain pizza"], "hovers": [["<col=66FF66>Heals: 7</col>"]] },
+	{ "items": ["1/2 meat pizza"], "hovers": [["<col=66FF66>Heals: 8</col>"]] },
+	{ "items": ["1/2 anchovy pizza"], "hovers": [["<col=66FF66>Heals: 9</col>"]] },
+	{ "items": ["Half an apple pie"], "hovers": [["<col=66FF66>Heals: 7</col>"]] },
+	{ "items": ["Half a garden pie"], "hovers": [["<col=66FF66>Heals: 6</col>"]] },
+	{ "items": ["Half a fish pie"], "hovers": [["<col=66FF66>Heals: 6</col>"]] },
+	{ "items": ["Half a wild pie"], "hovers": [["<col=FFB84D>Heals: 11</col>"]] },
+	{ "items": ["Half an admiral pie"], "hovers": [["<col=66FF66>Heals: 8</col>"]] },
+	{ "items": ["Half a mud pie"], "hovers": [["<col=66FF66>Heals: 6</col>"]] },
+    { "items": ["Half a cake"], "hovers": [["<col=66FF66>Heals: 4</col>"]] }
   ]
 }

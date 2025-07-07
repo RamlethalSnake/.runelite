@@ -14,7 +14,6 @@
     "items_regex": ["Raw ((wild|barb-tailed|dashing) kebbit|larupia|graahk|kyatt|pyre fox|(sunlight|moonlight) antelope)"],
     "hovers": [
       [
-          "<col=E447FF>Cooking:</col> ${cooking_xp * qty} xp (${cooking_xp} ea)",
           "Quetzal Whistle Charges: ${quetzal_charges * qty} (${quetzal_charges * inv_qty(id)} in inv for this meat)"
       ]
     ]
