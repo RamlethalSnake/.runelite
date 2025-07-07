@@ -19,7 +19,7 @@
     { "items": ["Shark"], "hovers": [["<col=FFB84D>Heals: 20</col>"]] },
     { "items": ["Sea turtle"], "hovers": [["<col=FFB84D>Heals: 21</col>"]] },
     { "items": ["Tuna potato"], "hovers": [["<col=FFB84D>Heals: 22</col>"]] },
-    { "items": ["Anglerfish"], "hovers": [["<col=FFB84D>Heals: up to 22</col>"]] },
+    { "items": ["Anglerfish"], "hovers": [["<col=66B2FF>Heals: 3 to 22</col>"]] },
     { "items": ["Dark crab", "Manta ray"], "hovers": [["<col=FFB84D>Heals: 22</col>"]] },
     { "items": ["Plain pizza"], "hovers": [["<col=66FF66>Heals: 7 per slice</col>"]] },
     { "items": ["Meat pizza"], "hovers": [["<col=66FF66>Heals: 8 per slice</col>"]] },
