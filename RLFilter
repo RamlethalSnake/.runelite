@@ -396,5 +396,10 @@ twitch.+giveaway.+drop part
 ^ *(buy|sel+)ing? .+ ?[-|]+ ?[\w\-_ ]+ *$
 not safe on pvp.+you never get the sceptre#
 
+♾️♾️♾️♾️♾️ PAGE 4 ♾️♾️♾️♾️♾️
+(?i)^hey i could really use \d+[kmb]? gp\b.*
+(?i)i will half your money no strings attached
+(?i)^(guaranteed )?half(ing)? money.*
+
 ♾️♾️♾️♾️♾️ NAMES ♾️♾️♾️♾️♾️
-(?i)^coin[-_ ]?host.*$
+(?i)^(c[o0]in|casin[o0]|c[a@]s[i1]n[o0])[-_ ]?\w{2,}$
