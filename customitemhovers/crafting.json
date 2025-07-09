@@ -214,7 +214,7 @@
 				
 				"<col=AA99CC>Value:</col>",
 			
-				"${'<col=' + (inv_qty('Water orb') < 10 ? '4DA8FF' : inv_qty('Water orb') <= 100 ? '33FFE0' : inv_qty('Water orb') <= 1000 ? '33FF99' : '00CC44') + '>' + ((inv_qty('Water orb') * gp) >= 1000000 ? floor(inv_qty('Water orb') * gp / 100000) / 10 + 'm' : inv_qty('Water orb') * gp >= 1000 ? floor(inv_qty('Water orb') * gp / 100) / 10 + 'k' : inv_qty('Water orb') * gp)}"
+				"${'<col=' + (inv_qty('Water orb') < 10 ? '4DA8FF' : inv_qty('Water orb') <= 100 ? '33FFE0' : inv_qty('Water orb') <= 1000 ? '33FF99' : '00CC44') + '>' + ((inv_qty('Water orb') * water_battlestaff) >= 1000000 ? floor(inv_qty('Water orb') * water_battlestaff / 100000) / 10 + 'm' : inv_qty('Water orb') * water_battlestaff >= 1000 ? floor(inv_qty('Water orb') * water_battlestaff / 100) / 10 + 'k' : inv_qty('Water orb') * water_battlestaff)}"
 			]
     ]
   }, 
@@ -231,7 +231,7 @@
 				
 				"<col=AA99CC>Value:</col>",
 			
-				"${'<col=' + ((bank_qty('Water orb') + inv_qty('Water orb')) < 10 ? '4DA8FF' : (bank_qty('Water orb') + inv_qty('Water orb')) <= 100 ? '33FFE0' : (bank_qty('Water orb') + inv_qty('Water orb')) <= 1000 ? '33FF99' : '00CC44') + '>' + ((bank_qty('Water orb') + inv_qty('Water orb')) * gp >= 1000000 ? floor((bank_qty('Water orb') + inv_qty('Water orb')) * gp / 100000) / 10 + 'm' : (bank_qty('Water orb') + inv_qty('Water orb')) * gp >= 1000 ? floor((bank_qty('Water orb') + inv_qty('Water orb')) * gp / 100) / 10 + 'k' : (bank_qty('Water orb') + inv_qty('Water orb')) * gp)}"
+				"${'<col=' + ((bank_qty('Water orb') + inv_qty('Water orb')) < 10 ? '4DA8FF' : (bank_qty('Water orb') + inv_qty('Water orb')) <= 100 ? '33FFE0' : (bank_qty('Water orb') + inv_qty('Water orb')) <= 1000 ? '33FF99' : '00CC44') + '>' + ((bank_qty('Water orb') + inv_qty('Water orb')) * water_battlestaff >= 1000000 ? floor((bank_qty('Water orb') + inv_qty('Water orb')) * water_battlestaff / 100000) / 10 + 'm' : (bank_qty('Water orb') + inv_qty('Water orb')) * water_battlestaff >= 1000 ? floor((bank_qty('Water orb') + inv_qty('Water orb')) * water_battlestaff / 100) / 10 + 'k' : (bank_qty('Water orb') + inv_qty('Water orb')) * water_battlestaff)}"
 			]
     ]
   }, 
@@ -252,7 +252,7 @@
 				
 				"<col=AA99CC>Value:</col>",
 			
-				"${'<col=' + ((bank_qty('Water orb') + inv_qty('Water orb')) < 10 ? '4DA8FF' : (bank_qty('Water orb') + inv_qty('Water orb')) <= 100 ? '33FFE0' : (bank_qty('Water orb') + inv_qty('Water orb')) <= 1000 ? '33FF99' : '00CC44') + '>' + ((bank_qty('Water orb') + inv_qty('Water orb')) * gp >= 1000000 ? floor((bank_qty('Water orb') + inv_qty('Water orb')) * gp / 100000) / 10 + 'm' : (bank_qty('Water orb') + inv_qty('Water orb')) * gp >= 1000 ? floor((bank_qty('Water orb') + inv_qty('Water orb')) * gp / 100) / 10 + 'k' : (bank_qty('Water orb') + inv_qty('Water orb')) * gp)}"
+				"${'<col=' + ((bank_qty('Water orb') + inv_qty('Water orb')) < 10 ? '4DA8FF' : (bank_qty('Water orb') + inv_qty('Water orb')) <= 100 ? '33FFE0' : (bank_qty('Water orb') + inv_qty('Water orb')) <= 1000 ? '33FF99' : '00CC44') + '>' + ((bank_qty('Water orb') + inv_qty('Water orb')) * water_battlestaff >= 1000000 ? floor((bank_qty('Water orb') + inv_qty('Water orb')) * water_battlestaff / 100000) / 10 + 'm' : (bank_qty('Water orb') + inv_qty('Water orb')) * water_battlestaff >= 1000 ? floor((bank_qty('Water orb') + inv_qty('Water orb')) * water_battlestaff / 100) / 10 + 'k' : (bank_qty('Water orb') + inv_qty('Water orb')) * water_battlestaff)}"
 			]
     ]
   }, 
@@ -269,7 +269,7 @@
 				
 				"<col=AA99CC>Value:</col>",
 			
-				"${'<col=' + (inv_qty('Earth orb') < 10 ? '4DA8FF' : inv_qty('Earth orb') <= 100 ? '33FFE0' : inv_qty('Earth orb') <= 1000 ? '33FF99' : '00CC44') + '>' + ((inv_qty('Earth orb') * gp) >= 1000000 ? floor(inv_qty('Earth orb') * gp / 100000) / 10 + 'm' : inv_qty('Earth orb') * gp >= 1000 ? floor(inv_qty('Earth orb') * gp / 100) / 10 + 'k' : inv_qty('Earth orb') * gp)}"
+				"${'<col=' + (inv_qty('Earth orb') < 10 ? '4DA8FF' : inv_qty('Earth orb') <= 100 ? '33FFE0' : inv_qty('Earth orb') <= 1000 ? '33FF99' : '00CC44') + '>' + ((inv_qty('Earth orb') * earth_battlestaff) >= 1000000 ? floor(inv_qty('Earth orb') * earth_battlestaff / 100000) / 10 + 'm' : inv_qty('Earth orb') * earth_battlestaff >= 1000 ? floor(inv_qty('Earth orb') * earth_battlestaff / 100) / 10 + 'k' : inv_qty('Earth orb') * earth_battlestaff)}"
 			]
     ]
   }, 
@@ -286,7 +286,7 @@
 				
 				"<col=AA99CC>Value:</col>",
 			
-				"${'<col=' + ((bank_qty('Earth orb') + inv_qty('Earth orb')) < 10 ? '4DA8FF' : (bank_qty('Earth orb') + inv_qty('Earth orb')) <= 100 ? '33FFE0' : (bank_qty('Earth orb') + inv_qty('Earth orb')) <= 1000 ? '33FF99' : '00CC44') + '>' + ((bank_qty('Earth orb') + inv_qty('Earth orb')) * gp >= 1000000 ? floor((bank_qty('Earth orb') + inv_qty('Earth orb')) * gp / 100000) / 10 + 'm' : (bank_qty('Earth orb') + inv_qty('Earth orb')) * gp >= 1000 ? floor((bank_qty('Earth orb') + inv_qty('Earth orb')) * gp / 100) / 10 + 'k' : (bank_qty('Earth orb') + inv_qty('Earth orb')) * gp)}"
+				"${'<col=' + ((bank_qty('Earth orb') + inv_qty('Earth orb')) < 10 ? '4DA8FF' : (bank_qty('Earth orb') + inv_qty('Earth orb')) <= 100 ? '33FFE0' : (bank_qty('Earth orb') + inv_qty('Earth orb')) <= 1000 ? '33FF99' : '00CC44') + '>' + ((bank_qty('Earth orb') + inv_qty('Earth orb')) * earth_battlestaff >= 1000000 ? floor((bank_qty('Earth orb') + inv_qty('Earth orb')) * earth_battlestaff / 100000) / 10 + 'm' : (bank_qty('Earth orb') + inv_qty('Earth orb')) * earth_battlestaff >= 1000 ? floor((bank_qty('Earth orb') + inv_qty('Earth orb')) * earth_battlestaff / 100) / 10 + 'k' : (bank_qty('Earth orb') + inv_qty('Earth orb')) * earth_battlestaff)}"
 			]
     ]
   }, 
@@ -307,7 +307,7 @@
 				
 				"<col=AA99CC>Value:</col>",
 			
-				"${'<col=' + ((bank_qty('Earth orb') + inv_qty('Earth orb')) < 10 ? '4DA8FF' : (bank_qty('Earth orb') + inv_qty('Earth orb')) <= 100 ? '33FFE0' : (bank_qty('Earth orb') + inv_qty('Earth orb')) <= 1000 ? '33FF99' : '00CC44') + '>' + ((bank_qty('Earth orb') + inv_qty('Earth orb')) * gp >= 1000000 ? floor((bank_qty('Earth orb') + inv_qty('Earth orb')) * gp / 100000) / 10 + 'm' : (bank_qty('Earth orb') + inv_qty('Earth orb')) * gp >= 1000 ? floor((bank_qty('Earth orb') + inv_qty('Earth orb')) * gp / 100) / 10 + 'k' : (bank_qty('Earth orb') + inv_qty('Earth orb')) * gp)}"
+				"${'<col=' + ((bank_qty('Earth orb') + inv_qty('Earth orb')) < 10 ? '4DA8FF' : (bank_qty('Earth orb') + inv_qty('Earth orb')) <= 100 ? '33FFE0' : (bank_qty('Earth orb') + inv_qty('Earth orb')) <= 1000 ? '33FF99' : '00CC44') + '>' + ((bank_qty('Earth orb') + inv_qty('Earth orb')) * earth_battlestaff >= 1000000 ? floor((bank_qty('Earth orb') + inv_qty('Earth orb')) * earth_battlestaff / 100000) / 10 + 'm' : (bank_qty('Earth orb') + inv_qty('Earth orb')) * earth_battlestaff >= 1000 ? floor((bank_qty('Earth orb') + inv_qty('Earth orb')) * earth_battlestaff / 100) / 10 + 'k' : (bank_qty('Earth orb') + inv_qty('Earth orb')) * earth_battlestaff)}"
 			]
     ]
   }, 
@@ -325,7 +325,7 @@
 				
 				"<col=AA99CC>Value:</col>",
 			
-				"${'<col=' + (inv_qty('Fire orb') < 10 ? '4DA8FF' : inv_qty('Fire orb') <= 100 ? '33FFE0' : inv_qty('Fire orb') <= 1000 ? '33FF99' : '00CC44') + '>' + ((inv_qty('Fire orb') * gp) >= 1000000 ? floor(inv_qty('Fire orb') * gp / 100000) / 10 + 'm' : inv_qty('Fire orb') * gp >= 1000 ? floor(inv_qty('Fire orb') * gp / 100) / 10 + 'k' : inv_qty('Fire orb') * gp)}"
+				"${'<col=' + (inv_qty('Fire orb') < 10 ? '4DA8FF' : inv_qty('Fire orb') <= 100 ? '33FFE0' : inv_qty('Fire orb') <= 1000 ? '33FF99' : '00CC44') + '>' + ((inv_qty('Fire orb') * fire_battlestaff) >= 1000000 ? floor(inv_qty('Fire orb') * fire_battlestaff / 100000) / 10 + 'm' : inv_qty('Fire orb') * fire_battlestaff >= 1000 ? floor(inv_qty('Fire orb') * fire_battlestaff / 100) / 10 + 'k' : inv_qty('Fire orb') * fire_battlestaff)}"
 			]
     ]
   }, 
@@ -342,7 +342,7 @@
 				
 				"<col=AA99CC>Value:</col>",
 			
-				"${'<col=' + ((bank_qty('Fire orb') + inv_qty('Fire orb')) < 10 ? '4DA8FF' : (bank_qty('Fire orb') + inv_qty('Fire orb')) <= 100 ? '33FFE0' : (bank_qty('Fire orb') + inv_qty('Fire orb')) <= 1000 ? '33FF99' : '00CC44') + '>' + ((bank_qty('Fire orb') + inv_qty('Fire orb')) * gp >= 1000000 ? floor((bank_qty('Fire orb') + inv_qty('Fire orb')) * gp / 100000) / 10 + 'm' : (bank_qty('Fire orb') + inv_qty('Fire orb')) * gp >= 1000 ? floor((bank_qty('Fire orb') + inv_qty('Fire orb')) * gp / 100) / 10 + 'k' : (bank_qty('Fire orb') + inv_qty('Fire orb')) * gp)}"
+				"${'<col=' + ((bank_qty('Fire orb') + inv_qty('Fire orb')) < 10 ? '4DA8FF' : (bank_qty('Fire orb') + inv_qty('Fire orb')) <= 100 ? '33FFE0' : (bank_qty('Fire orb') + inv_qty('Fire orb')) <= 1000 ? '33FF99' : '00CC44') + '>' + ((bank_qty('Fire orb') + inv_qty('Fire orb')) * fire_battlestaff >= 1000000 ? floor((bank_qty('Fire orb') + inv_qty('Fire orb')) * fire_battlestaff / 100000) / 10 + 'm' : (bank_qty('Fire orb') + inv_qty('Fire orb')) * fire_battlestaff >= 1000 ? floor((bank_qty('Fire orb') + inv_qty('Fire orb')) * fire_battlestaff / 100) / 10 + 'k' : (bank_qty('Fire orb') + inv_qty('Fire orb')) * fire_battlestaff)}"
 			]
     ]
   }, 
@@ -363,7 +363,7 @@
 				
 				"<col=AA99CC>Value:</col>",
 			
-				"${'<col=' + ((bank_qty('Fire orb') + inv_qty('Fire orb')) < 10 ? '4DA8FF' : (bank_qty('Fire orb') + inv_qty('Fire orb')) <= 100 ? '33FFE0' : (bank_qty('Fire orb') + inv_qty('Fire orb')) <= 1000 ? '33FF99' : '00CC44') + '>' + ((bank_qty('Fire orb') + inv_qty('Fire orb')) * gp >= 1000000 ? floor((bank_qty('Fire orb') + inv_qty('Fire orb')) * gp / 100000) / 10 + 'm' : (bank_qty('Fire orb') + inv_qty('Fire orb')) * gp >= 1000 ? floor((bank_qty('Fire orb') + inv_qty('Fire orb')) * gp / 100) / 10 + 'k' : (bank_qty('Fire orb') + inv_qty('Fire orb')) * gp)}"
+				"${'<col=' + ((bank_qty('Fire orb') + inv_qty('Fire orb')) < 10 ? '4DA8FF' : (bank_qty('Fire orb') + inv_qty('Fire orb')) <= 100 ? '33FFE0' : (bank_qty('Fire orb') + inv_qty('Fire orb')) <= 1000 ? '33FF99' : '00CC44') + '>' + ((bank_qty('Fire orb') + inv_qty('Fire orb')) * fire_battlestaff >= 1000000 ? floor((bank_qty('Fire orb') + inv_qty('Fire orb')) * fire_battlestaff / 100000) / 10 + 'm' : (bank_qty('Fire orb') + inv_qty('Fire orb')) * fire_battlestaff >= 1000 ? floor((bank_qty('Fire orb') + inv_qty('Fire orb')) * fire_battlestaff / 100) / 10 + 'k' : (bank_qty('Fire orb') + inv_qty('Fire orb')) * fire_battlestaff)}"
 			]
     ]
   },  
@@ -380,7 +380,7 @@
 				
 				"<col=AA99CC>Value:</col>",
 			
-				"${'<col=' + (inv_qty('Air orb') < 10 ? '4DA8FF' : inv_qty('Air orb') <= 100 ? '33FFE0' : inv_qty('Air orb') <= 1000 ? '33FF99' : '00CC44') + '>' + ((inv_qty('Air orb') * gp) >= 1000000 ? floor(inv_qty('Air orb') * gp / 100000) / 10 + 'm' : inv_qty('Air orb') * gp >= 1000 ? floor(inv_qty('Air orb') * gp / 100) / 10 + 'k' : inv_qty('Air orb') * gp)}"
+				"${'<col=' + (inv_qty('Air orb') < 10 ? '4DA8FF' : inv_qty('Air orb') <= 100 ? '33FFE0' : inv_qty('Air orb') <= 1000 ? '33FF99' : '00CC44') + '>' + ((inv_qty('Air orb') * air_battlestaff) >= 1000000 ? floor(inv_qty('Air orb') * air_battlestaff / 100000) / 10 + 'm' : inv_qty('Air orb') * air_battlestaff >= 1000 ? floor(inv_qty('Air orb') * air_battlestaff / 100) / 10 + 'k' : inv_qty('Air orb') * air_battlestaff)}"
 			]
     ]
   }, 
@@ -397,7 +397,7 @@
 				
 				"<col=AA99CC>Value:</col>",
 			
-				"${'<col=' + ((bank_qty('Air orb') + inv_qty('Air orb')) < 10 ? '4DA8FF' : (bank_qty('Air orb') + inv_qty('Air orb')) <= 100 ? '33FFE0' : (bank_qty('Air orb') + inv_qty('Air orb')) <= 1000 ? '33FF99' : '00CC44') + '>' + ((bank_qty('Air orb') + inv_qty('Air orb')) * gp >= 1000000 ? floor((bank_qty('Air orb') + inv_qty('Air orb')) * gp / 100000) / 10 + 'm' : (bank_qty('Air orb') + inv_qty('Air orb')) * gp >= 1000 ? floor((bank_qty('Air orb') + inv_qty('Air orb')) * gp / 100) / 10 + 'k' : (bank_qty('Air orb') + inv_qty('Air orb')) * gp)}"
+				"${'<col=' + ((bank_qty('Air orb') + inv_qty('Air orb')) < 10 ? '4DA8FF' : (bank_qty('Air orb') + inv_qty('Air orb')) <= 100 ? '33FFE0' : (bank_qty('Air orb') + inv_qty('Air orb')) <= 1000 ? '33FF99' : '00CC44') + '>' + ((bank_qty('Air orb') + inv_qty('Air orb')) * air_battlestaff >= 1000000 ? floor((bank_qty('Air orb') + inv_qty('Air orb')) * air_battlestaff / 100000) / 10 + 'm' : (bank_qty('Air orb') + inv_qty('Air orb')) * air_battlestaff >= 1000 ? floor((bank_qty('Air orb') + inv_qty('Air orb')) * air_battlestaff / 100) / 10 + 'k' : (bank_qty('Air orb') + inv_qty('Air orb')) * air_battlestaff)}"
 			]
     ]
   }, 
@@ -418,7 +418,7 @@
 				
 				"<col=AA99CC>Value:</col>",
 			
-				"${'<col=' + ((bank_qty('Air orb') + inv_qty('Air orb')) < 10 ? '4DA8FF' : (bank_qty('Air orb') + inv_qty('Air orb')) <= 100 ? '33FFE0' : (bank_qty('Air orb') + inv_qty('Air orb')) <= 1000 ? '33FF99' : '00CC44') + '>' + ((bank_qty('Air orb') + inv_qty('Air orb')) * gp >= 1000000 ? floor((bank_qty('Air orb') + inv_qty('Air orb')) * gp / 100000) / 10 + 'm' : (bank_qty('Air orb') + inv_qty('Air orb')) * gp >= 1000 ? floor((bank_qty('Air orb') + inv_qty('Air orb')) * gp / 100) / 10 + 'k' : (bank_qty('Air orb') + inv_qty('Air orb')) * gp)}"
+				"${'<col=' + ((bank_qty('Air orb') + inv_qty('Air orb')) < 10 ? '4DA8FF' : (bank_qty('Air orb') + inv_qty('Air orb')) <= 100 ? '33FFE0' : (bank_qty('Air orb') + inv_qty('Air orb')) <= 1000 ? '33FF99' : '00CC44') + '>' + ((bank_qty('Air orb') + inv_qty('Air orb')) * air_battlestaff >= 1000000 ? floor((bank_qty('Air orb') + inv_qty('Air orb')) * air_battlestaff / 100000) / 10 + 'm' : (bank_qty('Air orb') + inv_qty('Air orb')) * air_battlestaff >= 1000 ? floor((bank_qty('Air orb') + inv_qty('Air orb')) * air_battlestaff / 100) / 10 + 'k' : (bank_qty('Air orb') + inv_qty('Air orb')) * air_battlestaff)}"
 			]
     ]
   } 
