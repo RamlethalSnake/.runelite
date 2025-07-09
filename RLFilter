@@ -400,6 +400,7 @@ not safe on pvp.+you never get the sceptre#
 (?i)^hey i could really use \d+[kmb]? gp\b.*
 (?i)i will half your money no strings attached
 (?i)^(guaranteed )?half(ing)? money.*
+(?i)\bikov\b.*\bgame\b|\bgame\b.*\bikov\b
 
 ♾️♾️♾️♾️♾️ NAMES ♾️♾️♾️♾️♾️
 (?i)^(c[o0]in|casin[o0]|c[a@]s[i1]n[o0])[-_ ]?\w{2,}$
