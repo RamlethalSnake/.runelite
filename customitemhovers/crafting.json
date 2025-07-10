@@ -204,7 +204,7 @@
   
     {
     "items": ["Water orb"],
-	"condition": "crafting_level >= 62 && inv_qty('Water orb') >= 1",
+	"condition": "crafting_level >= 54 && inv_qty('Water orb') >= 1",
     "hovers": [
 	
 			[
@@ -221,7 +221,7 @@
   
       {
     "items": ["Water orb"],
-	"condition": "crafting_level >= 62 && inv_qty('Water orb') == 0",
+	"condition": "crafting_level >= 54 && inv_qty('Water orb') == 0",
     "hovers": [
 	
 			[
@@ -238,12 +238,12 @@
   
   {
     "items": ["Water orb"],
-	"condition": "crafting_level < 62",
+	"condition": "crafting_level < 54",
     "hovers": [
 	
 			[
 			
-				"<col=e74c3c>Requires 62 Crafting (${62 - crafting_level} levels away) </col>",
+				"<col=e74c3c>Requires 54 Crafting (${54 - crafting_level} levels away) </col>",
 				
 				
 				"<col=AA99CC>Experience:</col>",
@@ -259,7 +259,7 @@
 
     {
     "items": ["Earth orb"],
-	"condition": "crafting_level >= 62 && inv_qty('Earth orb') >= 1",
+	"condition": "crafting_level >= 58 && inv_qty('Earth orb') >= 1",
     "hovers": [
 	
 			[
@@ -276,7 +276,7 @@
   
       {
     "items": ["Earth orb"],
-	"condition": "crafting_level >= 62 && inv_qty('Earth orb') == 0",
+	"condition": "crafting_level >= 58 && inv_qty('Earth orb') == 0",
     "hovers": [
 	
 			[
@@ -293,12 +293,12 @@
   
   {
     "items": ["Earth orb"],
-	"condition": "crafting_level < 62",
+	"condition": "crafting_level < 58",
     "hovers": [
 	
 			[
 			
-				"<col=e74c3c>Requires 62 Crafting (${62 - crafting_level} levels away) </col>",
+				"<col=e74c3c>Requires 58 Crafting (${58 - crafting_level} levels away) </col>",
 				
 				
 				"<col=AA99CC>Experience:</col>",
@@ -370,7 +370,7 @@
 
     {
     "items": ["Air orb"],
-	"condition": "crafting_level >= 62 && inv_qty('Air orb') >= 1",
+	"condition": "crafting_level >= 66 && inv_qty('Air orb') >= 1",
     "hovers": [
 	
 			[
@@ -387,7 +387,7 @@
   
       {
     "items": ["Air orb"],
-	"condition": "crafting_level >= 62 && inv_qty('Air orb') == 0",
+	"condition": "crafting_level >= 66 && inv_qty('Air orb') == 0",
     "hovers": [
 	
 			[
@@ -404,12 +404,12 @@
   
   {
     "items": ["Air orb"],
-	"condition": "crafting_level < 62",
+	"condition": "crafting_level < 66",
     "hovers": [
 	
 			[
 			
-				"<col=e74c3c>Requires 62 Crafting (${62 - crafting_level} levels away) </col>",
+				"<col=e74c3c>Requires 66 Crafting (${66 - crafting_level} levels away) </col>",
 				
 				
 				"<col=AA99CC>Experience:</col>",
