@@ -11,10 +11,10 @@
     [
       "<col=3498db>Farming:</col>",
       "${farming_level_real < 15 ? '<col=FF4D4D>Level: 15</col>' : '<col=55ff55>Level: 15</col>'}",
-      "${inv_qty('Tomato') < 5 ? '<col=FF4D4D>Payment: 5x Tomato</col>' : '<col=55ff55>Payment: 5x Tomato</col>'}",
-      "${'<col=FFFF66>Experience: 467</col>'}",
+      "${(inv_qty('Oak seed') + inv_qty('Oak seedling') + inv_qty('Oak sapling')) > 1 ? (inv_qty('Tomato') < (5 * (inv_qty('Oak seed') + inv_qty('Oak seedling') + inv_qty('Oak sapling'))) ? '<col=FF4D4D>Payment: 5 (' + (5 * (inv_qty('Oak seed') + inv_qty('Oak seedling') + inv_qty('Oak sapling'))) + ') Tomato</col>' : '<col=55ff55>Payment: 5 (' + (5 * (inv_qty('Oak seed') + inv_qty('Oak seedling') + inv_qty('Oak sapling'))) + ') Tomato</col>') : (inv_qty('Tomato') < 5 ? '<col=FF4D4D>Payment: 5x Tomato</col>' : '<col=55ff55>Payment: 5x Tomato</col>')}",
+      "${'<col=FFFF66>Experience: 467' + ((inv_qty('Oak seed') + inv_qty('Oak seedling') + inv_qty('Oak sapling')) > 1 ? ' (' + (((inv_qty('Oak seed') + inv_qty('Oak seedling') + inv_qty('Oak sapling')) * 467) < 1000000 ? floor(((inv_qty('Oak seed') + inv_qty('Oak seedling') + inv_qty('Oak sapling')) * 467) / 1000) + 'k' : floor(((inv_qty('Oak seed') + inv_qty('Oak seedling') + inv_qty('Oak sapling')) * 467) / 1000000) + 'm') + ')' : '') + '</col>'}",
       "${'<col=FFFF66>Time: 200 Minutes (3h 20m)</col>'}",
-	  "${'<col=FFFF66>Type: Log Tree </col>'}"
+      "${'<col=FFFF66>Type: Log Tree </col>'}"
     ]
   ]
 },
@@ -25,10 +25,10 @@
     [
       "<col=3498db>Farming:</col>",
       "${farming_level_real < 30 ? '<col=FF4D4D>Level: 30</col>' : '<col=55ff55>Level: 30</col>'}",
-      "${inv_qty('Apple') < 5 ? '<col=FF4D4D>Payment: 5x Apple</col>' : '<col=55ff55>Payment: 5x Apple</col>'}",
-      "${'<col=FFFF66>Experience: 1,456</col>'}",
+      "${(inv_qty('Willow seed') + inv_qty('Willow seedling') + inv_qty('Willow sapling')) > 1 ? (inv_qty('Apple') < (5 * (inv_qty('Willow seed') + inv_qty('Willow seedling') + inv_qty('Willow sapling'))) ? '<col=FF4D4D>Payment: 5 (' + (5 * (inv_qty('Willow seed') + inv_qty('Willow seedling') + inv_qty('Willow sapling'))) + ') Apple</col>' : '<col=55ff55>Payment: 5 (' + (5 * (inv_qty('Willow seed') + inv_qty('Willow seedling') + inv_qty('Willow sapling'))) + ') Apple</col>') : (inv_qty('Apple') < 5 ? '<col=FF4D4D>Payment: 5x Apple</col>' : '<col=55ff55>Payment: 5x Apple</col>')}",
+      "${'<col=FFFF66>Experience: 1,456' + ((inv_qty('Willow seed') + inv_qty('Willow seedling') + inv_qty('Willow sapling')) > 1 ? ' (' + (((inv_qty('Willow seed') + inv_qty('Willow seedling') + inv_qty('Willow sapling')) * 1456) < 1000000 ? floor(((inv_qty('Willow seed') + inv_qty('Willow seedling') + inv_qty('Willow sapling')) * 1456) / 1000) + 'k' : floor(((inv_qty('Willow seed') + inv_qty('Willow seedling') + inv_qty('Willow sapling')) * 1456) / 1000000) + 'm') + ')' : '') + '</col>'}",
       "${'<col=FFFF66>Time: 240 Minutes (4h)</col>'}",
-	  "${'<col=FFFF66>Type: Log Tree </col>'}"
+      "${'<col=FFFF66>Type: Log Tree </col>'}"
     ]
   ]
 },
@@ -39,10 +39,10 @@
     [
       "<col=3498db>Farming:</col>",
       "${farming_level_real < 45 ? '<col=FF4D4D>Level: 45</col>' : '<col=55ff55>Level: 45</col>'}",
-      "${inv_qty('Orange') < 5 ? '<col=FF4D4D>Payment: 5x Orange</col>' : '<col=55ff55>Payment: 5x Orange</col>'}",
-      "${'<col=FFFF66>Experience: 3,403</col>'}",
+      "${(inv_qty('Maple seed') + inv_qty('Maple seedling') + inv_qty('Maple sapling')) > 1 ? (inv_qty('Orange') < (5 * (inv_qty('Maple seed') + inv_qty('Maple seedling') + inv_qty('Maple sapling'))) ? '<col=FF4D4D>Payment: 5 (' + (5 * (inv_qty('Maple seed') + inv_qty('Maple seedling') + inv_qty('Maple sapling'))) + ') Orange</col>' : '<col=55ff55>Payment: 5 (' + (5 * (inv_qty('Maple seed') + inv_qty('Maple seedling') + inv_qty('Maple sapling'))) + ') Orange</col>') : (inv_qty('Orange') < 5 ? '<col=FF4D4D>Payment: 5x Orange</col>' : '<col=55ff55>Payment: 5x Orange</col>')}",
+      "${'<col=FFFF66>Experience: 3,403' + ((inv_qty('Maple seed') + inv_qty('Maple seedling') + inv_qty('Maple sapling')) > 1 ? ' (' + (((inv_qty('Maple seed') + inv_qty('Maple seedling') + inv_qty('Maple sapling')) * 3403) < 1000000 ? floor(((inv_qty('Maple seed') + inv_qty('Maple seedling') + inv_qty('Maple sapling')) * 3403) / 1000) + 'k' : floor(((inv_qty('Maple seed') + inv_qty('Maple seedling') + inv_qty('Maple sapling')) * 3403) / 1000000) + 'm') + ')' : '') + '</col>'}",
       "${'<col=FFFF66>Time: 320 Minutes (5h 20m)</col>'}",
-	  "${'<col=FFFF66>Type: Log Tree </col>'}"
+      "${'<col=FFFF66>Type: Log Tree </col>'}"
     ]
   ]
 },
@@ -53,10 +53,10 @@
     [
       "<col=3498db>Farming:</col>",
       "${farming_level_real < 60 ? '<col=FF4D4D>Level: 60</col>' : '<col=55ff55>Level: 60</col>'}",
-      "${inv_qty('Cactus spine') < 10 ? '<col=FF4D4D>Payment: 10x Cactus Spine</col>' : '<col=55ff55>Payment: 10x Cactus Spine</col>'}",
-      "${'<col=FFFF66>Experience: 7,069</col>'}",
+      "${(inv_qty('Yew seed') + inv_qty('Yew seedling') + inv_qty('Yew sapling')) > 1 ? (inv_qty('Cactus spine') < (10 * (inv_qty('Yew seed') + inv_qty('Yew seedling') + inv_qty('Yew sapling'))) ? '<col=FF4D4D>Payment: 10 (' + (10 * (inv_qty('Yew seed') + inv_qty('Yew seedling') + inv_qty('Yew sapling'))) + ') Cactus Spine</col>' : '<col=55ff55>Payment: 10 (' + (10 * (inv_qty('Yew seed') + inv_qty('Yew seedling') + inv_qty('Yew sapling'))) + ') Cactus Spine</col>') : (inv_qty('Cactus spine') < 10 ? '<col=FF4D4D>Payment: 10x Cactus Spine</col>' : '<col=55ff55>Payment: 10x Cactus Spine</col>')}",
+      "${'<col=FFFF66>Experience: 7,069' + ((inv_qty('Yew seed') + inv_qty('Yew seedling') + inv_qty('Yew sapling')) > 1 ? ' (' + (((inv_qty('Yew seed') + inv_qty('Yew seedling') + inv_qty('Yew sapling')) * 7069) < 1000000 ? floor(((inv_qty('Yew seed') + inv_qty('Yew seedling') + inv_qty('Yew sapling')) * 7069) / 1000) + 'k' : floor(((inv_qty('Yew seed') + inv_qty('Yew seedling') + inv_qty('Yew sapling')) * 7069) / 1000000) + 'm') + ')' : '') + '</col>'}",
       "${'<col=FFFF66>Time: 380 Minutes (6h 20m)</col>'}",
-	  "${'<col=FFFF66>Type: Log Tree </col>'}"
+      "${'<col=FFFF66>Type: Log Tree </col>'}"
     ]
   ]
 },
@@ -67,27 +67,27 @@
     [
       "<col=3498db>Farming:</col>",
       "${farming_level_real < 75 ? '<col=FF4D4D>Level: 75</col>' : '<col=55ff55>Level: 75</col>'}",
-      "${inv_qty('Coconut') < 25 ? '<col=FF4D4D>Payment: 25x Coconut</col>' : '<col=55ff55>Payment: 25x Coconut</col>'}",
-      "${'<col=FFFF66>Experience: 13,768</col>'}",
+      "${(inv_qty('Magic seed') + inv_qty('Magic seedling') + inv_qty('Magic sapling')) > 1 ? (inv_qty('Coconut') < (25 * (inv_qty('Magic seed') + inv_qty('Magic seedling') + inv_qty('Magic sapling'))) ? '<col=FF4D4D>Payment: 25 (' + (25 * (inv_qty('Magic seed') + inv_qty('Magic seedling') + inv_qty('Magic sapling'))) + ') Coconut</col>' : '<col=55ff55>Payment: 25 (' + (25 * (inv_qty('Magic seed') + inv_qty('Magic seedling') + inv_qty('Magic sapling'))) + ') Coconut</col>') : (inv_qty('Coconut') < 25 ? '<col=FF4D4D>Payment: 25x Coconut</col>' : '<col=55ff55>Payment: 25x Coconut</col>')}",
+      "${'<col=FFFF66>Experience: 13,768' + ((inv_qty('Magic seed') + inv_qty('Magic seedling') + inv_qty('Magic sapling')) > 1 ? ' (' + (((inv_qty('Magic seed') + inv_qty('Magic seedling') + inv_qty('Magic sapling')) * 13768) < 1000000 ? floor(((inv_qty('Magic seed') + inv_qty('Magic seedling') + inv_qty('Magic sapling')) * 13768) / 1000) + 'k' : floor(((inv_qty('Magic seed') + inv_qty('Magic seedling') + inv_qty('Magic sapling')) * 13768) / 1000000) + 'm') + ')' : '') + '</col>'}",
       "${'<col=FFFF66>Time: 480 Minutes (8h)</col>'}",
-	  "${'<col=FFFF66>Type: Log Tree </col>'}"
+      "${'<col=FFFF66>Type: Log Tree </col>'}"
     ]
   ]
 },
  
  // Fruit Trees
  
- {
+{
   "items_regex": ["Apple (tree seed|seedling|sapling)"],
   "condition": "inv_contains('Apple seed') || inv_contains('Apple seedling') || inv_contains('Apple sapling')",
   "hovers": [
     [
       "<col=3498db>Farming:</col>",
       "${farming_level_real < 27 ? '<col=FF4D4D>Level: 27</col>' : '<col=55ff55>Level: 27</col>'}",
-      "${inv_qty('Sweetcorn') < 9 ? '<col=FF4D4D>Payment: 9x Raw Sweetcorn</col>' : '<col=55ff55>Payment: 9x Raw Sweetcorn</col>'}",
-      "${'<col=FFFF66>Experience: 1,199</col>'}",
+      "${(inv_qty('Apple seed') + inv_qty('Apple seedling') + inv_qty('Apple sapling')) > 1 ? (inv_qty('Sweetcorn') < (9 * (inv_qty('Apple seed') + inv_qty('Apple seedling') + inv_qty('Apple sapling'))) ? '<col=FF4D4D>Payment: 9 (' + (9 * (inv_qty('Apple seed') + inv_qty('Apple seedling') + inv_qty('Apple sapling'))) + ') Raw Sweetcorn</col>' : '<col=55ff55>Payment: 9 (' + (9 * (inv_qty('Apple seed') + inv_qty('Apple seedling') + inv_qty('Apple sapling'))) + ') Raw Sweetcorn</col>') : (inv_qty('Sweetcorn') < 9 ? '<col=FF4D4D>Payment: 9x Raw Sweetcorn</col>' : '<col=55ff55>Payment: 9x Raw Sweetcorn</col>')}",
+      "${'<col=FFFF66>Experience: 1,199' + ((inv_qty('Apple seed') + inv_qty('Apple seedling') + inv_qty('Apple sapling')) > 1 ? ' (' + (((inv_qty('Apple seed') + inv_qty('Apple seedling') + inv_qty('Apple sapling')) * 1199) < 1000000 ? floor(((inv_qty('Apple seed') + inv_qty('Apple seedling') + inv_qty('Apple sapling')) * 1199) / 1000) + 'k' : floor(((inv_qty('Apple seed') + inv_qty('Apple seedling') + inv_qty('Apple sapling')) * 1199) / 1000000) + 'm') + ')' : '') + '</col>'}",
       "${'<col=FFFF66>Time: 960 Minutes (16h)</col>'}",
-	  "${'<col=FFFF66>Type: Fruit Tree </col>'}"
+      "${'<col=FFFF66>Type: Fruit Tree </col>'}"
     ]
   ]
 },
@@ -98,10 +98,10 @@
     [
       "<col=3498db>Farming:</col>",
       "${farming_level_real < 33 ? '<col=FF4D4D>Level: 33</col>' : '<col=55ff55>Level: 33</col>'}",
-      "${inv_qty('Basket of Apples') < 4 ? '<col=FF4D4D>Payment: 4x Apples (5)</col>' : '<col=55ff55>Payment: 4x Apples (5)</col>'}",
-      "${'<col=FFFF66>Experience: 1,750</col>'}",
+      "${(inv_qty('Banana seed') + inv_qty('Banana seedling') + inv_qty('Banana sapling')) > 1 ? (inv_qty('Basket of Apples') < (4 * (inv_qty('Banana seed') + inv_qty('Banana seedling') + inv_qty('Banana sapling'))) ? '<col=FF4D4D>Payment: 4 (' + (4 * (inv_qty('Banana seed') + inv_qty('Banana seedling') + inv_qty('Banana sapling'))) + ') Basket of Apples</col>' : '<col=55ff55>Payment: 4 (' + (4 * (inv_qty('Banana seed') + inv_qty('Banana seedling') + inv_qty('Banana sapling'))) + ') Basket of Apples</col>') : (inv_qty('Basket of Apples') < 4 ? '<col=FF4D4D>Payment: 4x Basket of Apples</col>' : '<col=55ff55>Payment: 4x Basket of Apples</col>')}",
+      "${'<col=FFFF66>Experience: 1,750' + ((inv_qty('Banana seed') + inv_qty('Banana seedling') + inv_qty('Banana sapling')) > 1 ? ' (' + (((inv_qty('Banana seed') + inv_qty('Banana seedling') + inv_qty('Banana sapling')) * 1750) < 1000000 ? floor(((inv_qty('Banana seed') + inv_qty('Banana seedling') + inv_qty('Banana sapling')) * 1750) / 1000) + 'k' : floor(((inv_qty('Banana seed') + inv_qty('Banana seedling') + inv_qty('Banana sapling')) * 1750) / 1000000) + 'm') + ')' : '') + '</col>'}",
       "${'<col=FFFF66>Time: 960 Minutes (16h)</col>'}",
-	  "${'<col=FFFF66>Type: Fruit Tree </col>'}"
+      "${'<col=FFFF66>Type: Fruit Tree </col>'}"
     ]
   ]
 },
@@ -112,10 +112,10 @@
     [
       "<col=3498db>Farming:</col>",
       "${farming_level_real < 39 ? '<col=FF4D4D>Level: 39</col>' : '<col=55ff55>Level: 39</col>'}",
-      "${inv_qty('Basket of Strawberries') < 3 ? '<col=FF4D4D>Payment: 3x Strawberries (5)</col>' : '<col=55ff55>Payment: 3x Strawberries (5)</col>'}",
-      "${'<col=FFFF66>Experience: 2,470</col>'}",
+      "${(inv_qty('Orange seed') + inv_qty('Orange seedling') + inv_qty('Orange sapling')) > 1 ? (inv_qty('Basket of Strawberries') < (3 * (inv_qty('Orange seed') + inv_qty('Orange seedling') + inv_qty('Orange sapling'))) ? '<col=FF4D4D>Payment: 3 (' + (3 * (inv_qty('Orange seed') + inv_qty('Orange seedling') + inv_qty('Orange sapling'))) + ') Basket of Strawberries</col>' : '<col=55ff55>Payment: 3 (' + (3 * (inv_qty('Orange seed') + inv_qty('Orange seedling') + inv_qty('Orange sapling'))) + ') Basket of Strawberries</col>') : (inv_qty('Basket of Strawberries') < 3 ? '<col=FF4D4D>Payment: 3x Basket of Strawberries</col>' : '<col=55ff55>Payment: 3x Basket of Strawberries</col>')}",
+      "${'<col=FFFF66>Experience: 2,470' + ((inv_qty('Orange seed') + inv_qty('Orange seedling') + inv_qty('Orange sapling')) > 1 ? ' (' + (((inv_qty('Orange seed') + inv_qty('Orange seedling') + inv_qty('Orange sapling')) * 2470) < 1000000 ? floor(((inv_qty('Orange seed') + inv_qty('Orange seedling') + inv_qty('Orange sapling')) * 2470) / 1000) + 'k' : floor(((inv_qty('Orange seed') + inv_qty('Orange seedling') + inv_qty('Orange sapling')) * 2470) / 1000000) + 'm') + ')' : '') + '</col>'}",
       "${'<col=FFFF66>Time: 960 Minutes (16h)</col>'}",
-	  "${'<col=FFFF66>Type: Fruit Tree </col>'}"
+      "${'<col=FFFF66>Type: Fruit Tree </col>'}"
     ]
   ]
 },
@@ -126,10 +126,10 @@
     [
       "<col=3498db>Farming:</col>",
       "${farming_level_real < 42 ? '<col=FF4D4D>Level: 42</col>' : '<col=55ff55>Level: 42</col>'}",
-      "${inv_qty('Basket of Bananas') < 5 ? '<col=FF4D4D>Payment: 5x Bananas (5)</col>' : '<col=55ff55>Payment: 5x Bananas (5)</col>'}",
-      "${'<col=FFFF66>Experience: 2,907</col>'}",
+      "${(inv_qty('Curry seed') + inv_qty('Curry seedling') + inv_qty('Curry sapling')) > 1 ? (inv_qty('Basket of Bananas') < (5 * (inv_qty('Curry seed') + inv_qty('Curry seedling') + inv_qty('Curry sapling'))) ? '<col=FF4D4D>Payment: 5 (' + (5 * (inv_qty('Curry seed') + inv_qty('Curry seedling') + inv_qty('Curry sapling'))) + ') Basket of Bananas</col>' : '<col=55ff55>Payment: 5 (' + (5 * (inv_qty('Curry seed') + inv_qty('Curry seedling') + inv_qty('Curry sapling'))) + ') Basket of Bananas</col>') : (inv_qty('Basket of Bananas') < 5 ? '<col=FF4D4D>Payment: 5x Basket of Bananas</col>' : '<col=55ff55>Payment: 5x Basket of Bananas</col>')}",
+      "${'<col=FFFF66>Experience: 2,907' + ((inv_qty('Curry seed') + inv_qty('Curry seedling') + inv_qty('Curry sapling')) > 1 ? ' (' + (((inv_qty('Curry seed') + inv_qty('Curry seedling') + inv_qty('Curry sapling')) * 2907) < 1000000 ? floor(((inv_qty('Curry seed') + inv_qty('Curry seedling') + inv_qty('Curry sapling')) * 2907) / 1000) + 'k' : floor(((inv_qty('Curry seed') + inv_qty('Curry seedling') + inv_qty('Curry sapling')) * 2907) / 1000000) + 'm') + ')' : '') + '</col>'}",
       "${'<col=FFFF66>Time: 960 Minutes (16h)</col>'}",
-	  "${'<col=FFFF66>Type: Fruit Tree </col>'}"
+      "${'<col=FFFF66>Type: Fruit Tree </col>'}"
     ]
   ]
 },
@@ -140,10 +140,10 @@
     [
       "<col=3498db>Farming:</col>",
       "${farming_level_real < 51 ? '<col=FF4D4D>Level: 51</col>' : '<col=55ff55>Level: 51</col>'}",
-      "${inv_qty('Watermelon') < 10 ? '<col=FF4D4D>Payment: 10x Watermelon</col>' : '<col=55ff55>Payment: 10x Watermelon</col>'}",
-      "${'<col=FFFF66>Experience: 4,606</col>'}",
+      "${(inv_qty('Pineapple seed') + inv_qty('Pineapple seedling') + inv_qty('Pineapple sapling')) > 1 ? (inv_qty('Watermelon') < (10 * (inv_qty('Pineapple seed') + inv_qty('Pineapple seedling') + inv_qty('Pineapple sapling'))) ? '<col=FF4D4D>Payment: 10 (' + (10 * (inv_qty('Pineapple seed') + inv_qty('Pineapple seedling') + inv_qty('Pineapple sapling'))) + ') Watermelon</col>' : '<col=55ff55>Payment: 10 (' + (10 * (inv_qty('Pineapple seed') + inv_qty('Pineapple seedling') + inv_qty('Pineapple sapling'))) + ') Watermelon</col>') : (inv_qty('Watermelon') < 10 ? '<col=FF4D4D>Payment: 10x Watermelon</col>' : '<col=55ff55>Payment: 10x Watermelon</col>')}",
+      "${'<col=FFFF66>Experience: 4,606' + ((inv_qty('Pineapple seed') + inv_qty('Pineapple seedling') + inv_qty('Pineapple sapling')) > 1 ? ' (' + (((inv_qty('Pineapple seed') + inv_qty('Pineapple seedling') + inv_qty('Pineapple sapling')) * 4606) < 1000000 ? floor(((inv_qty('Pineapple seed') + inv_qty('Pineapple seedling') + inv_qty('Pineapple sapling')) * 4606) / 1000) + 'k' : floor(((inv_qty('Pineapple seed') + inv_qty('Pineapple seedling') + inv_qty('Pineapple sapling')) * 4606) / 1000000) + 'm') + ')' : '') + '</col>'}",
       "${'<col=FFFF66>Time: 960 Minutes (16h)</col>'}",
-	  "${'<col=FFFF66>Type: Fruit Tree </col>'}"
+      "${'<col=FFFF66>Type: Fruit Tree </col>'}"
     ]
   ]
 },
@@ -154,10 +154,10 @@
     [
       "<col=3498db>Farming:</col>",
       "${farming_level_real < 57 ? '<col=FF4D4D>Level: 57</col>' : '<col=55ff55>Level: 57</col>'}",
-      "${inv_qty('Pineapple') < 10 ? '<col=FF4D4D>Payment: 10x Pineapple</col>' : '<col=55ff55>Payment: 10x Pineapple</col>'}",
-      "${'<col=FFFF66>Experience: 6,146</col>'}",
+      "${(inv_qty('Papaya seed') + inv_qty('Papaya seedling') + inv_qty('Papaya sapling')) > 1 ? (inv_qty('Pineapple') < (10 * (inv_qty('Papaya seed') + inv_qty('Papaya seedling') + inv_qty('Papaya sapling'))) ? '<col=FF4D4D>Payment: 10 (' + (10 * (inv_qty('Papaya seed') + inv_qty('Papaya seedling') + inv_qty('Papaya sapling'))) + ') Pineapple</col>' : '<col=55ff55>Payment: 10 (' + (10 * (inv_qty('Papaya seed') + inv_qty('Papaya seedling') + inv_qty('Papaya sapling'))) + ') Pineapple</col>') : (inv_qty('Pineapple') < 10 ? '<col=FF4D4D>Payment: 10x Pineapple</col>' : '<col=55ff55>Payment: 10x Pineapple</col>')}",
+      "${'<col=FFFF66>Experience: 6,146' + ((inv_qty('Papaya seed') + inv_qty('Papaya seedling') + inv_qty('Papaya sapling')) > 1 ? ' (' + (((inv_qty('Papaya seed') + inv_qty('Papaya seedling') + inv_qty('Papaya sapling')) * 6146) < 1000000 ? floor(((inv_qty('Papaya seed') + inv_qty('Papaya seedling') + inv_qty('Papaya sapling')) * 6146) / 1000) + 'k' : floor(((inv_qty('Papaya seed') + inv_qty('Papaya seedling') + inv_qty('Papaya sapling')) * 6146) / 1000000) + 'm') + ')' : '') + '</col>'}",
       "${'<col=FFFF66>Time: 960 Minutes (16h)</col>'}",
-	  "${'<col=FFFF66>Type: Fruit Tree </col>'}"
+      "${'<col=FFFF66>Type: Fruit Tree </col>'}"
     ]
   ]
 },
@@ -168,10 +168,10 @@
     [
       "<col=3498db>Farming:</col>",
       "${farming_level_real < 68 ? '<col=FF4D4D>Level: 68</col>' : '<col=55ff55>Level: 68</col>'}",
-      "${inv_qty('Papaya fruit') < 15 ? '<col=FF4D4D>Payment: 15x Papaya</col>' : '<col=55ff55>Payment: 15x Papaya</col>'}",
-      "${'<col=FFFF66>Experience: 10,150</col>'}",
+      "${(inv_qty('Palm seed') + inv_qty('Palm seedling') + inv_qty('Palm sapling')) > 1 ? (inv_qty('Papaya fruit') < (15 * (inv_qty('Palm seed') + inv_qty('Palm seedling') + inv_qty('Palm sapling'))) ? '<col=FF4D4D>Payment: 15 (' + (15 * (inv_qty('Palm seed') + inv_qty('Palm seedling') + inv_qty('Palm sapling'))) + ') Papaya Fruit</col>' : '<col=55ff55>Payment: 15 (' + (15 * (inv_qty('Palm seed') + inv_qty('Palm seedling') + inv_qty('Palm sapling'))) + ') Papaya Fruit</col>') : (inv_qty('Papaya fruit') < 15 ? '<col=FF4D4D>Payment: 15x Papaya Fruit</col>' : '<col=55ff55>Payment: 15x Papaya Fruit</col>')}",
+      "${'<col=FFFF66>Experience: 10,150' + ((inv_qty('Palm seed') + inv_qty('Palm seedling') + inv_qty('Palm sapling')) > 1 ? ' (' + (((inv_qty('Palm seed') + inv_qty('Palm seedling') + inv_qty('Palm sapling')) * 10150) < 1000000 ? floor(((inv_qty('Palm seed') + inv_qty('Palm seedling') + inv_qty('Palm sapling')) * 10150) / 1000) + 'k' : floor(((inv_qty('Palm seed') + inv_qty('Palm seedling') + inv_qty('Palm sapling')) * 10150) / 1000000) + 'm') + ')' : '') + '</col>'}",
       "${'<col=FFFF66>Time: 960 Minutes (16h)</col>'}",
-	  "${'<col=FFFF66>Type: Fruit Tree </col>'}"
+      "${'<col=FFFF66>Type: Fruit Tree </col>'}"
     ]
   ]
 },
@@ -182,10 +182,10 @@
     [
       "<col=3498db>Farming:</col>",
       "${farming_level_real < 81 ? '<col=FF4D4D>Level: 81</col>' : '<col=55ff55>Level: 81</col>'}",
-      "${inv_qty('Coconut') < 15 ? '<col=FF4D4D>Payment: 15x Coconut</col>' : '<col=55ff55>Payment: 15x Coconut</col>'}",
-      "${'<col=FFFF66>Experience: 17,335</col>'}",
+      "${(inv_qty('Dragonfruit seed') + inv_qty('Dragonfruit seedling') + inv_qty('Dragonfruit sapling')) > 1 ? (inv_qty('Coconut') < (15 * (inv_qty('Dragonfruit seed') + inv_qty('Dragonfruit seedling') + inv_qty('Dragonfruit sapling'))) ? '<col=FF4D4D>Payment: 15 (' + (15 * (inv_qty('Dragonfruit seed') + inv_qty('Dragonfruit seedling') + inv_qty('Dragonfruit sapling'))) + ') Coconut</col>' : '<col=55ff55>Payment: 15 (' + (15 * (inv_qty('Dragonfruit seed') + inv_qty('Dragonfruit seedling') + inv_qty('Dragonfruit sapling'))) + ') Coconut</col>') : (inv_qty('Coconut') < 15 ? '<col=FF4D4D>Payment: 15x Coconut</col>' : '<col=55ff55>Payment: 15x Coconut</col>')}",
+      "${'<col=FFFF66>Experience: 17,335' + ((inv_qty('Dragonfruit seed') + inv_qty('Dragonfruit seedling') + inv_qty('Dragonfruit sapling')) > 1 ? ' (' + (((inv_qty('Dragonfruit seed') + inv_qty('Dragonfruit seedling') + inv_qty('Dragonfruit sapling')) * 17335) < 1000000 ? floor(((inv_qty('Dragonfruit seed') + inv_qty('Dragonfruit seedling') + inv_qty('Dragonfruit sapling')) * 17335) / 1000) + 'k' : floor(((inv_qty('Dragonfruit seed') + inv_qty('Dragonfruit seedling') + inv_qty('Dragonfruit sapling')) * 17335) / 1000000) + 'm') + ')' : '') + '</col>'}",
       "${'<col=FFFF66>Time: 960 Minutes (16h)</col>'}",
-	  "${'<col=FFFF66>Type: Fruit Tree </col>'}"
+      "${'<col=FFFF66>Type: Fruit Tree </col>'}"
     ]
   ]
 },
@@ -199,8 +199,8 @@
     [
       "<col=3498db>Farming:</col>",
       "${farming_level_real < 35 ? '<col=FF4D4D>Level: 35</col>' : '<col=55ff55>Level: 35</col>'}",
-      "${inv_qty('Limpwurt root') < 15 ? '<col=FF4D4D>Payment: 15x Limpwurt Root</col>' : '<col=55ff55>Payment: 15x Limpwurt Root</col>'}",
-      "${'<col=FFFF66>Experience: 7,290</col>'}",
+      "${(inv_qty('Teak seed') + inv_qty('Teak seedling') + inv_qty('Teak sapling')) > 1 ? (inv_qty('Limpwurt root') < (15 * (inv_qty('Teak seed') + inv_qty('Teak seedling') + inv_qty('Teak sapling'))) ? '<col=FF4D4D>Payment: 15 (' + (15 * (inv_qty('Teak seed') + inv_qty('Teak seedling') + inv_qty('Teak sapling'))) + ') Limpwurt Root</col>' : '<col=55ff55>Payment: 15 (' + (15 * (inv_qty('Teak seed') + inv_qty('Teak seedling') + inv_qty('Teak sapling'))) + ') Limpwurt Root</col>') : (inv_qty('Limpwurt root') < 15 ? '<col=FF4D4D>Payment: 15x Limpwurt Root</col>' : '<col=55ff55>Payment: 15x Limpwurt Root</col>')}",
+      "${'<col=FFFF66>Experience: 7,290' + ((inv_qty('Teak seed') + inv_qty('Teak seedling') + inv_qty('Teak sapling')) > 1 ? ' (' + (((inv_qty('Teak seed') + inv_qty('Teak seedling') + inv_qty('Teak sapling')) * 7290) < 1000000 ? floor(((inv_qty('Teak seed') + inv_qty('Teak seedling') + inv_qty('Teak sapling')) * 7290) / 1000) + 'k' : floor(((inv_qty('Teak seed') + inv_qty('Teak seedling') + inv_qty('Teak sapling')) * 7290) / 1000000) + 'm') + ')' : '') + '</col>'}",
       "${'<col=FFFF66>Time: 2,880 Minutes (48h)</col>'}",
 	  "${'<col=FFFF66>Type: Special Tree </col>'}"
     ]
@@ -213,8 +213,8 @@
     [
       "<col=3498db>Farming:</col>",
       "${farming_level_real < 55 ? '<col=FF4D4D>Level: 55</col>' : '<col=55ff55>Level: 55</col>'}",
-      "${inv_qty('Yanillian hops') < 25 ? '<col=FF4D4D>Payment: 25x Yanillian Hops</col>' : '<col=55ff55>Payment: 25x Yanillian Hops</col>'}",
-      "${'<col=FFFF66>Experience: 15,720</col>'}",
+      "${(inv_qty('Mahogany seed') + inv_qty('Mahogany seedling') + inv_qty('Mahogany sapling')) > 1 ? (inv_qty('Yanillian hops') < (25 * (inv_qty('Mahogany seed') + inv_qty('Mahogany seedling') + inv_qty('Mahogany sapling'))) ? '<col=FF4D4D>Payment: 25 (' + (25 * (inv_qty('Mahogany seed') + inv_qty('Mahogany seedling') + inv_qty('Mahogany sapling'))) + ') Yanillian Hops</col>' : '<col=55ff55>Payment: 25 (' + (25 * (inv_qty('Mahogany seed') + inv_qty('Mahogany seedling') + inv_qty('Mahogany sapling'))) + ') Yanillian Hops</col>') : (inv_qty('Yanillian hops') < 25 ? '<col=FF4D4D>Payment: 25x Yanillian Hops</col>' : '<col=55ff55>Payment: 25x Yanillian Hops</col>')}",
+      "${'<col=FFFF66>Experience: 15,720' + ((inv_qty('Mahogany seed') + inv_qty('Mahogany seedling') + inv_qty('Mahogany sapling')) > 1 ? ' (' + (((inv_qty('Mahogany seed') + inv_qty('Mahogany seedling') + inv_qty('Mahogany sapling')) * 15720) < 1000000 ? floor(((inv_qty('Mahogany seed') + inv_qty('Mahogany seedling') + inv_qty('Mahogany sapling')) * 15720) / 1000) + 'k' : floor(((inv_qty('Mahogany seed') + inv_qty('Mahogany seedling') + inv_qty('Mahogany sapling')) * 15720) / 1000000) + 'm') + ')' : '') + '</col>'}",
       "${'<col=FFFF66>Time: 2,880 Minutes (48h)</col>'}",
 	  "${'<col=FFFF66>Type: Special Tree </col>'}"
     ]
@@ -227,8 +227,8 @@
     [
       "<col=3498db>Farming:</col>",
       "${farming_level_real < 85 ? '<col=FF4D4D>Level: 85</col>' : '<col=55ff55>Level: 85</col>'}",
-      "${inv_qty('Potato cactus') < 8 ? '<col=FF4D4D>Payment: 8x Potato Cactus</col>' : '<col=55ff55>Payment: 8x Potato Cactus</col>'}",
-      "${'<col=FFFF66>Experience: 14,130</col>'}",
+      "${(inv_qty('Celastrus seed') + inv_qty('Celastrus seedling') + inv_qty('Celastrus sapling')) > 1 ? (inv_qty('Potato cactus') < (8 * (inv_qty('Celastrus seed') + inv_qty('Celastrus seedling') + inv_qty('Celastrus sapling'))) ? '<col=FF4D4D>Payment: 8 (' + (8 * (inv_qty('Celastrus seed') + inv_qty('Celastrus seedling') + inv_qty('Celastrus sapling'))) + ') Potato Cactus</col>' : '<col=55ff55>Payment: 8 (' + (8 * (inv_qty('Celastrus seed') + inv_qty('Celastrus seedling') + inv_qty('Celastrus sapling'))) + ') Potato Cactus</col>') : (inv_qty('Potato cactus') < 8 ? '<col=FF4D4D>Payment: 8x Potato Cactus</col>' : '<col=55ff55>Payment: 8x Potato Cactus</col>')}",
+      "${'<col=FFFF66>Experience: 14,130' + ((inv_qty('Celastrus seed') + inv_qty('Celastrus seedling') + inv_qty('Celastrus sapling')) > 1 ? ' (' + (((inv_qty('Celastrus seed') + inv_qty('Celastrus seedling') + inv_qty('Celastrus sapling')) * 14130) < 1000000 ? floor(((inv_qty('Celastrus seed') + inv_qty('Celastrus seedling') + inv_qty('Celastrus sapling')) * 14130) / 1000) + 'k' : floor(((inv_qty('Celastrus seed') + inv_qty('Celastrus seedling') + inv_qty('Celastrus sapling')) * 14130) / 1000000) + 'm') + ')' : '') + '</col>'}",
       "${'<col=FFFF66>Time: 2,880 Minutes (48h)</col>'}",
 	  "${'<col=FFFF66>Type: Special Tree </col>'}"
     ]
@@ -241,8 +241,8 @@
     [
       "<col=3498db>Farming:</col>",
       "${farming_level_real < 90 ? '<col=FF4D4D>Level: 90</col>' : '<col=55ff55>Level: 90</col>'}",
-      "${inv_qty('Dragonfruit') < 6 ? '<col=FF4D4D>Payment: 6x Dragonfruit</col>' : '<col=55ff55>Payment: 6x Dragonfruit</col>'}",
-      "${'<col=FFFF66>Experience: 22,450</col>'}",
+      "${(inv_qty('Redwood seed') + inv_qty('Redwood seedling') + inv_qty('Redwood sapling')) > 1 ? (inv_qty('Dragonfruit') < (6 * (inv_qty('Redwood seed') + inv_qty('Redwood seedling') + inv_qty('Redwood sapling'))) ? '<col=FF4D4D>Payment: 6 (' + (6 * (inv_qty('Redwood seed') + inv_qty('Redwood seedling') + inv_qty('Redwood sapling'))) + ') Dragonfruit</col>' : '<col=55ff55>Payment: 6 (' + (6 * (inv_qty('Redwood seed') + inv_qty('Redwood seedling') + inv_qty('Redwood sapling'))) + ') Dragonfruit</col>') : (inv_qty('Dragonfruit') < 6 ? '<col=FF4D4D>Payment: 6x Dragonfruit</col>' : '<col=55ff55>Payment: 6x Dragonfruit</col>')}",
+      "${'<col=FFFF66>Experience: 22,450' + ((inv_qty('Redwood seed') + inv_qty('Redwood seedling') + inv_qty('Redwood sapling')) > 1 ? ' (' + (((inv_qty('Redwood seed') + inv_qty('Redwood seedling') + inv_qty('Redwood sapling')) * 22450) < 1000000 ? floor(((inv_qty('Redwood seed') + inv_qty('Redwood seedling') + inv_qty('Redwood sapling')) * 22450) / 1000) + 'k' : floor(((inv_qty('Redwood seed') + inv_qty('Redwood seedling') + inv_qty('Redwood sapling')) * 22450) / 1000000) + 'm') + ')' : '') + '</col>'}",
       "${'<col=FFFF66>Time: 640 Minutes (10h 40m)</col>'}",
 	  "${'<col=FFFF66>Type: Special Tree </col>'}"
     ]
@@ -262,7 +262,6 @@
     ]
   ]
 },
-
 
 {
   "items": ["Crystal acorn"],
@@ -300,10 +299,10 @@
     [
       "<col=3498db>Farming:</col>",
       "${farming_level_real < 1 ? '<col=FF4D4D>Level: 1</col>' : '<col=55ff55>Level: 1</col>'}",
-      "${inv_qty('Compost') < 2 ? '<col=FF4D4D>Payment: 2x Compost</col>' : '<col=55ff55>Payment: 2x Compost</col>'}",
-      "${'<col=FFFF66>Experience: 9</col>'}",
+      "${inv_qty('Potato seed') > 1 ? (inv_qty('Compost') < (2 * inv_qty('Potato seed')) ? '<col=FF4D4D>Payment: 2 (' + (2 * inv_qty('Potato seed')) + ') Compost</col>' : '<col=55ff55>Payment: 2 (' + (2 * inv_qty('Potato seed')) + ') Compost</col>') : (inv_qty('Compost') < 2 ? '<col=FF4D4D>Payment: 2x Compost</col>' : '<col=55ff55>Payment: 2x Compost</col>')}",
+      "${'<col=FFFF66>Experience: 9' + (inv_qty('Potato seed') > 1 ? ' (' + (inv_qty('Potato seed') * 9) + ')' : '') + '</col>'}",
       "${'<col=FFFF66>Time: 40 Minutes</col>'}",
-	  "${'<col=FFFF66>Type: Allotment </col>'}"
+      "${'<col=FFFF66>Type: Allotment </col>'}"
     ]
   ]
 },
@@ -314,10 +313,10 @@
     [
       "<col=3498db>Farming:</col>",
       "${farming_level_real < 5 ? '<col=FF4D4D>Level: 5</col>' : '<col=55ff55>Level: 5</col>'}",
-      "${inv_qty('Potato') < 10 ? '<col=FF4D4D>Payment: 10x Potato</col>' : '<col=55ff55>Payment: 10x Potato</col>'}",
-      "${'<col=FFFF66>Experience: 10.5</col>'}",
+      "${inv_qty('Onion seed') > 1 ? (inv_qty('Potato') < (10 * inv_qty('Onion seed')) ? '<col=FF4D4D>Payment: 10 (' + (10 * inv_qty('Onion seed')) + ') Potato</col>' : '<col=55ff55>Payment: 10 (' + (10 * inv_qty('Onion seed')) + ') Potato</col>') : (inv_qty('Potato') < 10 ? '<col=FF4D4D>Payment: 10x Potato</col>' : '<col=55ff55>Payment: 10x Potato</col>')}",
+      "${'<col=FFFF66>Experience: 10.5' + (inv_qty('Onion seed') > 1 ? ' (' + (inv_qty('Onion seed') * 10.5) + ')' : '') + '</col>'}",
       "${'<col=FFFF66>Time: 60 Minutes</col>'}",
-	  "${'<col=FFFF66>Type: Allotment </col>'}"
+      "${'<col=FFFF66>Type: Allotment </col>'}"
     ]
   ]
 },
@@ -328,10 +327,10 @@
     [
       "<col=3498db>Farming:</col>",
       "${farming_level_real < 7 ? '<col=FF4D4D>Level: 7</col>' : '<col=55ff55>Level: 7</col>'}",
-      "${inv_qty('Onion') < 10 ? '<col=FF4D4D>Payment: 10x Onion</col>' : '<col=55ff55>Payment: 10x Onion</col>'}",
-      "${'<col=FFFF66>Experience: 11.5</col>'}",
+      "${inv_qty('Cabbage seed') > 1 ? (inv_qty('Onion') < (10 * inv_qty('Cabbage seed')) ? '<col=FF4D4D>Payment: 10 (' + (10 * inv_qty('Cabbage seed')) + ') Onion</col>' : '<col=55ff55>Payment: 10 (' + (10 * inv_qty('Cabbage seed')) + ') Onion</col>') : (inv_qty('Onion') < 10 ? '<col=FF4D4D>Payment: 10x Onion</col>' : '<col=55ff55>Payment: 10x Onion</col>')}",
+      "${'<col=FFFF66>Experience: 11.5' + (inv_qty('Cabbage seed') > 1 ? ' (' + (inv_qty('Cabbage seed') * 11.5) + ')' : '') + '</col>'}",
       "${'<col=FFFF66>Time: 60 Minutes</col>'}",
-	  "${'<col=FFFF66>Type: Allotment </col>'}"
+      "${'<col=FFFF66>Type: Allotment </col>'}"
     ]
   ]
 },
@@ -342,10 +341,10 @@
     [
       "<col=3498db>Farming:</col>",
       "${farming_level_real < 12 ? '<col=FF4D4D>Level: 12</col>' : '<col=55ff55>Level: 12</col>'}",
-      "${inv_qty('Cabbage') < 10 ? '<col=FF4D4D>Payment: 10x Cabbage</col>' : '<col=55ff55>Payment: 10x Cabbage</col>'}",
-      "${'<col=FFFF66>Experience: 14</col>'}",
+      "${inv_qty('Tomato seed') > 1 ? (inv_qty('Cabbage') < (10 * inv_qty('Tomato seed')) ? '<col=FF4D4D>Payment: 10 (' + (10 * inv_qty('Tomato seed')) + ') Cabbage</col>' : '<col=55ff55>Payment: 10 (' + (10 * inv_qty('Tomato seed')) + ') Cabbage</col>') : (inv_qty('Cabbage') < 10 ? '<col=FF4D4D>Payment: 10x Cabbage</col>' : '<col=55ff55>Payment: 10x Cabbage</col>')}",
+      "${'<col=FFFF66>Experience: 14' + (inv_qty('Tomato seed') > 1 ? ' (' + (inv_qty('Tomato seed') * 14) + ')' : '') + '</col>'}",
       "${'<col=FFFF66>Time: 80 Minutes</col>'}",
-	  "${'<col=FFFF66>Type: Allotment </col>'}"
+      "${'<col=FFFF66>Type: Allotment </col>'}"
     ]
   ]
 },
@@ -356,10 +355,10 @@
     [
       "<col=3498db>Farming:</col>",
       "${farming_level_real < 20 ? '<col=FF4D4D>Level: 20</col>' : '<col=55ff55>Level: 20</col>'}",
-      "${inv_qty('Jute fibre') < 10 ? '<col=FF4D4D>Payment: 10x Jute Fibre</col>' : '<col=55ff55>Payment: 10x Jute Fibre</col>'}",
-      "${'<col=FFFF66>Experience: 19</col>'}",
+      "${inv_qty('Sweetcorn seed') > 1 ? (inv_qty('Jute fibre') < (10 * inv_qty('Sweetcorn seed')) ? '<col=FF4D4D>Payment: 10 (' + (10 * inv_qty('Sweetcorn seed')) + ') Jute Fibre</col>' : '<col=55ff55>Payment: 10 (' + (10 * inv_qty('Sweetcorn seed')) + ') Jute Fibre</col>') : (inv_qty('Jute fibre') < 10 ? '<col=FF4D4D>Payment: 10x Jute Fibre</col>' : '<col=55ff55>Payment: 10x Jute Fibre</col>')}",
+      "${'<col=FFFF66>Experience: 19' + (inv_qty('Sweetcorn seed') > 1 ? ' (' + (inv_qty('Sweetcorn seed') * 19) + ')' : '') + '</col>'}",
       "${'<col=FFFF66>Time: 100 Minutes</col>'}",
-	  "${'<col=FFFF66>Type: Allotment </col>'}"
+      "${'<col=FFFF66>Type: Allotment </col>'}"
     ]
   ]
 },
@@ -370,10 +369,10 @@
     [
       "<col=3498db>Farming:</col>",
       "${farming_level_real < 31 ? '<col=FF4D4D>Level: 31</col>' : '<col=55ff55>Level: 31</col>'}",
-      "${inv_qty('Basket of Apples') < 1 ? '<col=FF4D4D>Payment: 1x Apples (5)</col>' : '<col=55ff55>Payment: 1x Apples (5)</col>'}",
-      "${'<col=FFFF66>Experience: 29</col>'}",
+      "${inv_qty('Strawberry seed') > 1 ? (inv_qty('Basket of Apples') < inv_qty('Strawberry seed') ? '<col=FF4D4D>Payment: ' + inv_qty('Strawberry seed') + 'x Apples (5)</col>' : '<col=55ff55>Payment: ' + inv_qty('Strawberry seed') + 'x Apples (5)</col>') : (inv_qty('Basket of Apples') < 1 ? '<col=FF4D4D>Payment: 1x Apples (5)</col>' : '<col=55ff55>Payment: 1x Apples (5)</col>')}",
+      "${'<col=FFFF66>Experience: 29' + (inv_qty('Strawberry seed') > 1 ? ' (' + (inv_qty('Strawberry seed') * 29) + ')' : '') + '</col>'}",
       "${'<col=FFFF66>Time: 160 Minutes (2h 40m)</col>'}",
-	  "${'<col=FFFF66>Type: Allotment </col>'}"
+      "${'<col=FFFF66>Type: Allotment </col>'}"
     ]
   ]
 },
@@ -384,10 +383,10 @@
     [
       "<col=3498db>Farming:</col>",
       "${farming_level_real < 47 ? '<col=FF4D4D>Level: 47</col>' : '<col=55ff55>Level: 47</col>'}",
-      "${inv_qty('Curry leaf') < 10 ? '<col=FF4D4D>Payment: 10x Curry Leaves</col>' : '<col=55ff55>Payment: 10x Curry Leaves</col>'}",
-      "${'<col=FFFF66>Experience: 54.5</col>'}",
+      "${inv_qty('Watermelon seed') > 1 ? (inv_qty('Curry leaf') < (10 * inv_qty('Watermelon seed')) ? '<col=FF4D4D>Payment: 10 (' + (10 * inv_qty('Watermelon seed')) + ') Curry Leaves</col>' : '<col=55ff55>Payment: 10 (' + (10 * inv_qty('Watermelon seed')) + ') Curry Leaves</col>') : (inv_qty('Curry leaf') < 10 ? '<col=FF4D4D>Payment: 10x Curry Leaves</col>' : '<col=55ff55>Payment: 10x Curry Leaves</col>')}",
+      "${'<col=FFFF66>Experience: 54.5' + (inv_qty('Watermelon seed') > 1 ? ' (' + (inv_qty('Watermelon seed') * 54.5) + ')' : '') + '</col>'}",
       "${'<col=FFFF66>Time: 160 Minutes (2h 40m)</col>'}",
-	  "${'<col=FFFF66>Type: Allotment </col>'}"
+      "${'<col=FFFF66>Type: Allotment </col>'}"
     ]
   ]
 },
@@ -398,10 +397,10 @@
     [
       "<col=3498db>Farming:</col>",
       "${farming_level_real < 61 ? '<col=FF4D4D>Level: 61</col>' : '<col=55ff55>Level: 61</col>'}",
-      "${inv_qty('Jangerberry') < 5 ? '<col=FF4D4D>Payment: 5x Jangerberries</col>' : '<col=55ff55>Payment: 5x Jangerberries</col>'}",
-      "${'<col=FFFF66>Experience: 82</col>'}",
+      "${inv_qty('Snape grass seed') > 1 ? (inv_qty('Jangerberry') < (5 * inv_qty('Snape grass seed')) ? '<col=FF4D4D>Payment: 5 (' + (5 * inv_qty('Snape grass seed')) + ') Jangerberries</col>' : '<col=55ff55>Payment: 5 (' + (5 * inv_qty('Snape grass seed')) + ') Jangerberries</col>') : (inv_qty('Jangerberry') < 5 ? '<col=FF4D4D>Payment: 5x Jangerberries</col>' : '<col=55ff55>Payment: 5x Jangerberries</col>')}",
+      "${'<col=FFFF66>Experience: 82' + (inv_qty('Snape grass seed') > 1 ? ' (' + (inv_qty('Snape grass seed') * 82) + ')' : '') + '</col>'}",
       "${'<col=FFFF66>Time: 70 Minutes (1h 10m)</col>'}",
-	  "${'<col=FFFF66>Type: Allotment </col>'}"
+      "${'<col=FFFF66>Type: Allotment </col>'}"
     ]
   ]
 },
@@ -415,7 +414,7 @@
     [
       "<col=3498db>Farming:</col>",
       "${farming_level_real < 2 ? '<col=FF4D4D>Level: 2</col>' : '<col=55ff55>Level: 2</col>'}",
-      "${'<col=FFFF66>Experience: 55.5</col>'}",
+      "${inv_qty('Marigold seed') > 1 ? '<col=FFFF66>Experience: 55.5 (' + (inv_qty('Marigold seed') * 55.5) + ')</col>' : '<col=FFFF66>Experience: 55.5</col>'}",
       "${'<col=FFFF66>Time: 20 Minutes</col>'}",
 	  "${'<col=FFFF66>Type: Flower </col>'}"
     ]
@@ -428,7 +427,7 @@
     [
       "<col=3498db>Farming:</col>",
       "${farming_level_real < 11 ? '<col=FF4D4D>Level: 11</col>' : '<col=55ff55>Level: 11</col>'}",
-      "${'<col=FFFF66>Experience: 78.5</col>'}",
+      "${inv_qty('Rosemary seed') > 1 ? '<col=FFFF66>Experience: 78.5 (' + (inv_qty('Rosemary seed') * 78.5) + ')</col>' : '<col=FFFF66>Experience: 78.5</col>'}",
       "${'<col=FFFF66>Time: 20 Minutes</col>'}",
 	  "${'<col=FFFF66>Type: Flower </col>'}"
     ]
@@ -441,7 +440,7 @@
     [
       "<col=3498db>Farming:</col>",
       "${farming_level_real < 24 ? '<col=FF4D4D>Level: 24</col>' : '<col=55ff55>Level: 24</col>'}",
-      "${'<col=FFFF66>Experience: 130.5</col>'}",
+      "${inv_qty('Nasturtium seed') > 1 ? '<col=FFFF66>Experience: 130.5 (' + (inv_qty('Nasturtium seed') * 130.5) + ')</col>' : '<col=FFFF66>Experience: 130.5</col>'}",
       "${'<col=FFFF66>Time: 20 Minutes</col>'}",
 	  "${'<col=FFFF66>Type: Flower </col>'}"
     ]
@@ -454,7 +453,7 @@
     [
       "<col=3498db>Farming:</col>",
       "${farming_level_real < 25 ? '<col=FF4D4D>Level: 25</col>' : '<col=55ff55>Level: 25</col>'}",
-      "${'<col=FFFF66>Experience: 136</col>'}",
+      "${inv_qty('Woad seed') > 1 ? '<col=FFFF66>Experience: 136 (' + (inv_qty('Woad seed') * 136) + ')</col>' : '<col=FFFF66>Experience: 136</col>'}",
       "${'<col=FFFF66>Time: 20 Minutes</col>'}",
 	  "${'<col=FFFF66>Type: Flower </col>'}"
     ]
@@ -467,7 +466,7 @@
     [
       "<col=3498db>Farming:</col>",
       "${farming_level_real < 26 ? '<col=FF4D4D>Level: 26</col>' : '<col=55ff55>Level: 26</col>'}",
-      "${'<col=FFFF66>Experience: 141.5</col>'}",
+      "${inv_qty('Limpwurt seed') > 1 ? '<col=FFFF66>Experience: 141.5 (' + (inv_qty('Limpwurt seed') * 141.5) + ')</col>' : '<col=FFFF66>Experience: 141.5</col>'}",
       "${'<col=FFFF66>Time: 20 Minutes</col>'}",
 	  "${'<col=FFFF66>Type: Flower </col>'}"
     ]
@@ -480,7 +479,7 @@
     [
       "<col=3498db>Farming:</col>",
       "${farming_level_real < 58 ? '<col=FF4D4D>Level: 58</col>' : '<col=55ff55>Level: 58</col>'}",
-      "${'<col=FFFF66>Experience: 292</col>'}",
+      "${inv_qty('White lily seed') > 1 ? '<col=FFFF66>Experience: 292 (' + (inv_qty('White lily seed') * 292) + ')</col>' : '<col=FFFF66>Experience: 292</col>'}",
       "${'<col=FFFF66>Time: 20 Minutes</col>'}",
 	  "${'<col=FFFF66>Type: Flower </col>'}"
     ]
@@ -493,8 +492,8 @@
     [
       "<col=3498db>Farming:</col>",
       "${farming_level_real < 10 ? '<col=FF4D4D>Level: 10</col>' : '<col=55ff55>Level: 10</col>'}",
-      "${inv_qty('Cabbage') < 10 ? '<col=FF4D4D>Payment: 10x Cabbage</col>' : '<col=55ff55>Payment: 10x Cabbage</col>'}",
-      "${'<col=FFFF66>Experience: 64 (Check) / 4.5 (Harvest)</col>'}",
+      "${inv_qty('Redberry seed') > 1 ? (inv_qty('Cabbage') < 10 ? '<col=FF4D4D>Payment: 10x Cabbage</col>' : '<col=55ff55>Payment: 10x Cabbage</col>') : (inv_qty('Cabbage') < 10 ? '<col=FF4D4D>Payment: 10x Cabbage</col>' : '<col=55ff55>Payment: 10x Cabbage</col>')}",
+      "${'<col=FFFF66>Experience: 64 (Check) / 4.5 (Harvest)' + (inv_qty('Redberry seed') > 1 ? ' (' + (inv_qty('Redberry seed') * 64) + ' / ' + (inv_qty('Redberry seed') * 4.5) + ')' : '') + '</col>'}",
       "${'<col=FFFF66>Time: 100 Minutes (5*20m)</col>'}",
 	  "${'<col=FFFF66>Type: Bush </col>'}"
     ]
@@ -507,8 +506,8 @@
     [
       "<col=3498db>Farming:</col>",
       "${farming_level_real < 22 ? '<col=FF4D4D>Level: 22</col>' : '<col=55ff55>Level: 22</col>'}",
-      "${inv_qty('Tomato') < 5 ? '<col=FF4D4D>Payment: 5x Tomato</col>' : '<col=55ff55>Payment: 5x Tomato</col>'}",
-      "${'<col=FFFF66>Experience: 102.5 (Check) / 7 (Harvest)</col>'}",
+      "${inv_qty('Cadavaberry seed') > 1 ? (inv_qty('Tomato') < 5 ? '<col=FF4D4D>Payment: 5x Tomato</col>' : '<col=55ff55>Payment: 5x Tomato</col>') : (inv_qty('Tomato') < 5 ? '<col=FF4D4D>Payment: 5x Tomato</col>' : '<col=55ff55>Payment: 5x Tomato</col>')}",
+      "${'<col=FFFF66>Experience: 102.5 (Check) / 7 (Harvest)' + (inv_qty('Cadavaberry seed') > 1 ? ' (' + (inv_qty('Cadavaberry seed') * 102.5) + ' / ' + (inv_qty('Cadavaberry seed') * 7) + ')' : '') + '</col>'}",
       "${'<col=FFFF66>Time: 120 Minutes (6*20m)</col>'}",
 	  "${'<col=FFFF66>Type: Bush </col>'}"
     ]
@@ -521,8 +520,8 @@
     [
       "<col=3498db>Farming:</col>",
       "${farming_level_real < 36 ? '<col=FF4D4D>Level: 36</col>' : '<col=55ff55>Level: 36</col>'}",
-      "${inv_qty('Basket of Strawberries') < 3 ? '<col=FF4D4D>Payment: 3x Strawberries (5)</col>' : '<col=55ff55>Payment: 3x Strawberries (5)</col>'}",
-      "${'<col=FFFF66>Experience: 177.5 (Check) / 12 (Harvest)</col>'}",
+      "${inv_qty('Dwellberry seed') > 1 ? (inv_qty('Basket of Strawberries') < 3 ? '<col=FF4D4D>Payment: 3x Strawberries (5)</col>' : '<col=55ff55>Payment: 3x Strawberries (5)</col>') : (inv_qty('Basket of Strawberries') < 1 ? '<col=FF4D4D>Payment: 1x Strawberries (5)</col>' : '<col=55ff55>Payment: 1x Strawberries (5)</col>')}",
+      "${'<col=FFFF66>Experience: 177.5 (Check) / 12 (Harvest)' + (inv_qty('Dwellberry seed') > 1 ? ' (' + (inv_qty('Dwellberry seed') * 177.5) + ' / ' + (inv_qty('Dwellberry seed') * 12) + ')' : '') + '</col>'}",
       "${'<col=FFFF66>Time: 140 Minutes (7*20m)</col>'}",
 	  "${'<col=FFFF66>Type: Bush </col>'}"
     ]
@@ -535,8 +534,8 @@
     [
       "<col=3498db>Farming:</col>",
       "${farming_level_real < 48 ? '<col=FF4D4D>Level: 48</col>' : '<col=55ff55>Level: 48</col>'}",
-      "${inv_qty('Watermelon') < 6 ? '<col=FF4D4D>Payment: 6x Watermelon</col>' : '<col=55ff55>Payment: 6x Watermelon</col>'}",
-      "${'<col=FFFF66>Experience: 284.5 (Check) / 19 (Harvest)</col>'}",
+      "${inv_qty('Jangerberry seed') > 1 ? (inv_qty('Watermelon') < 6 ? '<col=FF4D4D>Payment: 6x Watermelon</col>' : '<col=55ff55>Payment: 6x Watermelon</col>') : (inv_qty('Watermelon') < 6 ? '<col=FF4D4D>Payment: 6x Watermelon</col>' : '<col=55ff55>Payment: 6x Watermelon</col>')}",
+      "${'<col=FFFF66>Experience: 284.5 (Check) / 19 (Harvest)' + (inv_qty('Jangerberry seed') > 1 ? ' (' + (inv_qty('Jangerberry seed') * 284.5) + ' / ' + (inv_qty('Jangerberry seed') * 19) + ')' : '') + '</col>'}",
       "${'<col=FFFF66>Time: 160 Minutes (8*20m)</col>'}",
 	  "${'<col=FFFF66>Type: Bush </col>'}"
     ]
@@ -549,8 +548,8 @@
     [
       "<col=3498db>Farming:</col>",
       "${farming_level_real < 59 ? '<col=FF4D4D>Level: 59</col>' : '<col=55ff55>Level: 59</col>'}",
-      "${inv_qty('Bittercap mushroom') < 8 ? '<col=FF4D4D>Payment: 8x Bittercap Mushroom</col>' : '<col=55ff55>Payment: 8x Bittercap Mushroom</col>'}",
-      "${'<col=FFFF66>Experience: 437.5 (Check) / 29 (Harvest)</col>'}",
+      "${inv_qty('Whiteberry seed') > 1 ? (inv_qty('Bittercap mushroom') < 8 ? '<col=FF4D4D>Payment: 8x Bittercap Mushroom</col>' : '<col=55ff55>Payment: 8x Bittercap Mushroom</col>') : (inv_qty('Bittercap mushroom') < 8 ? '<col=FF4D4D>Payment: 8x Bittercap Mushroom</col>' : '<col=55ff55>Payment: 8x Bittercap Mushroom</col>')}",
+      "${'<col=FFFF66>Experience: 437.5 (Check) / 29 (Harvest)' + (inv_qty('Whiteberry seed') > 1 ? ' (' + (inv_qty('Whiteberry seed') * 437.5) + ' / ' + (inv_qty('Whiteberry seed') * 29) + ')' : '') + '</col>'}",
       "${'<col=FFFF66>Time: 160 Minutes (8*20m)</col>'}",
 	  "${'<col=FFFF66>Type: Bush </col>'}"
     ]
@@ -564,7 +563,7 @@
       "<col=3498db>Farming:</col>",
       "${farming_level_real < 70 ? '<col=FF4D4D>Level: 70</col>' : '<col=55ff55>Level: 70</col>'}",
       "${'<col=55ff55>Payment: None (Immune to disease)</col>'}",
-      "${'<col=FFFF66>Experience: 675 (Check) / 45 (Harvest)</col>'}",
+      "${'<col=FFFF66>Experience: 675 (Check) / 45 (Harvest)' + (inv_qty('Poison ivy seed') > 1 ? ' (' + (inv_qty('Poison ivy seed') * 675) + ' / ' + (inv_qty('Poison ivy seed') * 45) + ')' : '') + '</col>'}",
       "${'<col=FFFF66>Time: 160 Minutes (8*20m)</col>'}",
 	  "${'<col=FFFF66>Type: Bush </col>'}"
     ]
@@ -580,7 +579,7 @@
     [
       "<col=3498db>Farming:</col>",
       "${farming_level_real < 3 ? '<col=FF4D4D>Level: 3</col>' : '<col=55ff55>Level: 3</col>'}",
-      "${'<col=FFFF66>Experience: 8.5</col>'}",
+      "${inv_qty('Barley seed') > 1 ? '<col=FFFF66>Experience: 8.5 (' + (inv_qty('Barley seed') * 8.5) + ')</col>' : '<col=FFFF66>Experience: 8.5</col>'}",
       "${'<col=FFFF66>Time: 40 Minutes</col>'}",
       "${'<col=FFFF66>Type: Hops </col>'}"
     ]
@@ -593,7 +592,7 @@
     [
       "<col=3498db>Farming:</col>",
       "${farming_level_real < 4 ? '<col=FF4D4D>Level: 4</col>' : '<col=55ff55>Level: 4</col>'}",
-      "${'<col=FFFF66>Experience: 9</col>'}",
+      "${inv_qty('Hammerstone seed') > 1 ? '<col=FFFF66>Experience: 9 (' + (inv_qty('Hammerstone seed') * 9) + ')</col>' : '<col=FFFF66>Experience: 9</col>'}",
       "${'<col=FFFF66>Time: 40 Minutes</col>'}",
       "${'<col=FFFF66>Type: Hops </col>'}"
     ]
@@ -606,7 +605,7 @@
     [
       "<col=3498db>Farming:</col>",
       "${farming_level_real < 8 ? '<col=FF4D4D>Level: 8</col>' : '<col=55ff55>Level: 8</col>'}",
-      "${'<col=FFFF66>Experience: 10.9</col>'}",
+      "${inv_qty('Asgarnian seed') > 1 ? '<col=FFFF66>Experience: 10.9 (' + (inv_qty('Asgarnian seed') * 10.9) + ')</col>' : '<col=FFFF66>Experience: 10.9</col>'}",
       "${'<col=FFFF66>Time: 50 Minutes</col>'}",
       "${'<col=FFFF66>Type: Hops </col>'}"
     ]
@@ -619,7 +618,7 @@
     [
       "<col=3498db>Farming:</col>",
       "${farming_level_real < 13 ? '<col=FF4D4D>Level: 13</col>' : '<col=55ff55>Level: 13</col>'}",
-      "${'<col=FFFF66>Experience: 13</col>'}",
+      "${inv_qty('Jute seed') > 1 ? '<col=FFFF66>Experience: 13 (' + (inv_qty('Jute seed') * 13) + ')</col>' : '<col=FFFF66>Experience: 13</col>'}",
       "${'<col=FFFF66>Time: 50 Minutes</col>'}",
       "${'<col=FFFF66>Type: Hops </col>'}"
     ]
@@ -632,7 +631,7 @@
     [
       "<col=3498db>Farming:</col>",
       "${farming_level_real < 16 ? '<col=FF4D4D>Level: 16</col>' : '<col=55ff55>Level: 16</col>'}",
-      "${'<col=FFFF66>Experience: 14.5</col>'}",
+      "${inv_qty('Yanillian seed') > 1 ? '<col=FFFF66>Experience: 14.5 (' + (inv_qty('Yanillian seed') * 14.5) + ')</col>' : '<col=FFFF66>Experience: 14.5</col>'}",
       "${'<col=FFFF66>Time: 60 Minutes</col>'}",
       "${'<col=FFFF66>Type: Hops </col>'}"
     ]
@@ -645,7 +644,7 @@
     [
       "<col=3498db>Farming:</col>",
       "${farming_level_real < 21 ? '<col=FF4D4D>Level: 21</col>' : '<col=55ff55>Level: 21</col>'}",
-      "${'<col=FFFF66>Experience: 17.5</col>'}",
+      "${inv_qty('Krandorian seed') > 1 ? '<col=FFFF66>Experience: 17.5 (' + (inv_qty('Krandorian seed') * 17.5) + ')</col>' : '<col=FFFF66>Experience: 17.5</col>'}",
       "${'<col=FFFF66>Time: 70 Minutes</col>'}",
       "${'<col=FFFF66>Type: Hops </col>'}"
     ]
@@ -658,7 +657,7 @@
     [
       "<col=3498db>Farming:</col>",
       "${farming_level_real < 28 ? '<col=FF4D4D>Level: 28</col>' : '<col=55ff55>Level: 28</col>'}",
-      "${'<col=FFFF66>Experience: 23</col>'}",
+      "${inv_qty('Wildblood seed') > 1 ? '<col=FFFF66>Experience: 23 (' + (inv_qty('Wildblood seed') * 23) + ')</col>' : '<col=FFFF66>Experience: 23</col>'}",
       "${'<col=FFFF66>Time: 80 Minutes</col>'}",
       "${'<col=FFFF66>Type: Hops </col>'}"
     ]
@@ -811,19 +810,6 @@
   ]
 },
 {
-  "items": ["Lantadyme seed"],
-  "condition": "inv_contains('Lantadyme seed')",
-  "hovers": [
-    [
-      "<col=3498db>Farming:</col>",
-      "${farming_level_real < 73 ? '<col=FF4D4D>Level: 73</col>' : '<col=55ff55>Level: 73</col>'}",
-      "${'<col=FFFF66>Experience: 134.5</col>'}",
-      "${'<col=FFFF66>Time: ~80 Minutes</col>'}",
-      "${'<col=FFFF66>Type: Herb </col>'}"
-    ]
-  ]
-},
-{
   "items": ["Dwarf weed seed"],
   "condition": "inv_contains('Dwarf weed seed')",
   "hovers": [
@@ -861,7 +847,7 @@
     [
       "<col=3498db>Farming:</col>",
       "${farming_level_real < 55 ? '<col=FF4D4D>Level: 55</col>' : '<col=55ff55>Level: 55</col>'}",
-      "${'<col=FFFF66>Experience: 374 (Harvest)</col>'}",
+      "${inv_qty('Cactus seed') > 1 ? '<col=FFFF66>Experience: 374 (' + (inv_qty('Cactus seed') * 374) + ')</col>' : '<col=FFFF66>Experience: 374 (Harvest)</col>'}",
       "${'<col=FFFF66>Time: 560 Minutes (9h 20m)</col>'}",
 	  "${'<col=FFFF66>Type: Cacti </col>'}"
     ]
@@ -887,9 +873,9 @@
     [
       "<col=3498db>Farming:</col>",
       "${farming_level_real < 63 ? '<col=FF4D4D>Level: 63</col>' : '<col=55ff55>Level: 63</col>'}",
-      "${'<col=FFFF66>Experience: 512 (Harvest)</col>'}",
+      "${inv_qty('Belladonna seed') > 1 ? '<col=FFFF66>Experience: 512 (' + (inv_qty('Belladonna seed') * 512) + ')</col>' : '<col=FFFF66>Experience: 512 (Harvest)</col>'}",
       "${'<col=FFFF66>Time: 320 Minutes (5h 20m)</col>'}",
-	  "${'<col=FFFF66>Type: Special Seed </col>'}"
+      "${'<col=FFFF66>Type: Special Seed </col>'}"
     ]
   ]
 },
@@ -900,9 +886,9 @@
     [
       "<col=3498db>Farming:</col>",
       "${farming_level_real < 53 ? '<col=FF4D4D>Level: 53</col>' : '<col=55ff55>Level: 53</col>'}",
-      "${'<col=FFFF66>Experience: 570 (Harvest)</col>'}",
+      "${inv_qty('Mushroom spore') > 1 ? '<col=FFFF66>Experience: 570 (' + (inv_qty('Mushroom spore') * 570) + ')</col>' : '<col=FFFF66>Experience: 570 (Harvest)</col>'}",
       "${'<col=FFFF66>Time: 240 Minutes (4h)</col>'}",
-	  "${'<col=FFFF66>Type: Special Seed </col>'}"
+      "${'<col=FFFF66>Type: Special Seed </col>'}"
     ]
   ]
 },
@@ -913,9 +899,9 @@
     [
       "<col=3498db>Farming:</col>",
       "${farming_level_real < 53 ? '<col=FF4D4D>Level: 53</col>' : '<col=55ff55>Level: 53</col>'}",
-      "${'<col=FFFF66>Experience: 57 per mushroom</col>'}",
+      "${inv_qty('Bittercap mushroom spore') > 1 ? '<col=FFFF66>Experience: 57 (' + (inv_qty('Bittercap mushroom spore') * 57) + ')</col>' : '<col=FFFF66>Experience: 57 per mushroom</col>'}",
       "${'<col=FFFF66>Time: 240 Minutes (4h)</col>'}",
-	  "${'<col=FFFF66>Type: Special Seed </col>'}"
+      "${'<col=FFFF66>Type: Special Seed </col>'}"
     ]
   ]
 },
@@ -965,13 +951,12 @@
     [
       "<col=3498db>Farming:</col>",
       "${farming_level_real < 23 ? '<col=FF4D4D>Level: 23</col>' : '<col=55ff55>Level: 23</col>'}",
-      "${'<col=FFFF66>Experience: 19</col>'}",
+      "${inv_qty('Seaweed spore') > 1 ? '<col=FFFF66>Experience: 19 (' + (inv_qty('Seaweed spore') * 19) + ')</col>' : '<col=FFFF66>Experience: 19</col>'}",
       "${'<col=FFFF66>Time: ~40 Minutes</col>'}",
       "${'<col=FFFF66>Type: Underwater </col>'}"
     ]
   ]
 },
-
 {
   "items": ["Grape seed"],
   "condition": "inv_contains('Grape seed')",
@@ -979,13 +964,12 @@
     [
       "<col=3498db>Farming:</col>",
       "${farming_level_real < 36 ? '<col=FF4D4D>Level: 36</col>' : '<col=55ff55>Level: 36</col>'}",
-      "${'<col=FFFF66>Experience: 31.5 (plant) / 625 (check) / 40 (harvest)</col>'}",
+      "${inv_qty('Grape seed') > 1 ? '<col=FFFF66>Experience: 31.5 (' + (inv_qty('Grape seed') * 31.5) + ') (plant) / 625 (' + (inv_qty('Grape seed') * 625) + ') (check) / 40 (' + (inv_qty('Grape seed') * 40) + ') (harvest)</col>' : '<col=FFFF66>Experience: 31.5 (plant) / 625 (check) / 40 (harvest)</col>'}",
       "${'<col=FFFF66>Time: ~35 Minutes</col>'}",
       "${'<col=FFFF66>Type: Vine </col>'}"
     ]
   ]
 },
-
 {
   "items": ["Potato cactus seed"],
   "condition": "inv_contains('Potato cactus seed')",
@@ -993,12 +977,11 @@
     [
       "<col=3498db>Farming:</col>",
       "${farming_level_real < 64 ? '<col=FF4D4D>Level: 64</col>' : '<col=55ff55>Level: 64</col>'}",
-      "${'<col=FFFF66>Experience: 68 (plant) / 230 (check) / 68 (harvest)</col>'}",
+      "${inv_qty('Potato cactus seed') > 1 ? '<col=FFFF66>Experience: 68 (' + (inv_qty('Potato cactus seed') * 68) + ') (plant) / 230 (' + (inv_qty('Potato cactus seed') * 230) + ') (check) / 68 (' + (inv_qty('Potato cactus seed') * 68) + ') (harvest)</col>' : '<col=FFFF66>Experience: 68 (plant) / 230 (check) / 68 (harvest)</col>'}",
       "${'<col=FFFF66>Time: ~70 Minutes</col>'}",
       "${'<col=FFFF66>Type: Cactus </col>'}"
     ]
   ]
 }
-
 ]
 }
