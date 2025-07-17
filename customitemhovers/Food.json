@@ -46,7 +46,7 @@
     { "items": ["Worm hole"], "hovers": [["<col=66B2FF>Heals: 15</col>"]] },
     { "items": ["Chocolate bomb"], "hovers": [["<col=66B2FF>Heals: 15</col>"]] },
     { "items": ["Half a chocolate cake"], "hovers": [["<col=66B2FF>Heals: 5 per bite</col>"]] },
-	{ "items": ["Blurberry special", "Fruit blast", "Drunk dragon", "Wizard blizzard", "Short green guy", "Choc saturday", "Pink skirt", "Dirty blast"], "hovers": [["<col=C266FF>Heals: 14</col>"]] },
+	{ "items": ["Blurberry special", "Fruit blast", "Drunk dragon", "Wizard blizzard", "Short green guy", "Choc saturday", "Dirty blast"], "hovers": [["<col=C266FF>Heals: 14</col>"]] },
 
     // 🧪 Combo & Stat-Boosting Foods
     { "items": ["Summer pie"], "hovers": [["<col=FFB84D>Heals: 11 per bite</col>"]] },
@@ -63,7 +63,7 @@
     { "items": ["Saradomin brew"], "hovers": [["<col=FFB84D>Heals: 15% + 2 HP</col>"]] },
     { "items": ["Guthix rest"], "hovers": [["<col=66FF66>Heals: 5 per sip</col>"]] },
     { "items": ["Tea flask"], "hovers": [["<col=66FF66>Heals: 3 per sip</col>"]] },
-    { "items": ["Cup of tea"], "hovers": [["<col=66FF66>Heals: 3</col>"]] },
+    { "items": ["Cup of tea","Tea flask"], "hovers": [["<col=66FF66>Heals: 3</col>"]] },
     { "items": ["Mushroom potato"], "hovers": [["<col=FFB84D>Heals: 20</col>"]] },
     { "items": ["Egg potato", "Potato with cheese"], "hovers": [["<col=C266FF>Heals: 16</col>"]] },
     { "items": ["Baked potato"], "hovers": [["<col=66FF66>Heals: 4</col>"]] },
@@ -77,11 +77,11 @@
     // 🧅 Gatherables
     { "items": ["Cabbage", "Onion", "Potato"], "hovers": [["<col=FFFFFF>Heals: 1</col>"]] },
     { "items": ["Banana"], "hovers": [["<col=FFFFFF>Heals: 2</col>"]] },
-    { "items": ["Kebab"], "hovers": [["<col=66FF66>Heals: 0–30 (random)</col>"]] },
+    { "items": ["Kebab"], "hovers": [["<col=66FF66>Heals: 0 to 30 (random)</col>"]] },
 	{ "items": ["Spinach roll"], "hovers": [["<col=FFFFFF>Heals: 2</col>"]] },
 
     // 🍬 Fringe Edibles & Utility Foods
-    { "items": ["Purple sweets"], "hovers": [["<col=66FF66>Heals: 1–3 + run energy</col>"]] },
+    { "items": ["Purple sweets"], "hovers": [["<col=66FF66>Heals: 1 to 3 | Energy: 10 </col>"]] },
     { "items": ["Strange fruit"], "hovers": [["<col=66FF66>Heals: 1 + cures poison</col>"]] },
     { "items": ["Edible seaweed"], "hovers": [["<col=FFFFFF>Heals: 2</col>"]] },
     { "items": ["Edible crab meat"], "hovers": [["<col=FFFFFF>Heals: 2</col>"]] },
@@ -93,9 +93,9 @@
     { "items": ["Baguette"], "hovers": [["<col=66FF66>Heals: 6</col>"]] },
 
     // 🧃 Drinks & Oddities
-    { "items": ["Beer", "Asgarnian ale", "Wizard's mind bomb", "Greenman's ale"], "hovers": [["<col=66FF66>Heals: 1–2</col>"]] },
-    { "items": ["Dragon bitter", "Chef's delight"], "hovers": [["<col=66FF66>Heals: 2–3</col>"]] },
-    { "items": ["Cup of tea", "Guthix rest", "Tea flask"], "hovers": [["<col=66FF66>Heals: 3–5</col>"]] },
+    { "items": ["Beer", "Asgarnian ale", "Wizard's mind bomb", "Greenman's ale"], "hovers": [["<col=66FF66>Heals: 1 to 2</col>"]] },
+    { "items": ["Dragon bitter", "Chef's delight"], "hovers": [["<col=66FF66>Heals: 2 to 3</col>"]] },
+    { "items": ["Guthix rest"], "hovers": [["<col=66FF66>Heals: 5</col>"]] },
     { "items": ["Moonlight mead", "Olde Suspicious Ale"], "hovers": [["<col=66FF66>Heals: 3</col>"]] },
 
     // 🍫 Miscellaneous Edibles
