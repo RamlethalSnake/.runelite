@@ -1,1 +1,1 @@
-{"internalName":"pack-lite-ui","commit":"f3c1178d30650ad9c1b68b6fd7d82f14c1b8b2c9","displayName":"lite:ui","compatibleVersion":"1.6.1","author":"cue","tags":["Dark"," Clean"," Runelite"],"repo":"https://github.com/melkypie/resource-packs/tree/pack-lite-ui","hasIcon":true}
+{"internalName":"pack-lite-ui","commit":"4b632d62f98b6339fa594b084345bc7281f03c54","displayName":"lite:ui","compatibleVersion":"1.7.4","author":"cue","tags":["Dark"," Clean"," Runelite"," lite"," ui"," liteui"," rl"],"repo":"https://github.com/melkypie/resource-packs/tree/pack-lite-ui","hasIcon":true}

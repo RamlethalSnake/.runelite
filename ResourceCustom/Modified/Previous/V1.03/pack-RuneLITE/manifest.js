@@ -1,1 +1,0 @@
-{"internalName":"pack-RuneLITE","commit":"99ba92baccd1492e5012a99b99c08b89172d4d5a","displayName":"RuneLITE","compatibleVersion":"1.6.1","author":"Smoke (Smoked today)","tags":["streamlined","modern","lite","dark","varietyz","smoke","elegant","overhaul","themed"],"repo":"https://github.com/melkypie/resource-packs/tree/pack-RuneLITE","hasIcon":true}

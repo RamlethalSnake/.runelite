@@ -402,7 +402,10 @@ not safe on pvp.+you never get the sceptre#
 (?i)^(guaranteed )?half(ing)? money.*
 (?i)\bikov\b.*\bgame\b|\bgame\b.*\bikov\b
 (?i)rs to ikov
-Ikov
+(?i)Ikov
+(?i)Clan hall
+(?i)World 302
+(?i)Ice World
 
 ♾️♾️♾️♾️♾️ NAMES ♾️♾️♾️♾️♾️
 (?i)^(c[o0]in|casin[o0]|c[a@]s[i1]n[o0])[-_ ]?\w{2,}$

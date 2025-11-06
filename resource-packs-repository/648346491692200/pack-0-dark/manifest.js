@@ -1,1 +1,1 @@
-{"internalName":"pack-0-dark","commit":"c26a7714cf9270e5f8b9a98973272df09bf2e8c5","displayName":"0 Dark","compatibleVersion":"1.7.6","author":"EXpoZuR","tags":["dark","colorful","modern"],"repo":"https://github.com/melkypie/resource-packs/tree/pack-0-dark","hasIcon":true}
+{"internalName":"pack-0-dark","commit":"188f7f19b5bd9db9f2261d947706bbc901c5d373","displayName":"0 Dark","compatibleVersion":"1.7.6","author":"EXpoZuR","tags":["dark","colorful","modern"],"repo":"https://github.com/melkypie/resource-packs/tree/pack-0-dark","hasIcon":true}

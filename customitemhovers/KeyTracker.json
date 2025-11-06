@@ -1,0 +1,922 @@
+{
+  "is_hover_map": "absolutely",
+  "hovers": [
+
+    {
+      "ids": ["298"], //Waterfall Dungeon key
+      "hovers": [
+        [
+          "<col=AA99CC>Unlocks:",
+          "<col=33FF99>Waterfall Dungeon",
+          "<col=AA99CC>Found:",
+          "<col=FF6666>Search crate near Waterfall entrance",
+          "<col=AA99CC>Quests:",
+          "<col=33FFE0>Waterfall Quest",
+          "<col=33FFE0>Roving Elves",
+          "<col=33FFE0>Song of the Elves"
+        ]
+      ]
+    },
+	
+    {
+      "ids": ["293"], //Tree Gnome Village key
+      "hovers": [
+        [
+          "<col=AA99CC>Unlocks:",
+          "<col=33FF99>Golrie's cell in Tree Gnome Village dungeon",
+          "<col=AA99CC>Found:",
+          "<col=FF6666>Given in quest",
+          "<col=AA99CC>Quests:",
+          "<col=33FFE0>Tree Gnome Village"
+        ]
+      ]
+    },
+	
+    {
+      "ids": ["292"], //Digsite chest key
+      "hovers": [
+        [
+          "<col=AA99CC>Unlocks:",
+          "<col=33FF99>Chest in Digsite building",
+          "<col=AA99CC>Found:",
+          "<col=FF6666>Given in quest",
+          "<col=AA99CC>Quests:",
+          "<col=33FFE0>The Dig Site"
+        ]
+      ]
+    },
+	
+    {
+      "ids": ["291"], //Hazeel Cult chest key
+      "hovers": [
+        [
+          "<col=AA99CC>Unlocks:",
+          "<col=33FF99>Chest in Carnillean house",
+          "<col=AA99CC>Found:",
+          "<col=FF6666>Given in quest",
+          "<col=AA99CC>Quests:",
+          "<col=33FFE0>Hazeel Cult"
+        ]
+      ]
+    },	
+    {
+      "ids": ["288"], //The Path of Glouphrie key
+      "hovers": [
+        [
+          "<col=AA99CC>Unlocks:",
+          "<col=33FF99>Chest in Arposandra ruins",
+          "<col=AA99CC>Found:",
+          "<col=FF6666>Given in quest",
+          "<col=AA99CC>Quests:",
+          "<col=33FFE0>The Path of Glouphrie"
+        ]
+      ]
+    },
+	
+    {
+      "ids": ["287"], //Death on the Isle key
+      "hovers": [
+        [
+          "<col=AA99CC>Unlocks:",
+          "<col=33FF99>Fancy chest in Villa Lucens wine cellar",
+          "<col=AA99CC>Found:",
+          "<col=FF6666>Search wine cellar after quest",
+          "<col=AA99CC>Quests:",
+          "<col=33FFE0>Death on the Isle"
+        ]
+      ]
+    },
+	
+    {
+      "ids": ["286"], //The Lost Tribe key
+      "hovers": [
+        [
+          "<col=AA99CC>Unlocks:",
+          "<col=33FF99>Chest in Lumbridge caves",
+          "<col=AA99CC>Found:",
+          "<col=FF6666>Given in quest",
+          "<col=AA99CC>Quests:",
+          "<col=33FFE0>The Lost Tribe"
+        ]
+      ]
+    },
+	
+ {
+      "ids": ["284"], //Witch's House key
+      "hovers": [
+        [
+          "<col=AA99CC>Unlocks:",
+          "<col=33FF99>Chest in Witch's House",
+          "<col=AA99CC>Found:",
+          "<col=FF6666>Given in quest",
+          "<col=AA99CC>Quests:",
+          "<col=33FFE0>Witch's House"
+        ]
+      ]
+    },
+	
+    {
+      "ids": ["283"], //Biohazard key
+      "hovers": [
+        [
+          "<col=AA99CC>Unlocks:",
+          "<col=33FF99>Chest in Biohazard lab",
+          "<col=AA99CC>Found:",
+          "<col=FF6666>Given in quest",
+          "<col=AA99CC>Quests:",
+          "<col=33FFE0>Biohazard"
+        ]
+      ]
+    },
+	
+    {
+      "ids": ["9722"], //Elemental Workshop II key
+      "hovers": [
+        [
+          "<col=AA99CC>Unlocks:",
+          "<col=33FF99>Hatch in Elemental Workshop",
+          "<col=AA99CC>Found:",
+          "<col=FF6666>Given in quest",
+          "<col=AA99CC>Quests:",
+          "<col=33FFE0>Elemental Workshop II"
+        ]
+      ]
+    },
+	
+    {
+      "ids": ["281"], //Melzar's Maze key
+      "hovers": [
+        [
+          "<col=AA99CC>Unlocks:",
+          "<col=33FF99>Chest in Melzar's Maze",
+          "<col=AA99CC>Found:",
+          "<col=FF6666>Given in quest",
+          "<col=AA99CC>Quests:",
+          "<col=33FFE0>Dragon Slayer"
+        ]
+      ]
+    },
+    {
+      "ids": ["983"], //Brass key
+      "hovers": [
+        [
+          "<col=AA99CC>Unlocks:",
+          "<col=33FF99>Back entrance to Edgeville Dungeon",
+          "<col=AA99CC>Found:",
+          "<col=FF6666>Buy from the G.E. or inside of the dungeon"
+        ]
+      ]
+    },
+	
+    {
+      "ids": ["23987"], //Brittle key
+      "hovers": [
+        [
+          "<col=AA99CC>Unlocks:",
+          "<col=33FF99>Slayer Tower rooftop entrance",
+          "<col=AA99CC>Found:",
+          "<col=FF6666>Drop from Gargoyle boss (Grotesque Guardians)",
+          "<col=AA99CC>Quests:",
+          "<col=33FFE0>None"
+        ]
+      ]
+    },
+	
+    {
+      "ids": ["4272"], //Bone key (Ghosts Ahoy)
+      "hovers": [
+        [
+          "<col=AA99CC>Unlocks:",
+          "<col=33FF99>Doors in Port Phasmatys mausoleum",
+          "<col=AA99CC>Found:",
+          "<col=FF6666>Given in quest",
+          "<col=AA99CC>Quests:",
+          "<col=33FFE0>Ghosts Ahoy (Can be dropped after quest)"
+        ]
+      ]
+    },
+	
+    {
+      "ids": ["85"], //Shiny key
+      "hovers": [
+        [
+          "<col=AA99CC>Unlocks:",
+          "<col=33FF99>Temple of Ikov storage room",
+          "<col=AA99CC>Found:",
+          "<col=FF6666>Found inside Temple of Ikov dungeon",
+          "<col=AA99CC>Quests:",
+          "<col=33FFE0>Temple of Ikov"
+        ]
+      ]
+    },
+    {
+      "ids": ["2887"], //Battered key
+      "hovers": [
+        [
+          "<col=AA99CC>Unlocks:",
+          "<col=33FF99>Elemental Workshop entrance",
+          "<col=AA99CC>Found:",
+          "<col=FF6666>Search bookshelf in Seers' Village",
+          "<col=AA99CC>Quests:",
+          "<col=33FFE0>Elemental Workshop I",
+          "<col=33FFE0>Elemental Workshop II"
+        ]
+      ]
+    },
+	
+    {
+      "ids": ["30311"], //Base key
+      "hovers": [
+        [
+          "<col=AA99CC>Unlocks:",
+          "<col=33FF99>Base door in Arrav's hideout",
+          "<col=AA99CC>Found:",
+          "<col=FF6666>Given in quest",
+          "<col=AA99CC>Quests:",
+          "<col=33FFE0>The Curse of Arrav"
+        ]
+      ]
+    },
+	
+    {
+      "ids": ["6744"], //Bedabin key
+      "hovers": [
+        [
+          "<col=AA99CC>Unlocks:",
+          "<col=33FF99>Cell in Bedabin Camp",
+          "<col=AA99CC>Found:",
+          "<col=FF6666>Given in quest",
+          "<col=AA99CC>Quests:",
+          "<col=33FFE0>The Tourist Trap"
+        ]
+      ]
+    },
+	
+    {
+      "ids": ["6745"], //Cavern key
+      "hovers": [
+        [
+          "<col=AA99CC>Unlocks:",
+          "<col=33FF99>Fenkenstrain's dungeon gate",
+          "<col=AA99CC>Found:",
+          "<col=FF6666>Given in quest",
+          "<col=AA99CC>Quests:",
+          "<col=33FFE0>Creature of Fenkenstrain"
+        ]
+      ]
+    },
+    {
+      "ids": ["6743"], //Cell door key
+      "hovers": [
+        [
+          "<col=AA99CC>Unlocks:",
+          "<col=33FF99>Prison cell in Desert Mining Camp",
+          "<col=AA99CC>Found:",
+          "<col=FF6666>Given in quest",
+          "<col=AA99CC>Quests:",
+          "<col=33FFE0>The Tourist Trap"
+        ]
+      ]
+    },
+	
+	{
+      "ids": ["6770"], //Cell key 1
+      "hovers": [
+        [
+          "<col=AA99CC>Unlocks:",
+          "<col=33FF99>Prison cell in Troll Stronghold",
+          "<col=AA99CC>Found:",
+          "<col=FF6666>Dropped by Troll General",
+          "<col=AA99CC>Quests:",
+          "<col=33FFE0>Troll Stronghold"
+        ]
+      ]
+    },
+ 	{
+      "ids": ["6792"], //Ancestral key
+      "hovers": [
+        [
+          "<col=AA99CC>Unlocks:",
+          "<col=33FF99>Water Ravine Dungeon",
+          "<col=AA99CC>Found:",
+          "<col=FF6666>Tele-grab the key at Nardah",
+          "<col=AA99CC>Quests:",
+          "<col=33FFE0>Spirits of the Elid"
+        ]
+      ]
+    },   
+ 	{
+      "ids": ["605"], //Bone Key (Shilo Village)
+      "hovers": [
+        [
+          "<col=AA99CC>Unlocks:",
+          "<col=33FF99>Rashiliyia's Tomb",
+          "<col=AA99CC>Found:",
+          "<col=FF6666>Use a chisel on a bone shard",
+          "<col=AA99CC>Quests:",
+          "<col=33FFE0>Shilo Village"
+        ]
+      ]
+    },   
+    {
+      "ids": ["6771"], //Cell key 2
+      "hovers": [
+        [
+          "<col=AA99CC>Unlocks:",
+          "<col=33FF99>Second prison cell in Troll Stronghold",
+          "<col=AA99CC>Found:",
+          "<col=FF6666>Dropped by Troll General",
+          "<col=AA99CC>Quests:",
+          "<col=33FFE0>Troll Stronghold"
+        ]
+      ]
+    },
+	
+    {
+      "ids": ["228"], //Combat damaged key
+      "hovers": [
+        [
+          "<col=AA99CC>Unlocks:",
+          "<col=33FF99>Glough's stronghold door",
+          "<col=AA99CC>Found:",
+          "<col=FF6666>Obtained during quest",
+          "<col=AA99CC>Quests:",
+          "<col=33FFE0>Monkey Madness II"
+        ]
+      ]
+    },
+	
+    {
+      "ids": ["24662"], //Crypt key
+      "hovers": [
+        [
+          "<col=AA99CC>Unlocks:",
+          "<col=33FF99>Crypt door in Theatre of Blood",
+          "<col=AA99CC>Found:",
+          "<col=FF6666>Obtained during quest",
+          "<col=AA99CC>Quests:",
+          "<col=33FFE0>A Night at the Theatre"
+        ]
+      ]
+    },
+	
+    {
+      "ids": ["4077"], //Crystal mine key
+      "hovers": [
+        [
+          "<col=AA99CC>Unlocks:",
+          "<col=33FF99>Haunted Mine entrance",
+          "<col=AA99CC>Found:",
+          "<col=FF6666>Dropped by Treus Dayth",
+          "<col=AA99CC>Quests:",
+          "<col=33FFE0>Haunted Mine"
+        ]
+      ]
+    },
+	
+    {
+      "ids": ["25810"], //Damp key
+      "hovers": [
+        [
+          "<col=AA99CC>Unlocks:",
+          "<col=33FF99>Damp chest in Kourend dungeon",
+          "<col=AA99CC>Found:",
+          "<col=FF6666>Obtained during quest",
+          "<col=AA99CC>Quests:",
+          "<col=33FFE0>A Kingdom Divided"
+        ]
+      ]
+    },
+	
+    {
+      "ids": ["28419"], //Diamond key
+      "hovers": [
+        [
+          "<col=AA99CC>Unlocks:",
+          "<col=33FF99>Diamond chest in Fallen Empire ruins",
+          "<col=AA99CC>Found:",
+          "<col=FF6666>Obtained during quest",
+          "<col=AA99CC>Quests:",
+          "<col=33FFE0>Desert Treasure II"
+        ]
+      ]
+    },
+	{
+      "ids": ["4617"], //Display cabinet key
+      "hovers": [
+        [
+          "<col=AA99CC>Unlocks:",
+          "<col=33FF99>Cabinet in the Golem's chamber",
+          "<col=AA99CC>Found:",
+          "<col=FF6666>Obtained during quest",
+          "<col=AA99CC>Quests:",
+          "<col=33FFE0>The Golem"
+        ]
+      ]
+    },
+	
+    {
+      "ids": ["9654"], //Door key (Darkness of Hallowvale)
+      "hovers": [
+        [
+          "<col=AA99CC>Unlocks:",
+          "<col=33FF99>Door in Meiyerditch laboratories",
+          "<col=AA99CC>Found:",
+          "<col=FF6666>Obtained during quest",
+          "<col=AA99CC>Quests:",
+          "<col=33FFE0>Darkness of Hallowvale"
+        ]
+      ]
+    },
+	
+    {
+      "ids": ["2409"], //Door key (Witch's House)
+      "hovers": [
+        [
+          "<col=AA99CC>Unlocks:",
+          "<col=33FF99>Witch's House basement door",
+          "<col=AA99CC>Found:",
+          "<col=FF6666>Obtained during quest",
+          "<col=AA99CC>Quests:",
+          "<col=33FFE0>Witch's House",
+          "<col=33FFE0>Grim Tales"
+        ]
+      ]
+    },
+	
+    {
+      "ids": ["24665"], //Dragon key
+      "hovers": [
+        [
+          "<col=AA99CC>Unlocks:",
+          "<col=33FF99>Dragonkin chamber in Lithkren",
+          "<col=AA99CC>Found:",
+          "<col=FF6666>Obtained during quest",
+          "<col=AA99CC>Quests:",
+          "<col=33FFE0>Dragon Slayer II"
+        ]
+      ]
+    },
+    {
+      "ids": ["28294"], //Emerald key
+      "hovers": [
+        [
+          "<col=AA99CC>Unlocks:",
+          "<col=33FF99>Emerald chest in Misthalin Manor",
+          "<col=AA99CC>Found:",
+          "<col=FF6666>Obtained during quest",
+          "<col=AA99CC>Quests:",
+          "<col=33FFE0>Misthalin Mystery"
+        ]
+      ]
+    },
+	
+    {
+      "ids": ["10158"], //Enchanted key
+      "hovers": [
+        [
+          "<col=AA99CC>Unlocks:",
+          "<col=33FF99>Treasure locations across Gielinor",
+          "<col=AA99CC>Found:",
+          "<col=FF6666>Given during quest",
+          "<col=AA99CC>Quests:",
+          "<col=33FFE0>Making History"
+        ]
+      ]
+    },
+	
+    {
+      "ids": ["20754"], //Giant key
+      "hovers": [
+        [
+          "<col=AA99CC>Unlocks:",
+          "<col=33FF99>Obor's lair in Edgeville Dungeon",
+          "<col=AA99CC>Found:",
+          "<col=FF6666>Dropped by hill giants",
+          "<col=AA99CC>State:",
+          "<col=33FFE0>Consumed on chest"
+        ]
+      ]
+    },
+    {
+      "ids": ["747"], //Glough's key
+      "hovers": [
+        [
+          "<col=AA99CC>Unlocks:",
+          "<col=33FF99>Glough's stronghold door",
+          "<col=AA99CC>Found:",
+          "<col=FF6666>Obtained during quest",
+          "<col=AA99CC>Quests:",
+          "<col=33FFE0>The Grand Tree"
+        ]
+      ]
+    },
+	
+    {
+      "ids": ["601"], //Goblin kitchen key
+      "hovers": [
+        [
+          "<col=AA99CC>Unlocks:",
+          "<col=33FF99>Kitchen door in Observatory",
+          "<col=AA99CC>Found:",
+          "<col=FF6666>Obtained during quest",
+          "<col=AA99CC>Quests:",
+          "<col=33FFE0>Observatory Quest"
+        ]
+      ]
+    },
+	
+	
+    {
+      "ids": ["24378"], //Grip's keyring
+      "hovers": [
+        [
+          "<col=AA99CC>Unlocks:",
+          "<col=33FF99>Doors in Brimhaven mansion",
+          "<col=AA99CC>Found:",
+          "<col=FF6666>Obtained during quest (Black Arm Gang)",
+          "<col=AA99CC>Quests:",
+          "<col=33FFE0>Heroes' Quest"
+        ]
+      ]
+    },
+    {
+      "ids": ["1591"], //Jail key
+      "hovers": [
+        [
+          "<col=AA99CC>Unlocks:",
+          "<col=33FF99>Cell in Black Knights' Base (Taverley Dungeon)",
+          "<col=AA99CC>Found:",
+          "<col=FF6666>Dropped by jailer",
+          "<col=AA99CC>Quests:",
+          "<col=33FFE0>Dragon Slayer I"
+        ]
+      ]
+    },
+    {
+      "ids": ["423"], //Key (Biohazard)
+      "hovers": [
+        [
+          "<col=AA99CC>Unlocks:",
+          "<col=33FF99>West Ardougne gate",
+          "<col=AA99CC>Found:",
+          "<col=FF6666>Obtained during quest",
+          "<col=AA99CC>Quests:",
+          "<col=33FFE0>Biohazard"
+        ]
+      ]
+    },
+    {
+      "ids": ["275"], //Key (Ernest the Chicken)
+      "hovers": [
+        [
+          "<col=AA99CC>Unlocks:",
+          "<col=33FF99>Basement doors in Draynor Manor",
+          "<col=AA99CC>Found:",
+          "<col=FF6666>Use a spade on the heap inside the Manor's west wall",
+          "<col=AA99CC>Quests:",
+          "<col=33FFE0>Ernest the Chicken (Can be dropped after quest)"
+        ]
+      ]
+    },
+	
+    {
+      "ids": ["1542"], //Key (Melzar's Maze)
+      "hovers": [
+        [
+          "<col=AA99CC>Unlocks:",
+          "<col=33FF99>Melzar's Maze doors",
+          "<col=AA99CC>Found:",
+          "<col=FF6666>Dropped by maze monsters",
+          "<col=AA99CC>Quests:",
+          "<col=33FFE0>Dragon Slayer I"
+        ]
+      ]
+    },
+	
+    {
+      "ids": ["560"], //Key (Olaf's Quest)
+      "hovers": [
+        [
+          "<col=AA99CC>Unlocks:",
+          "<col=33FF99>Chests and doors in Brine Rat cave",
+          "<col=AA99CC>Found:",
+          "<col=FF6666>Obtained during quest",
+          "<col=AA99CC>Quests:",
+          "<col=33FFE0>Olaf's Quest"
+        ]
+      ]
+    },
+    {
+      "ids": ["76"], //Khazard cell keys
+      "hovers": [
+        [
+          "<col=AA99CC>Unlocks:",
+          "<col=33FF99>Prison cells in Fight Arena",
+          "<col=AA99CC>Found:",
+          "<col=FF6666>Obtained during quest",
+          "<col=AA99CC>Quests:",
+          "<col=33FFE0>Fight Arena"
+        ]
+      ]
+    },
+	
+    {
+      "ids": ["1590"], //Dusty Key (Taverley Dungeon)
+      "hovers": [
+        [
+          "<col=AA99CC>Unlocks:",
+          "<col=33FF99>Taverley Dungeon Gate",
+          "<col=AA99CC>Found:",
+          "<col=FF6666>Velrak the explorer / Legends Guild"
+        ]
+      ]
+    },
+    {
+      "ids": ["6083"], //Tarnished Key
+      "hovers": [
+        [
+          "<col=AA99CC>Unlocks:",
+          "<col=33FF99>Cell",
+          "<col=AA99CC>Found:",
+          "<col=FF6666>Given by Essyllt",
+          "<col=AA99CC>Quests:",
+          "<col=33FFE0>Mourning's End Part II (Can be dropped after quest)"         
+        ]
+      ]
+    },
+    {
+      "ids": ["1843"], //Wrought Iron Key (Tourist Trap)
+      "hovers": [
+        [
+          "<col=AA99CC>Unlocks:",
+          "<col=33FF99>Door deep inside the Desert Mining Camp",
+          "<col=AA99CC>Found:",
+          "<col=FF6666>Searching one of the tables located inside the Desert Mining Camp",
+          "<col=AA99CC>Quests:",
+          "<col=33FFE0>Tourist Trap"
+        ]
+      ]
+    },
+    {
+      "ids": ["4161"], //Lighthouse key
+      "hovers": [
+        [
+          "<col=AA99CC>Unlocks:",
+          "<col=33FF99>Lighthouse door near Fremennik Province",
+          "<col=AA99CC>Found:",
+          "<col=FF6666>Obtained during quest",
+          "<col=AA99CC>Quests:",
+          "<col=33FFE0>Horror from the Deep"
+        ]
+      ]
+    },
+	
+    {
+      "ids": ["4162"], //Maze key
+      "hovers": [
+        [
+          "<col=AA99CC>Unlocks:",
+          "<col=33FF99>Melzar's Maze entrance",
+          "<col=AA99CC>Found:",
+          "<col=FF6666>Obtained during quest",
+          "<col=AA99CC>Quests:",
+          "<col=33FFE0>Dragon Slayer I"
+        ]
+      ]
+    },
+	
+    {
+      "ids": ["4078"], //Zealot's Key
+      "hovers": [
+        [
+          "<col=AA99CC>Unlocks:",
+          "<col=33FF99>Activate a water pump in the Haunted Mine",
+          "<col=AA99CC>Found:",
+          "<col=FF6666>Pickpocket a Saradominist Zealot ",
+          "<col=AA99CC>Quests:",
+          "<col=33FFE0>Haunted Mine (Can be returned to Zealot after quest)"
+        ]
+      ]
+    },
+    {
+      "ids": ["1588"], //Grip's Key
+      "hovers": [
+        [
+          "<col=AA99CC>Unlocks:",
+          "<col=33FF99>Black Arm Gang secondary Hideout",
+          "<col=AA99CC>Found:",
+          "<col=FF6666>Partner Kills Grip in Brimhaven",
+          "<col=AA99CC>Quests:",
+          "<col=33FFE0>Heroes' Quest"
+        ]
+      ]
+    },
+    {
+      "ids": ["7632"], //Temple Library Key
+      "hovers": [
+        [
+          "<col=AA99CC>Unlocks:",
+          "<col=33FF99>Mausoleum door in the Temple Library",
+          "<col=AA99CC>Found:",
+          "<col=FF6666>From Drezel inside the Myreque Hideout",
+          "<col=AA99CC>Quests:",
+          "<col=33FFE0>In Aid of the Myreque (Can be destroyed after quest)"
+        ]
+      ]
+    },
+    {
+      "ids": ["1839"], //Metal key (Tourist Trap)
+      "hovers": [
+        [
+          "<col=AA99CC>Unlocks:",
+          "<col=33FF99>Cell door in Desert Mining Camp",
+          "<col=AA99CC>Found:",
+          "<col=FF6666>By killing the Mercernary Captain",
+          "<col=AA99CC>Quests:",
+          "<col=33FFE0>The Tourist Trap"
+        ]
+      ]
+    },
+	
+    {
+      "ids": ["1586"], //Miscellaneous key
+      "hovers": [
+        [
+          "<col=AA99CC>Unlocks:",
+          "<col=33FF99>Various doors in Heroes' Guild",
+          "<col=AA99CC>Found:",
+          "<col=FF6666>Obtained during quest",
+          "<col=AA99CC>Quests:",
+          "<col=33FFE0>Heroes' Quest"
+        ]
+      ]
+    },
+    {
+      "ids": ["993"], //Muddy key
+      "hovers": [
+        [
+          "<col=AA99CC>Unlocks:",
+          "<col=33FF99>Muddy chest in Lava Maze",
+          "<col=AA99CC>Found:",
+          "<col=FF6666>Dropped by chaos dwarves",
+          "<col=AA99CC>Notes:",
+          "<col=33FFE0>Chest contains low-value loot"
+        ]
+      ]
+    },
+	
+    {
+      "ids": ["6104"], //New key
+      "hovers": [
+        [
+          "<col=AA99CC>Unlocks:",
+          "<col=33FF99>Door in Mourner tunnels",
+          "<col=AA99CC>Found:",
+          "<col=FF6666>Obtained during quest",
+          "<col=AA99CC>Quests:",
+          "<col=33FFE0>Mourning's End Part II"
+        ]
+      ]
+    },
+		
+    {
+      "ids": ["6772"], //Prison key (Troll Stronghold)
+      "hovers": [
+        [
+          "<col=AA99CC>Unlocks:",
+          "<col=33FF99>Prison cell in Troll Stronghold",
+          "<col=AA99CC>Found:",
+          "<col=FF6666>Dropped by Troll General",
+          "<col=AA99CC>Quests:",
+          "<col=33FFE0>Troll Stronghold"
+        ]
+      ]
+    },
+	
+    {
+      "ids": ["3745"], //Seer's key
+      "hovers": [
+        [
+          "<col=AA99CC>Unlocks:",
+          "<col=33FF99>Seer's house in Rellekka",
+          "<col=AA99CC>Found:",
+          "<col=FF6666>Obtained during quest",
+          "<col=AA99CC>Quests:",
+          "<col=33FFE0>The Fremennik Trials"
+        ]
+      ]
+    },
+    {
+      "ids": ["4186"], //Shed key
+      "hovers": [
+        [
+          "<col=AA99CC>Unlocks:",
+          "<col=33FF99>Shed in Fenkenstrain's castle grounds",
+          "<col=AA99CC>Found:",
+          "<col=FF6666>Obtained during quest",
+          "<col=AA99CC>Quests:",
+          "<col=33FFE0>Creature of Fenkenstrain"
+        ]
+      ]
+    },
+	
+    {
+      "ids": ["2399", "2400", "2401"], //Silverlight keys
+      "hovers": [
+        [
+          "<col=AA99CC>Unlocks:",
+          "<col=33FF99>Silverlight case in Varrock castle",
+          "<col=AA99CC>Found:",
+          "<col=FF6666>Obtained from Captain Rovin, Sir Prysin, and Wizard Traiborn",
+          "<col=AA99CC>Quests:",
+          "<col=33FFE0>Demon Slayer"
+        ]
+      ]
+    },
+	
+    {
+      "ids": ["993"], //Sinister key
+      "hovers": [
+        [
+          "<col=AA99CC>Unlocks:",
+          "<col=33FF99>Sinister chest in Yanille dungeon",
+          "<col=AA99CC>Found:",
+          "<col=FF6666>Dropped by Salarin the Twisted",
+          "<col=AA99CC>Notes:",
+          "<col=33FFE0>Chest contains herbs"
+        ]
+      ]
+    },
+	
+    {
+      "ids": ["4165"], //Slashed book
+      "hovers": [
+        [
+          "<col=AA99CC>Unlocks:",
+          "<col=33FF99>Hidden door in Varrock digsite",
+          "<col=AA99CC>Found:",
+          "<col=FF6666>Obtained during quest",
+          "<col=AA99CC>Quests:",
+          "<col=33FFE0>The Dig Site"
+        ]
+      ]
+    },
+	
+    {
+      "ids": ["4166"], //Small key
+      "hovers": [
+        [
+          "<col=AA99CC>Unlocks:",
+          "<col=33FF99>Cell door in West Ardougne",
+          "<col=AA99CC>Found:",
+          "<col=FF6666>Obtained during quest",
+          "<col=AA99CC>Quests:",
+          "<col=33FFE0>Plague City"
+        ]
+      ]
+    },
+	
+    {
+      "ids": ["4167"], //Stone key
+      "hovers": [
+        [
+          "<col=AA99CC>Unlocks:",
+          "<col=33FF99>Stone door in Temple of Ikov",
+          "<col=AA99CC>Found:",
+          "<col=FF6666>Obtained during quest",
+          "<col=AA99CC>Quests:",
+          "<col=33FFE0>Temple of Ikov"
+        ]
+      ]
+    },
+	
+    {
+      "ids": ["4168"], //Temple key
+      "hovers": [
+        [
+          "<col=AA99CC>Unlocks:",
+          "<col=33FF99>Temple door in Paterdomus",
+          "<col=AA99CC>Found:",
+          "<col=FF6666>Obtained during quest",
+          "<col=AA99CC>Quests:",
+          "<col=33FFE0>Priest in Peril"
+        ]
+      ]
+    },
+	
+    {
+      "ids": ["24668"], //Theatre key
+      "hovers": [
+        [
+          "<col=AA99CC>Unlocks:",
+          "<col=33FF99>Theatre of Blood entry",
+          "<col=AA99CC>Found:",
+          "<col=FF6666>Obtained during quest",
+          "<col=AA99CC>Quests:",
+          "<col=33FFE0>A Night at the Theatre"
+        ]
+      ]
+    }
+  ]
+}
