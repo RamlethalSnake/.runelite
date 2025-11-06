@@ -1,6 +1,0 @@
-CAPE:24855 (Mythical max cape)
-HEAD:24857 (Mythical max hood)
-TORSO:27450 (Graceful top)
-LEGS:27453 (Graceful legs)
-HANDS:27456 (Graceful gloves)
-BOOTS:27459 (Graceful boots)

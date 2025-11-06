@@ -1,1 +1,0 @@
-{"internalName":"pack-pixelscape-dark","commit":"53b50a970323ba3bc24c29bb28a0df15baa91bde","displayName":"Pixelscape Dark","compatibleVersion":"1.3.4","author":"f2p Ello","tags":["high detail"," pixelart"],"repo":"https://github.com/melkypie/resource-packs/tree/pack-pixelscape-dark","hasIcon":true}

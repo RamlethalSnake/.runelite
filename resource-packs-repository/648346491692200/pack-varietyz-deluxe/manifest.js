@@ -1,1 +1,0 @@
-{"internalName":"pack-varietyz-deluxe","commit":"7c0923dc4674113c728bee18218431982d54590a","displayName":"Varietyz - Deluxe Theme ","compatibleVersion":"1.4.5","author":"Smoke (Smoked today)","tags":["dark","black","gold","grey","mode","varietyz","custom"],"repo":"https://github.com/melkypie/resource-packs/tree/pack-varietyz-deluxe","hasIcon":true}

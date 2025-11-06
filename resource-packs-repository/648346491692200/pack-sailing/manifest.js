@@ -1,1 +1,0 @@
-{"internalName":"pack-sailing","commit":"ad420ad96f5faa4de7adaab702166f42b38ae76d","displayName":"Set Sail","compatibleVersion":"1.4.8","author":"Riggnarokk","tags":["Sailing","Ocean","teal","recolor","pirate"],"repo":"https://github.com/melkypie/resource-packs/tree/pack-sailing","hasIcon":true}

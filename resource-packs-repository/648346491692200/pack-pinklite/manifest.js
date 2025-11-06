@@ -1,1 +1,0 @@
-{"internalName":"pack-pinklite","commit":"20b818dd98079e540409b0ca4b7d9f1ba8b39638","displayName":"Pinklite","compatibleVersion":"1.4.9","author":"Airships","tags":["pinklite","pinklight","pink","light","lite","airships","reskin","palette","color","gronk","colour","simple"],"repo":"https://github.com/melkypie/resource-packs/tree/pack-pinklite","hasIcon":true}

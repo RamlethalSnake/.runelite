@@ -1,1 +1,0 @@
-{"internalName":"pack-reaper-chroma","commit":"8473790738ebb24d4714e1220ff18ab9548ea91a","displayName":"Reaper Chroma","compatibleVersion":"1.4.4","author":"EXpoZuR","tags":["dark","colorful","modern","reaper","chroma"],"repo":"https://github.com/melkypie/resource-packs/tree/pack-reaper-chroma","hasIcon":true}

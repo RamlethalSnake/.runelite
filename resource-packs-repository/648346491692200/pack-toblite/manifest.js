@@ -1,1 +1,0 @@
-{"internalName":"pack-toblite","commit":"757a76c938d9f62d40b289510cc4093034cde158","displayName":"TOBlite","compatibleVersion":"1.4.9","author":"degradee","tags":["reskin","tob","theatre of blood","raid","raids2","vampire","sotf","red"],"repo":"https://github.com/melkypie/resource-packs/tree/pack-toblite","hasIcon":true}

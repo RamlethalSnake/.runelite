@@ -1,1 +1,0 @@
-{"internalName":"pack-vgascape","commit":"e99b7e8f321a362496bf8315f5bc1c01ddf81d4b","displayName":"VGAscape","compatibleVersion":"1.16.0","author":"gonekittywild","tags":["pixel"," resizeable"," retro"," beige"," brown"," light"],"repo":"https://github.com/melkypie/resource-packs/tree/pack-vgascape","hasIcon":true}

@@ -1,1 +1,0 @@
-{"internalName":"pack-win95ish","commit":"25cfc0748797c0f47a8e3ed1ca8d23231972c19c","displayName":"Win95ish","compatibleVersion":"1.4.8","author":"Puffcap","tags":["retro","os","simple","clean"],"repo":"https://github.com/melkypie/resource-packs/tree/pack-win95ish","hasIcon":true}

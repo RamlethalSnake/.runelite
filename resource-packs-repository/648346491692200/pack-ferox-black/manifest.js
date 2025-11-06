@@ -1,1 +1,0 @@
-{"internalName":"pack-ferox-black","commit":"389117bc8e84ab5958f37fa8224dfcf5d7bf7ceb","displayName":"FEROX BLACK","compatibleVersion":"1.4.9","author":"TagaKanto","tags":["dark","black","night","theme","zamorak","wilderness","ferox"],"repo":"https://github.com/melkypie/resource-packs/tree/pack-ferox-black","hasIcon":true}

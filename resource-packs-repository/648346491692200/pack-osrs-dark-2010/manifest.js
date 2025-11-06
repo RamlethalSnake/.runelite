@@ -1,1 +1,0 @@
-{"internalName":"pack-osrs-dark-2010","commit":"c8fd43e8ba092ae9c01522973493ad8e0c5b7efe","displayName":"Dark 2010scape","compatibleVersion":"1.4.5","author":"Nichy (nickyGyul)","tags":["dark","black","night","2010","recolor","rs3","rs2","gim","no bugs"],"repo":"https://github.com/melkypie/resource-packs/tree/pack-osrs-dark-2010","hasIcon":true}

@@ -1,1 +1,0 @@
-{"internalName":"pack-dark-mode-teal-2010","commit":"503dd9286772be2670e3842a8301694c5c169421","displayName":"Dark Mode Teal 2010","compatibleVersion":"1.7.3","author":"Vera","tags":["dark","modern","clean","dark mode","teal","dmt","vera","2010"],"repo":"https://github.com/melkypie/resource-packs/tree/pack-dark-mode-teal-2010","hasIcon":true}

@@ -1,1 +1,0 @@
-{"internalName":"pack-princess-lite","commit":"cf880a112e5176bff13dc66840d98868f54a6806","displayName":"PrincessLite","compatibleVersion":"1.1.2","author":"Princess dps","tags":["dark","princess","pink","pretty","fixed","resizeable"],"repo":"https://github.com/melkypie/resource-packs/tree/pack-princess-lite","hasIcon":true}

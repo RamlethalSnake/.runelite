@@ -1,1 +1,0 @@
-{"internalName":"pack-wood-cabin","commit":"0b253dacadd80c7fbc5a4af41a5701d0ec77070b","displayName":"Wood cabin (Resizable)","compatibleVersion":"1.0.4","author":"Duke","repo":"https://github.com/melkypie/resource-packs/tree/pack-wood-cabin","hasIcon":true}

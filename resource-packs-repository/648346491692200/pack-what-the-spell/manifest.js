@@ -1,1 +1,0 @@
-{"internalName":"pack-what-the-spell","commit":"ffafe5b8b632463400166fdf9561f6c165e7ad37","displayName":"WhatTheSpell","compatibleVersion":"1.4.8","author":"spring","tags":["accessibility"],"repo":"https://github.com/melkypie/resource-packs/tree/pack-what-the-spell","hasIcon":true}

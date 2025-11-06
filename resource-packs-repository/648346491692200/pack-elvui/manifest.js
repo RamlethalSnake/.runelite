@@ -1,1 +1,0 @@
-{"internalName":"pack-elvui","commit":"e284ecda6f6597d3eb0146cb2d3bdf818efed3b7","displayName":"ElvUi","compatibleVersion":"1.6.1","author":"Beardedrasta","tags":["clean","modern","smooth","ui","dark","minimal","black","plain"],"repo":"https://github.com/melkypie/resource-packs/tree/pack-elvui","hasIcon":true}

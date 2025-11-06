@@ -1,1 +1,0 @@
-{"internalName":"pack-nord","commit":"049a87182ecb354f9ce60dfa565bbeb5dd0404d2","displayName":"Default Nord","compatibleVersion":"1.3.0","author":"sgfost","tags":["nord","blue","dark","vanilla","recolor"],"repo":"https://github.com/melkypie/resource-packs/tree/pack-nord","hasIcon":true}

@@ -1,1 +1,0 @@
-{"internalName":"pack-2010-hd-overhaul","commit":"972781abf36511784649542a0c4ca71318f3d91c","displayName":"2010 HD Overhaul","compatibleVersion":"1.4.3","author":"DemHunter","tags":["2010"," HD"," fixed"," resizeable"," updated"," originalsprites"],"repo":"https://github.com/melkypie/resource-packs/tree/pack-2010-hd-overhaul","hasIcon":true}

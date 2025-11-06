@@ -1,1 +1,0 @@
-{"internalName":"pack-dark-fixed","commit":"15d6ecf6d18cf45f6d598e4b868131339753405b","displayName":"Dark (fixed)","compatibleVersion":"1.0.4","author":"Nan0bit","repo":"https://github.com/melkypie/resource-packs/tree/pack-dark-fixed","hasIcon":true}
