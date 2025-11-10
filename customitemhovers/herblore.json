@@ -64,7 +64,7 @@
     [
       "<col=3498db>Herblore:</col>",
       "${herblore_level_real < 22 ? '<col=FF4D4D>Level: 22</col>' : '<col=55ff55>Level: 22</col>'}",
-      "${inv_qty(\"Red spiders' eggs\") < 1 ? '<col=FF4D4D>Requires: Red spiders\\' eggs</col>' : '<col=55ff55>Requires: Red spiders\\' eggs</col>'}",
+      "${inv_qty('Red spiders\\' eggs') < 1 ? '<col=FF4D4D>Requires: Red spiders\\' eggs</col>' : '<col=55ff55>Requires: Red spiders\\' eggs</col>'}",
       "${'<col=FFFF66>Experience: 62.5 XP</col>'}",
       "${'<col=FFFF66>Product: Restore potion</col>'}"
     ],
