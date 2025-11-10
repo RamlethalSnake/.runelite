@@ -407,7 +407,13 @@ not safe on pvp.+you never get the sceptre#
 (?i)World 302
 (?i)Ice World
 (?i)Ice-World
+(?i)'Ice-World'
+(?i)'Ice World'
 (?i)Enter-guest
+
+♾️♾️♾️♾️♾️ Game ♾️♾️♾️♾️♾️
+(?i)Your stamina enhancement is about to expire.
+(?i)Your stamina enhancement has expired.
 
 ♾️♾️♾️♾️♾️ NAMES ♾️♾️♾️♾️♾️
 (?i)^(c[o0]in|casin[o0]|c[a@]s[i1]n[o0])[-_ ]?\w{2,}$
